@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <RadioButton
+        android:id="@+id/rbCategoryProfile"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:button="@drawable/checkbox_selector"
+        android:text="" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/iconCategory"
+        android:layout_gravity="center|center_vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/titleCategoryProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Sell"
+            android:gravity="center_vertical"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>
+
+

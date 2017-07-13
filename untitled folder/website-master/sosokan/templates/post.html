@@ -1,0 +1,340 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+    <script type="text/javascript" src="{% static "tinymce/js/tinymce/tinymce.min.js" %}"></script>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 col-xs-12 first ad-post-main">                    
+                    <div id="upload-ad" class="ad-detail-content">
+                    {{form.errors}}
+                        <form class="form-item row" action="." id="primaryPostForm" method="POST" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <h3>POST AN AD</h3>
+                                <div class="h3-seprator"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" value="{{form.name.value}}" placeholder="Title" size="60" maxlength="255" class="form-control" required>
+                            </div>
+                            <div class="form-group form-s-select">
+                                <select data-noResult="No results match"  name='category' id='catID' class='form-select form-control' >
+                                    <option value=''>Category</option>
+                                    {% for category in categories %}
+                                        <option value="{{category.id}}">{{category}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            
+                            <div class="extra-fields-container">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" id="price" name="price" placeholder="Price"  value="{{form.price.value|default:""}}" size="30" class="form-control">
+                                
+                                
+                                <p style="margin-top:10px;">Currency sign is already set as "USD".Please do not use currency sign in price field. Only use numbers ex: 2345.</p>
+                            </div>
+                            <div class="form-group form-s-select">
+                                <select data-noResult="No results match"  name='post_location' id='post_location' class='form-select form-control' >
+                                    <option value='-1'>Select a Location</option>
+                                    <option class="level-0" value="51">New York</option>
+                                    <option class="level-0" value="54">California</option>
+                                    <option class="level-0" value="17">Florida</option>
+                                    <option class="level-0" value="41">Georgia</option>
+                                    <option class="level-0" value="33">Illinois</option>
+                                    <option class="level-0" value="45">Massachusets</option>
+                                    <option class="level-0" value="25">Pennsylviania</option>
+                                    <option class="level-0" value="47">Texas</option>
+                                    <option class="level-0" value="15">Washington State</option>
+                                    <option class="level-0" value="31">Arizona</option>
+                                </select>
+                                
+                            </div>
+                            <div class="form-group">
+                                <div id="wp-postContent-wrap" class="wp-core-ui wp-editor-wrap tmce-active"><link rel='stylesheet' id='editor-buttons-css'  href='{% static 'css/editor.min.css' %}' type='text/css' media='all' />
+                                <div id="wp-postContent-editor-tools" class="wp-editor-tools hide-if-no-js">
+                                </div>
+                                <div id="wp-postContent-editor-container" class="wp-editor-container"><div id="qt_postContent_toolbar" class="quicktags-toolbar"></div><textarea class="wp-editor-area" rows="20" autocomplete="off" cols="40" name="description" id="description"></textarea></div>
+                            </div>
+                        </div>
+                        <div id="map-container">
+                            <div class="form-group">
+                                <input id="address" name="address" type="text" placeholder="Address"  class="form-control">
+                                <p class="help-block">Start typing an address  and select from the dropdown.</p>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="post_tags" name="post_tags" placeholder="Tags"  size="12" maxlength="110" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <div id="map-canvas"></div>
+                                <script type="text/javascript">
+                                jQuery(document).ready(function($) {
+                                var geocoder;
+                                var map;
+                                var marker;
+                                var geocoder = new google.maps.Geocoder();
+                                function geocodePosition(pos) {
+                                geocoder.geocode({
+                                latLng: pos
+                                }, function(responses) {
+                                if (responses && responses.length > 0) {
+                                updateMarkerAddress(responses[0].formatted_address);
+                                } else {
+                                updateMarkerAddress('Cannot determine address at this location.');
+                                }
+                                });
+                                }
+                                function updateMarkerPosition(latLng) {
+                                jQuery('#latitude').val(latLng.lat());
+                                jQuery('#longitude').val(latLng.lng());
+                                }
+                                function updateMarkerAddress(str) {
+                                jQuery('#address').val(str);
+                                }
+                                function initialize() {
+                                var latlng = new google.maps.LatLng(0, 0);
+                                var mapOptions = {
+                                zoom: 2,
+                                center: latlng
+                                }
+                                map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+                                geocoder = new google.maps.Geocoder();
+                                marker = new google.maps.Marker({
+                                position: latlng,
+                                map: map,
+                                draggable: true
+                                });
+                                // Add dragging event listeners.
+                                google.maps.event.addListener(marker, 'dragstart', function() {
+                                updateMarkerAddress('Dragging...');
+                                });
+                                google.maps.event.addListener(marker, 'drag', function() {
+                                updateMarkerPosition(marker.getPosition());
+                                });
+                                google.maps.event.addListener(marker, 'dragend', function() {
+                                geocodePosition(marker.getPosition());
+                                });
+                                }
+                                google.maps.event.addDomListener(window, 'load', initialize);
+                                jQuery(document).ready(function() {
+                                initialize();
+                                jQuery(function() {
+                                jQuery("#address").autocomplete({
+                                //This bit uses the geocoder to fetch address values
+                                source: function(request, response) {
+                                geocoder.geocode( {'address': request.term }, function(results, status) {
+                                response(jQuery.map(results, function(item) {
+                                return {
+                                label:  item.formatted_address,
+                                value: item.formatted_address,
+                                latitude: item.geometry.location.lat(),
+                                longitude: item.geometry.location.lng()
+                                }
+                                }));
+                                })
+                                },
+                                //This bit is executed upon selection of an address
+                                select: function(event, ui) {
+                                jQuery("#latitude").val(ui.item.latitude);
+                                jQuery("#longitude").val(ui.item.longitude);
+                                var location = new google.maps.LatLng(ui.item.latitude, ui.item.longitude);
+                                marker.setPosition(location);
+                                map.setZoom(16);
+                                map.setCenter(location);
+                                }
+                                });
+                                });
+                                //Add listener to marker for reverse geocoding
+                                google.maps.event.addListener(marker, 'drag', function() {
+                                geocoder.geocode({'latLng': marker.getPosition()}, function(results, status) {
+                                if (status == google.maps.GeocoderStatus.OK) {
+                                if (results[0]) {
+                                jQuery('#address').val(results[0].formatted_address);
+                                jQuery('#latitude').val(marker.getPosition().lat());
+                                jQuery('#longitude').val(marker.getPosition().lng());
+                                }
+                                }
+                                });
+                                });
+                                });
+                                });
+                                </script>
+                                <input type="hidden" id="latitude" name="latitude"  class="form-text required input-textarea half">
+                                <input type="hidden" id="longitude" name="longitude" class="form-text last required input-textarea half">
+                            </div>
+                            <link rel="stylesheet" href="{% static 'css/jquery.filer.css' %}" type="text/css" />
+                            <link rel="stylesheet" href="{% static 'css/jquery.filer-dragdropbox-theme.css' %}" type="text/css" />
+                            <script type="text/javascript" src="{% static 'js/jquery.filer.min.js' %}"></script>
+                            <script>
+                            jQuery(document).ready(function($) {
+
+
+                            $("#filer_input2").filer({
+                            limit: null,
+                            maxSize: null,
+                            extensions: null,
+                            
+                            changeInput: '<div class="jFiler-input-dragDrop"><div class="jFiler-input-inner"><div class="jFiler-input-icon" style="margin-top:10px;"><i class="icon-jfi-cloud-up-o"></i></div><div class="jFiler-input-text"><h4>Drag & Drop IMAGE here</h4> <span style="display:inline-block; margin: 15px 0">or</span></div><a class="jFiler-input-choose-btn">Browse IMAGE</a></div></div>',
+                            showThumbs: true,
+                            theme: "dragdropbox",
+                            templates: {
+                        box: '<ul class="jFiler-items-list jFiler-items-grid"></ul>',
+                        item: '<li class="jFiler-item" style="width:49%">\
+                            <div class="jFiler-item-container">\
+                                <div class="jFiler-item-inner">\
+                                    <div class="jFiler-item-thumb">\
+                                        <div class="jFiler-item-status"></div>\
+                                        <div class="jFiler-item-thumb-overlay">\
+                                            <div class="jFiler-item-info">\
+                                                <div style="display:table-cell;vertical-align: middle;">\
+                                                    <span class="jFiler-item-title"><b title="{% templatetag openvariable %}fi-name{% templatetag closevariable %}">{% templatetag openvariable %}fi-name{% templatetag closevariable %}</b></span>\
+                                                    <span class="jFiler-item-others">{% templatetag openvariable %}fi-size2{% templatetag closevariable %}</span>\
+                                                </div>\
+                                            </div>\
+                                        </div>\
+                                        {% templatetag openvariable %}fi-image{% templatetag closevariable %}\
+                                    </div>\
+                                    <div class="jFiler-item-assets jFiler-row">\
+                                        <ul class="list-inline pull-left">\
+                                            <li>{% templatetag openvariable %}fi-progressBar{% templatetag closevariable %}</li>\
+                                        </ul>\
+                                        <ul class="list-inline pull-right">\
+                                            <li><a class="icon-jfi-trash jFiler-item-trash-action"></a></li>\
+                                        </ul>\
+                                    </div>\
+                                </div>\
+                            </div>\
+                        </li>',
+                        itemAppend: '<li class="jFiler-item" style="width:49%">\
+                            <div class="jFiler-item-container">\
+                                <div class="jFiler-item-inner">\
+                                    <div class="jFiler-item-thumb">\
+                                        <div class="jFiler-item-status"></div>\
+                                        <div class="jFiler-item-thumb-overlay">\
+                                            <div class="jFiler-item-info">\
+                                                <div style="display:table-cell;vertical-align: middle;">\
+                                                    <span class="jFiler-item-title"><b title="{% templatetag openvariable %}fi-name{% templatetag closevariable %}">{% templatetag openvariable %}fi-name}}</b></span>\
+                                                    <span class="jFiler-item-others">{% templatetag openvariable %}fi-size2{% templatetag closevariable %}</span>\
+                                                </div>\
+                                            </div>\
+                                        </div>\
+                                        {% templatetag openvariable %}fi-image{% templatetag closevariable %}\
+                                    </div>\
+                                    <div class="jFiler-item-assets jFiler-row">\
+                                        <ul class="list-inline pull-left">\
+                                            <li><span class="jFiler-item-others">{% templatetag openvariable %}fi-icon{% templatetag closevariable %}</span></li>\
+                                        </ul>\
+                                        <ul class="list-inline pull-right">\
+                                            <li><a class="icon-jfi-trash jFiler-item-trash-action"></a></li>\
+                                        </ul>\
+                                    </div>\
+                                </div>\
+                            </div>\
+                        </li>',
+                        progressBar: '<div class="bar"></div>',
+                        itemAppendToEnd: false,
+                        removeConfirmation: true,
+                        _selectors: {
+                        list: '.jFiler-items-list',
+                        item: '.jFiler-item',
+                        progressBar: '.bar',
+                        remove: '.jFiler-item-trash-action'
+                        }
+                        },
+                        dragDrop: {},
+                        uploadFile: {
+                        url: "/upload/",
+                        data: {csrfmiddlewaretoken: '{{ csrf_token }}'},
+                        type: 'POST',
+                        enctype: 'multipart/form-data',
+                        beforeSend: function(){},
+                        success: function(response, el){
+                                var number = response; 
+                                //number = number.replace(/\D/g, ''); 
+                                //number = parseInt(number, 10); 
+                                var parent = el.find('.jFiler-jProgressBar').parent();
+                                el.find('.jFiler-jProgressBar').fadeOut('slow', function(){
+                                        $('<div class=\'jFiler-item-others text-success\'><i class=\'icon-jfi-check-circle\'></i><input type=\'hidden\' class=\'parent-id\' name=\'parent_id[]\' value=\''+number+'\' > Success</div>').hide().appendTo(parent).fadeIn('slow');
+                                });
+                        },
+                        error: function(el){
+                                var parent = el.find(".jFiler-jProgressBar").parent();
+                                el.find(".jFiler-jProgressBar").fadeOut("slow", function(){
+                                        $("<div class=\"jFiler-item-others text-error\"><i class=\"icon-jfi-minus-circle\"></i> Error</div>").hide().appendTo(parent).fadeIn("slow");
+                                });
+                        },
+                        statusCode: null,
+                        onProgress: null,
+                        onComplete: function (){
+                              setInterval(function(){
+                                allimg_id = jQuery('.parent-id').map(function () {
+                                     return this.value;
+                                }).get(); 
+                                jQuery('.gallery-images').val(allimg_id);
+                                },800);
+                            },
+                        },
+                        files: null,
+                        addMore: false,
+                        clipBoardPaste: false,
+                        excludeName: null,
+                        beforeRender: null,
+                        afterRender: null,
+                        beforeShow: null,
+                        beforeSelect: null,
+                        onSelect: null,
+                        afterShow: null,
+                        onRemove: function(itemEl, file, id, listEl, boxEl, newInputEl, inputEl){
+                        var file = file.name;
+                        $.post('/remove', {file: file});
+                        },
+                        onEmpty: null,
+                        options: null,
+                        
+                        });
+                        });
+                        </script>
+                        <script type="text/javascript">tinyMCE.init({
+
+                        "cleanup_on_startup": true,
+                        "forced_root_block": false,
+                        "content_css": "/static/css/custom_content.css",
+                        "language": "en",
+                        "contextmenu": "formats | link image",
+                        "relative_urls": false,
+                        "directionality": "ltr",
+                        "selector": "textarea#description",
+                        "toolbar1": "bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist | outdent indent | table | link image | codesample | preview code | fontselect  fontsizeselect | forecolor backcolor | emoticons",
+                        "theme_advanced_fonts": "Andale Mono=andale mono,times;Arial=arial,helvetica,sans-serif;Arial Black=arial black,avant garde;Book Antiqua=book antiqua,palatino;Comic Sans MS=comic sans ms,sans-serif;Courier New=courier new,courier;Century Gothic=century_gothic;Georgia=georgia,palatino;Gill Sans MT=gill_sans_mt;Gill Sans MT Bold=gill_sans_mt_bold;Gill Sans MT BoldItalic=gill_sans_mt_bold_italic;Gill Sans MT Italic=gill_sans_mt_italic;Helvetica=helvetica;Impact=impact,chicago;Iskola Pota=iskoola_pota;Iskola Pota Bold=iskoola_pota_bold;Symbol=symbol;Tahoma=tahoma,arial,helvetica,sans-serif;Terminal=terminal,monaco;Times New Roman=times new roman,times;Trebuchet MS=trebuchet ms,geneva;Verdana=verdana,geneva;Webdings=webdings;Wingdings=wingdings,zapf dingbats",
+                        "custom_undo_redo_levels": 10,
+                        "plugins": "link image preview codesample contextmenu table code textcolor emoticons paste",
+                        "language_url": "/static/js/zh.js",
+                        "paste_data_images": true,
+                        "fontsize_formats": "8px 10px 12px 14px 18px 24px 36px"
+                        }); // end init
+                        </script>
+                    </div>
+                    <div class="form-group">
+                        <div class="jfiler-holder">
+                            <input type="file" class="form-control" name="file[]" id="filer_input2" multiple="multiple">
+                            <input type="hidden" class="form-control" name="gallery-images" class="gallery-images" value="" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <fieldset class="input-title" style="margin-bottom:0px;">
+                            <textarea name="video" class="form-control" id="video" cols="8" rows="5" placeholder="Put here iframe or video url." ></textarea>
+                            <p class="help-block">Add video embedding code or video URL here (youtube, vimeo, etc)</p>
+                        </fieldset>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="publish-ad-button">
+                            <input type="hidden" class="form-control" name="submitted" id="submitted" value="true" />
+                            <button class="btn form-submit btn btn-lg full-btn" id="edit-submit" name="op" value="Publish Ad" type="submit">Publish Ad</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:padding="15dp">
+
+    <com.sosokan.android.control.RoundedImageView
+        android:id="@+id/ivUser"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/no_avatar"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        app:border_color="@android:color/white"
+        app:border_width="2dp"
+        app:corner_radius="125dip"
+        app:mutate_background="false"
+        app:oval="true" />
+
+    <LinearLayout
+        android:id="@+id/llUserItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/ivUser"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bacground_messages"
+        android:orientation="vertical"
+        android:paddingRight="15dp">
+        <TextView
+            android:id="@+id/tvNameUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

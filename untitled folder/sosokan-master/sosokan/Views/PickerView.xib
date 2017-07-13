@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+            <string>Lato-Bold</string>
+        </mutableArray>
+        <mutableArray key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="OKy-gk-gVa" customClass="PickerView" customModule="sosokan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="261"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tB3-dM-vtI">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2P-LL-6kK">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="6fl-QJ-h5j"/>
+                                <constraint firstAttribute="width" constant="60" id="OiV-sZ-Zbw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="1" green="0.61568627450000002" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="6fl-QJ-h5j"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="cancelButtonDidTouched:" destination="OKy-gk-gVa" eventType="touchUpInside" id="GyV-XR-wn7"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UM7-bs-sRb">
+                            <rect key="frame" x="315" y="0.0" width="60" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="A31-Jz-nJh"/>
+                                <constraint firstAttribute="width" constant="60" id="qlZ-sR-oT9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                            <state key="normal" title="Done">
+                                <color key="titleColor" red="1" green="0.61568627450000002" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="A31-Jz-nJh"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="doneButtonDidTouched:" destination="OKy-gk-gVa" eventType="touchUpInside" id="DdR-vx-TRS"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJd-Gh-B81">
+                            <rect key="frame" x="60" y="0.0" width="255" height="45"/>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="UM7-bs-sRb" firstAttribute="top" secondItem="tB3-dM-vtI" secondAttribute="top" id="744-4U-1uZ"/>
+                        <constraint firstItem="bJd-Gh-B81" firstAttribute="top" secondItem="tB3-dM-vtI" secondAttribute="top" id="8tw-si-kdG"/>
+                        <constraint firstAttribute="trailing" secondItem="UM7-bs-sRb" secondAttribute="trailing" id="95I-vg-VVT"/>
+                        <constraint firstAttribute="bottom" secondItem="bJd-Gh-B81" secondAttribute="bottom" id="Lov-mk-rI9"/>
+                        <constraint firstItem="bJd-Gh-B81" firstAttribute="leading" secondItem="R2P-LL-6kK" secondAttribute="trailing" id="Qrg-9i-heM"/>
+                        <constraint firstItem="UM7-bs-sRb" firstAttribute="leading" secondItem="bJd-Gh-B81" secondAttribute="trailing" id="dGu-IQ-feR"/>
+                        <constraint firstAttribute="bottom" secondItem="R2P-LL-6kK" secondAttribute="bottom" id="faO-hJ-ehg"/>
+                        <constraint firstItem="R2P-LL-6kK" firstAttribute="leading" secondItem="tB3-dM-vtI" secondAttribute="leading" id="hKN-Ey-QuF"/>
+                        <constraint firstItem="R2P-LL-6kK" firstAttribute="top" secondItem="tB3-dM-vtI" secondAttribute="top" id="peJ-dm-uHU"/>
+                        <constraint firstAttribute="bottom" secondItem="UM7-bs-sRb" secondAttribute="bottom" id="qpc-L2-X4H"/>
+                        <constraint firstAttribute="height" constant="45" id="uc5-Hy-ago"/>
+                    </constraints>
+                </view>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZoH-Oi-pfB">
+                    <rect key="frame" x="0.0" y="45" width="375" height="216"/>
+                    <connections>
+                        <outlet property="dataSource" destination="OKy-gk-gVa" id="DQT-rr-lBC"/>
+                        <outlet property="delegate" destination="OKy-gk-gVa" id="rmq-PC-W5X"/>
+                    </connections>
+                </pickerView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ZoH-Oi-pfB" secondAttribute="bottom" id="596-Jb-kdw"/>
+                <constraint firstAttribute="trailing" secondItem="ZoH-Oi-pfB" secondAttribute="trailing" id="5Wq-pa-cdx"/>
+                <constraint firstItem="ZoH-Oi-pfB" firstAttribute="leading" secondItem="OKy-gk-gVa" secondAttribute="leading" id="8c8-Cc-xGk"/>
+                <constraint firstAttribute="trailing" secondItem="tB3-dM-vtI" secondAttribute="trailing" id="LDW-Rz-W9J"/>
+                <constraint firstItem="ZoH-Oi-pfB" firstAttribute="top" secondItem="tB3-dM-vtI" secondAttribute="bottom" id="Uzd-Lk-X2f"/>
+                <constraint firstItem="tB3-dM-vtI" firstAttribute="leading" secondItem="OKy-gk-gVa" secondAttribute="leading" id="b4c-kK-LmX"/>
+                <constraint firstItem="tB3-dM-vtI" firstAttribute="top" secondItem="OKy-gk-gVa" secondAttribute="top" id="bDT-Aw-65M"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelButton" destination="R2P-LL-6kK" id="KlS-6y-USD"/>
+                <outlet property="doneButton" destination="UM7-bs-sRb" id="15L-fw-ESg"/>
+                <outlet property="pickerView" destination="ZoH-Oi-pfB" id="JEK-RQ-cX7"/>
+                <outlet property="titleLabel" destination="bJd-Gh-B81" id="ERH-za-m5q"/>
+            </connections>
+            <point key="canvasLocation" x="352.5" y="363.5"/>
+        </view>
+    </objects>
+</document>

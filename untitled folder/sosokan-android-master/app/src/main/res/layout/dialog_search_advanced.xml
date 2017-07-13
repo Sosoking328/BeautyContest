@@ -1,0 +1,805 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/dialog_search_advance"
+    android:layout_height="match_parent"
+    android:tag="dialog_search_advance"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+    <!--MAIN-->
+    <LinearLayout
+        android:id="@+id/llAdvanceSearchMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/rlNavSearchAdvance"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:background="@color/orange"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ibBackSearchAdvance"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_clear_white_24dp" />
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Display1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                android:text="@string/advance_search"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+
+                android:background="@color/grey" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlNavSearchAdvance">
+
+            <EditText
+                android:id="@+id/edtSearchDialogAdvanceSearch"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/border_edit_text"
+                android:drawableLeft="@drawable/ic_search_black_24dp"
+                android:drawablePadding="5dp"
+                android:focusableInTouchMode="true"
+                android:hint="@string/search_here"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="#c9c8ce"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_lowercase"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_12" />
+
+            <TextView
+                android:id="@+id/tvCategorySearchAdvance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:text="@string/not_available"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/text_12" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+
+            android:background="@color/grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/city_lowercase"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_12" />
+
+            <TextView
+                android:id="@+id/tvCitySearchAdvance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:text="@string/all_cities"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/text_12" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+
+            android:background="@color/grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/property"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_12" />
+
+            <TextView
+                android:id="@+id/tvPropertySearchAdvance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:text="@string/all_properties"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/text_12" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+
+            android:background="@color/grey" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="@string/price_lowercase"
+                android:textColor="@color/black"
+
+                android:textSize="@dimen/text_12" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp">
+
+                <com.sosokan.android.ui.view.RangeSeekBar
+                    android:id="@+id/rangeSeekBarPrice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:absoluteMaxValue="5000"
+                    app:absoluteMinValue="0"
+                    app:absoluteUnitValue="1" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAllPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/rbPriceSearchAdvance"
+                    android:layout_width="@dimen/size_click"
+                    android:layout_height="@dimen/size_click"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:button="@drawable/checkbox_selector"
+                    android:src="@drawable/ic_checked"
+                    android:text="" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/all_lowercase"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+
+            android:background="@color/grey" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="@string/day_lowercase"
+                android:textColor="@color/black"
+
+                android:textSize="@dimen/text_12" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp">
+
+                <com.sosokan.android.ui.view.RangeSeekBar
+                    android:id="@+id/rangeSeekBarDay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:absoluteMaxValue="365"
+                    app:absoluteMinValue="0"
+                    app:absoluteUnitValue="2" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAllDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/rbDaySearchAdvance"
+                    android:layout_width="@dimen/size_click"
+                    android:layout_height="@dimen/size_click"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:button="@drawable/checkbox_selector"
+                    android:src="@drawable/ic_checked"
+                    android:text="" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/all_lowercase"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+
+            android:background="@color/grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:text="@string/cancel"
+                android:textAlignment="center"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/text_12" />
+
+            <View
+                android:layout_width="0.3dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/tvApply"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/orange"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:text="@string/apply"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_12" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+
+            android:background="@color/grey" />
+    </LinearLayout>
+
+    <!--CITY-->
+    <LinearLayout
+        android:id="@+id/llCitiesDialogSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <RelativeLayout
+            android:id="@+id/rlLocationDialogSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/rlNavDialogSearch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:background="@color/orange"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ibBackDialogSearchFromCity"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_arrow_back_white_30dp" />
+
+                <TextView
+                    android:id="@+id/tvTitleDialogSearch"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+
+                    android:text="@string/location"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+
+                    android:background="@color/grey" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlNavDialogSearch"
+                android:orientation="vertical">
+                <!--STATE-->
+                <LinearLayout
+                    android:id="@+id/llState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/state_lowercase"
+
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_12" />
+
+                        <TextView
+                            android:id="@+id/tvStateDialogSearch"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableRight="@drawable/ic_chevron_right_grey_24dp"
+                            android:gravity="center|right"
+                            android:paddingRight="10dp"
+                            android:text="@string/all_state_lowercase"
+                            android:textColor="@color/orange"
+                            android:textSize="@dimen/text_12" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+
+                        android:background="@color/grey" />
+                </LinearLayout>
+                <!--CITY-->
+                <LinearLayout
+                    android:id="@+id/llCities"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llState"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_margin="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/city_lowercase"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_12" />
+
+                        <TextView
+                            android:id="@+id/tvCityDialogSearch"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableRight="@drawable/ic_chevron_right_grey_24dp"
+                            android:gravity="center|right"
+                            android:paddingRight="10dp"
+                            android:text="@string/all_cities"
+                            android:textColor="@color/orange"
+                            android:textSize="@dimen/text_12" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+
+                        android:background="@color/grey" />
+                </LinearLayout>
+
+                <!--DISTANCE-->
+                <LinearLayout
+                    android:id="@+id/llDistance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llCities"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/llAllDistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/distance_lowercase"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_12" />
+
+                        <ToggleButton
+                            android:id="@+id/tbAllowDistance"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/toggle_selector"
+                            android:checked="true"
+                            android:text=""
+                            android:textOff=""
+                            android:textOn="" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="8dp">
+
+                        <com.sosokan.android.ui.view.RangeSeekBar
+                            android:id="@+id/rangeSeekBarDistance"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+
+                            app:absoluteMaxValue="500"
+                            app:absoluteMinValue="0" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/grey" />
+                <!--END DISTANCE-->
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.MapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:tag="map"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/llDistance"
+                    android:visibility="visible" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+
+                    android:background="@color/grey" />
+
+                <LinearLayout
+                    android:id="@+id/llButtonsDialogSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/btnCancelCityState"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:paddingRight="10dp"
+                        android:text="@string/cancel"
+                        android:textAlignment="center"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/text_12" />
+
+                    <View
+                        android:layout_width="0.3dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey" />
+
+                    <TextView
+                        android:id="@+id/tvApplyCityState"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@color/orange"
+                        android:gravity="center"
+                        android:paddingRight="10dp"
+                        android:text="@string/apply"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_12" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_above="@+id/llButtonsDialogSearch"
+                    android:background="@color/grey" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlStateDialogSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/rlNavDialogSearchState"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:background="@color/orange"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ibBackStateDialogSearch"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_arrow_back_white_30dp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvTitleStateDialogSearch"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+
+                    android:text="@string/state"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+
+                    android:background="@color/grey" />
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvStates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlNavDialogSearchState"
+                android:visibility="visible"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlCitiesDialogSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/rlNavCitiesDialogSearch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:background="@color/orange"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ibBackCitiesDialogSearch"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_arrow_back_white_30dp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvTitleCitiesDialogSearch"
+                    style="@style/TextAppearance.AppCompat.Display1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+
+                    android:text="@string/city"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+
+                    android:background="@color/grey" />
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvCities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlNavCitiesDialogSearch"
+                android:visibility="visible"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--CATEGORY-->
+    <LinearLayout
+        android:id="@+id/llCategoryDialogSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:background="@color/orange"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ibBackSelectCategory"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/orange"
+
+                android:padding="10dp"
+                android:src="@drawable/ic_arrow_back_white_30dp" />
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Display1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                android:text="@string/select_a_category"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey" />
+
+        <com.sosokan.android.control.multi.level.menu.MultiLevelListView
+            android:id="@+id/listViewCategorySelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:alwaysExtended="false"
+            app:nestType="multiple" />
+
+    </LinearLayout>
+
+</FrameLayout>

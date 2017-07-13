@@ -1,0 +1,766 @@
+/* 
+  Localizable.strings
+  sosokan
+
+  Created by An Phan on 5/30/16.
+  Copyright © 2016 icanstudioz inc. All rights reserved.
+*/
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "2BB-EB-ews"; */
+"Settings" = "设置";
+
+/* Class = "UITextField"; placeholder = "sosokan@mail.com"; ObjectID = "Csa-PC-tQS"; */
+"Csa-PC-tQS.placeholder" = "sosokan@mail.com";
+
+/* Class = "UITabBarItem"; title = "Setting"; ObjectID = "HYT-fX-SmA"; */
+"Setting" = "设置";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "PI0-HH-FH7"; */
+"Save" = "保存";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "XZ8-xb-OVd"; */
+"Email" = "電郵";
+
+/* Class = "UILabel"; text = "Choose your language"; ObjectID = "Zv5-yl-niO"; */
+"Choose your language" = "選擇你的語言";
+
+/* Class = "UILabel"; text = "Version"; ObjectID = "cGW-wb-v2i"; */
+"Version" = "版本";
+
+/* Class = "UIButton"; normalTitle = "Verify"; ObjectID = "fsj-mD-FV7"; */
+"Verify" = "验证";
+
+/* Class = "UITextField"; placeholder = "123456789"; ObjectID = "mjH-Or-ayq"; */
+"123456789" = "123456789";
+
+/* Class = "UITextField"; placeholder = "+00"; ObjectID = "pAl-Cj-J5q"; */
+"+00" = "+00";
+
+/* Class = "UILabel"; text = "notify me of new ads"; ObjectID = "r6u-bo-CQG"; */
+"notify me of new ads" = "通知新广告";
+
+/* Class = "UILabel"; text = "Telephone"; ObjectID = "uqn-To-5V0"; */
+"Telephone" = "電話";
+
+"Ok" = "好";
+
+"No" = "没有";
+
+// Tabbar
+"Home" = "首页";
+
+"Browse" = "瀏覽";
+
+"Post" = "发布";
+
+"Favorites" = "收藏";
+
+"Settings" = "设置";
+
+// Messages
+"Saved Successfully" = "保存成功";
+
+"Welcome Back" = "欢迎回来";
+
+"Incorrect password" = "密码错误";
+
+"Email is not valid" = "电子邮件无效";
+
+"Alert!" = "注意";
+
+"Please Enter your Email" = "请输入您的电子邮件";
+
+"The phone number you entered is not valid!" = "您输入的电话号码是无效的!";
+
+// Browse tab.
+
+/* Class = "UITextField"; placeholder = "Select a category"; ObjectID = "DgO-ke-0lZ"; */
+"Select a category" = "选择类别";
+
+/* Class = "UILabel"; text = "To date"; ObjectID = "GIl-Ts-Rma"; */
+"To date" = "至今";
+
+/* Class = "UIButton"; normalTitle = "Search"; ObjectID = "MaN-U4-hXd"; */
+"Search" = "搜索";
+
+/* Class = "UILabel"; text = "Nearby"; ObjectID = "VnY-CI-MtV"; */
+"Nearby" = "附近";
+
+/* Class = "UILabel"; text = "Filter by category"; ObjectID = "doq-vA-HgX"; */
+"Filter by category" = "按分类筛选";
+
+/* Class = "UITextField"; placeholder = "Select a distance"; ObjectID = "dpI-Ak-ONH"; */
+"Select a distance" = "选择距离";
+
+/* Class = "UILabel"; text = "Highest price"; ObjectID = "iNZ-Fv-AQw"; */
+"Highest price" = "最高价格";
+
+/* Class = "UILabel"; text = "Lowest pirce"; ObjectID = "pLp-Z6-61F"; */
+"Lowest price" = "最低价格";
+
+/* Class = "UILabel"; text = "From date"; ObjectID = "qZa-pi-FxT"; */
+"From date" = "从日期";
+
+/* Class = "UITextField"; placeholder = "Select a subcategory"; ObjectID = "w1z-FJ-Ph1"; */
+"Select a subcategory" = "选择一个子分类";
+
+"SoSoKan..." = "搜搜看...";
+
+//
+// Date picker
+"Cancel" = "取消";
+
+"Done" = "完成";
+
+"Select Date" = "选择日期";
+
+//
+// Post tab
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "0nX-Ba-gwq"; */
+"Title" = "标题";
+
+/* Class = "UITextView"; text = "Please enter your description here"; ObjectID = "2ej-8a-6DD"; */
+"Please enter your description here" = "请描述内容";
+
+/* Class = "UITextField"; placeholder = "Please enter your title here"; ObjectID = "Eco-u2-g6E"; */
+"Please enter your title here" = "请简洁描述标题";
+
+/* Class = "UILabel"; text = "Call me"; ObjectID = "QXh-JS-ejb"; */
+"Call me" = "电话联系";
+
+/* Class = "UILabel"; text = "Price"; ObjectID = "fm9-5l-DPf"; */
+"Price" = "价钱";
+
+/* Class = "UIButton"; normalTitle = "Post My Ad"; ObjectID = "jXL-e9-YDc"; */
+"Post My Ad" = "发布廣告";
+
+/* Class = "UILabel"; text = "Email me"; ObjectID = "mNf-ai-GCd"; */
+"Email me" = "电邮联系";
+
+/* Class = "UINavigationItem"; title = "Post an Ad"; ObjectID = "oOH-am-N9V"; */
+"Post an Ad" = "发布广告";
+
+/* Class = "UIButton"; normalTitle = "Add Location"; ObjectID = "uDL-hR-PNX"; */
+"Add Location" = "添加位置";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "wMb-1M-Ayw"; */
+"Description" = "描述";
+
+"Please login" = "请登录";
+
+"Loading..." = "缓冲...";
+
+"Your post was not successful!" = "您的文章没有成功";
+
+"Post Successfully" = "发布成功";
+
+"Please enter your post title" = "请输入标题";
+
+"Please enter description" = "请输入描述";
+
+"Please add price" = "请输入价钱";
+
+"Please upload at least one Ad image" = "请上载图片";
+
+"Please select Email Me and / or Call Me" = "请电邮或致电";
+
+"Please select category" = "請选择主分類";
+
+"Please select subcategory" = "请选子类别";
+
+//
+// HomeVC
+
+"Back" = "反回";
+
+"Advance" = "高級";
+
+"go" = "go_chines"; // Image name
+
+"Removed" = "删除";
+
+"Saved" = "保存";
+
+"Real Estate" = "地产服务";
+
+"Search on Sosokan" = "搜索 Sosokan";
+
+"Categories" = "分类";
+
+"Featured items" = "特色商品";
+
+"Recently searched" = "最近搜索";
+
+"Nearby items" = "附近的物品";
+
+//
+// Keys
+"name" = "name_c";
+
+//
+// Ad detail
+"ABOUT" = "關於";
+
+"LOCATION" = "位置";
+
+"PHONE" = "電話";
+
+"EMAIL" = "電郵";
+
+"No mail account setup on device" = "沒有設備上的郵件帳戶設置";
+
+"Mail have been cancelled" = "郵件已被取消";
+
+"Mail have been saved" = "郵件已保存";
+
+"Mail have been sent" = "郵件已發送";
+
+"Mail have been sent fail" = "郵件已發送失敗";
+
+// Build scheme
+"Release" = "发布";
+
+"Debug"  = "调试";
+
+"Error!" = "错误!";
+
+"ALL" = "所有";
+
+"Try again!" = "再试一次!";
+
+// Updated on July 17, 2015 by An Phan
+
+// Splash screen
+
+/* Class = "UIButton"; normalTitle = "SKIP"; ObjectID = "2XU-RL-lk0"; */
+"SKIP" = "跳过";
+
+/* Class = "UIButton"; normalTitle = "SIGN UP"; ObjectID = "FoR-sc-qiO"; */
+"LOGIN/SIGN UP" = "登录/注册";
+
+/* Class = "UIButton"; normalTitle = "VERIFY"; ObjectID = "LwW-Or-PCb"; */
+"VERIFY" = "核实";
+
+/* Class = "UILabel"; text = "OR"; ObjectID = "ct4-Bh-soZ"; */
+"OR" = "或许";
+
+/* Class = "UIButton"; normalTitle = "LOG IN USING WECHAT"; ObjectID = "ksx-dR-rB3"; */
+"LOG IN USING WECHAT" = "登录使用WECHAT";
+
+/* Class = "UITextField"; placeholder = "Type your phone number"; ObjectID = "pLD-g2-ek3"; */
+"Type your phone number" = "输入您的电话号码";
+
+/* Class = "UILabel"; text = "VERIFY BY PHONE"; ObjectID = "tA2-Yc-6xb"; */
+"VERIFY BY PHONE" = "通过电话验证";
+
+/* Class = "UIButton"; normalTitle = "LOG IN USING FACEBOOK"; ObjectID = "y1l-ea-1Vg"; */
+"LOG IN USING FACEBOOK" = "登录使用FACEBOOK";
+
+"The phone number you entered is not valid!" = "你输入的电话号码是无效的";
+
+"Select country" = "选择国家";
+
+"SIGN UP" = "注册";
+
+// Left side menu
+
+"HOME" = "首页";
+
+"MESSAGES" = "留言";
+
+"MY POSTS" = "我的发布";
+
+"FAVORITES" = "收藏格";
+
+"SUBSCRIPTIONS" = "订阅";
+
+"SETTINGS" = "设置";
+
+"LOG OUT" = "登出";
+
+"classified" = "宝物";
+
+"classifieds" = "宝物";
+
+"Are you sure you want to sign out?" = "您确定要退出吗？";
+
+"Sign out" = "退出";
+
+"We're sorry" = "很抱歉";
+
+"LOGIN" = "登录";
+
+"You need to login to your Sosokan account first to see your messages!" = "您需要登录到您的帐户Sosokan第一次看到你的消息";
+
+"You need to login to your Sosokan account first to see your favorites!" = "您需要登录到您的帐户Sosokan首先看到您的收藏夹";
+
+"You need to login to your Sosokan account first to see your posts!" = "您需要登录到您的帐户Sosokan首先看到您的文章";
+
+"You need to login to your Sosokan account first to setup your subscriptions!" = "您需要先登录到您的帐户Sosokan设置您的订阅！";
+
+"You need to login to your Sosokan account first to post your classifieds!" = "您需要登录到您的帐户Sosokan先来发表您的公告！";
+
+// Home page
+
+"Search here" = "这里搜索";
+
+"No results." = "没有结果。";
+
+"You need to login to your Sosokan account first to use this function!" = "您需要登录到您的帐户Sosokan首次使用该功能！";
+
+"View" = "视图";
+
+"Less than" = "少于";
+
+"km" = "千米";
+
+// HomeVC - Filter menu (menu on right)
+
+"ALL DISTANCE" = "所有的距离";
+
+"Distance" = "距离";
+
+"Sort Order" = "排序";
+
+"Most Recent" = "最近";
+
+"Most Favorite" = "最喜爱";
+
+"Within 1 miles" = "1英里内";
+
+"Within 5 miles" = "5英里内";
+
+"Within 10 miles" = "10英里内";
+
+"Within 20 miles" = "20英里内";
+
+"Within 25 miles" = "25英里内";
+
+"Within 50 miles" = "50英里内";
+
+"Within 100 miles" = "100英里内";
+
+"Within 250 miles" = "250英里内";
+
+"Within 500 miles" = "500英里内";
+
+// Ad detail page
+
+"Are you sure you want to delete this Ad?" = "你确定要删除该广告？";
+
+"Email is invalid!" = "电子邮件是无效的！";
+
+"The ad is marked as expiration." = "该广告被标记为过期。";
+
+"You need to login to your Sosokan account first to edit your classifieds!" = "您需要登录到您的帐户Sosokan先编辑您的公告";
+
+"You flagged this ad." = "您举报这则广告。";
+
+"CATEGORY" = "类别";
+
+"AVAILABILITY" = "可用性";
+
+"PHONE" = "电话";
+
+"FAX" = "传真";
+
+"EMAIL" = "电子邮件";
+
+"WEB" = "网站";
+
+"Delete" = "删除";
+
+"Full time" = "全职";
+
+"DETAILS" = "细节";
+
+// Edit ad options
+
+"EXPIRE" = "到期";
+
+"EDIT" = "编辑";
+
+"DELETE" = "删除";
+
+"FLAG" = "标签";
+
+// Favorites / My posts / User posts
+
+"POSTS" = "帖子";
+
+"MY POSTS" = "我的发布";
+
+// Create new ad
+
+"TITLE" = "标题";
+
+"DESCRIPTION" = "描述";
+
+"CATEGORY" = "类别";
+
+"SUBCATEGORY" = "选择一个子分类";
+
+"LOCATION" = "位置";
+
+"EMAIL ME" = "电邮联系我";
+
+"CALL ME" = "电话联系我";
+
+"PRICE" = "价钱";
+
+"DISCOUNT" = "折扣";
+
+"Type your title here..." = "在这里输入你的标题...";
+
+"Describe your classifieds here" = "这里描述您的公告";
+
+"Choose a location for your classifieds" = "选择一个位置";
+
+"Enter a price for your classifieds" = "输入价格";
+
+"Enter the percentage of your discount" = "输入折扣";
+
+"No location selected" = "没有位置选择";
+
+"EDIT POST" = "编辑帖子";
+
+"UPDATE" = "更新";
+
+"None" = "没有";
+
+"Updating..." = "更新中...";
+
+"Posting your ad..." = "发布广告...";
+
+"Missing email" = "缺乏电子邮件";
+
+"You didn't set up email on your account!" = "你没有设置电子邮件您的帐户！";
+
+"Missing phone" = "缺乏电话号码";
+
+"You didn't set up phone number on your account!" = "你不设置电子邮件您的帐户！";
+
+"NEW POST" = "最新帖子";
+
+"POST" = "发布";
+
+"Select category" = "选择类别";
+
+"Camera" = "相机";
+
+"Choose an option!" = "选择一个选项！";
+
+"Take a Photo"= "拍个照";
+
+"Choose from Camera Roll" = "选择从相机胶卷";
+
+"FEATURE MY AD +$0.99" = "展示我的广告+ $1";
+
+"Featured ads will be shown first and stand out from others" = "特色的广告将显示第一和别人站出来";
+
+"TAP TO EDIT PHOTO" = "即可编辑照片";
+
+"Premium feature" = "高级功能";
+
+"duration" = "为期";
+
+"Choose from library" = "选择库";
+
+"Adding video is our premium feature will cost 0.99 credits to add a 9 seconds video. Do you want to continue?\nSpecial Promotion!!! All premium features are free until 12/31/2016." = "添加视频是我们的高级功能将花费0.99个学分添加9秒视频。 你想继续吗？\n特价促销！所有高级功能都是免费的，直到2016年12月31日。";
+
+"Advance description will cost $0.99 in credits\nYou can edit more complex content.\nSpecial Promotion!!! All premium features are free until 12/31/2016." = "请注意：将耗资 $0.99金额\您可以编辑更丰富的内容。\n特价促销！所有高级功能都是免费的，直到2016年12月31日。";
+
+"Use basic description" = "使用基本介绍";
+
+"Continue" = "继续";
+
+"You removed rich text, please re-enter a plain text description for the ad." = "您已取消丰富，请重新输入该广告的纯文字内容。";
+
+
+"Post Successfully!" = "发布成功！";
+
+"Update Successfully!" = "更新成功！";
+
+// Profile
+
+"My profile" = "个人资料";
+
+"EDIT PROFILE" = "编辑个人资料";
+
+"PHOTO" = "照片";
+
+"FAQ" = "常问问题";
+
+"INVITE FRIENDS" = "邀请朋友";
+
+"LOGOUT" = "登出";
+
+"Sign Up" = "注册";
+
+"You need to login to your Sosokan account" = "您需要登录到您的帐户Sosokan";
+
+"Credits" = "余额";
+
+// Edit profile
+
+"Internal Error" = "内部错误";
+
+"COMPANY NAME" = "公司名";
+
+"NAME" = "名称";
+
+"NOTE" = "笔记";
+
+"ADDRESS" = "地址";
+
+"CITY" = "市";
+
+"ZIP" = "邮编号码";
+
+"STATE" = "州";
+
+"PHONE" = "电话";
+
+"FAX" = "传真";
+
+"EMAIL" = "电子邮件";
+
+"Name of your company" = "贵公司名称";
+
+"Name will be displayed" = "名称将显示";
+
+"Phone number" = "电话号码";
+
+"Fax number" = "传真号";
+
+"Email address" = "电子邮件地址";
+
+"ALLOW PEOPLE TO EMAIL ME" = "允许人们电子邮件联系";
+
+"ALLOW PEOPLE TO CALL ME" = "允许人们电话联系";
+
+"SAVE" = "保存";
+
+"PRIVATE SETTINGS" = "私人设置";
+
+"Note" = "笔记";
+
+"Address" = "地址";
+
+"City" = "市";
+
+"Zip" = "邮编号码";
+
+"State" = "州";
+
+"Type here..." = "在此输入...";
+
+"You" = "您";
+
+"MESSAGE" = "信息";
+
+// Invitation page
+
+"Invitation" = "邀请";
+
+"You cancelled the invitation!" = "您取消了邀请！";
+
+"The invitation was sent!" = "邀请以发出！";
+
+"You cancelled the invitation!" = "您取消了邀请！";
+
+"The invitation was failed!" = "该邀请失败！";
+
+// No media permission
+
+"It looks like you have turned off permissions needed to attach media." = "看来你已经关闭了附加的媒体需要的权限。";
+
+"Open Settings" = "打开设置";
+
+"Tap Privacy" = "点击隐私";
+
+"Tap Camera" = "点击相机";
+
+"Make sure Sosokan is turned ON" = "确保Sosokan接通";
+
+"English" = "英语";
+
+"Chinese (Simplified)" = "中文";
+
+// Extend expiration time drop down
+
+"Extend 1 month" = "延伸1个月";
+
+"Extend 3 months" = "延伸3个月";
+
+"Extend 6 months" = "延伸6个月";
+
+"Extend 1 year" = "延伸1年";
+
+// Users list
+"Users" = "用户";
+
+// FEEDBACK
+"FEEDBACK" = "评语";
+"Feedback" = "评语";
+//"Please advise your invaluable opinons and suggestions." = "请提供您的宝贵意见";
+"What's on your mind?" = "你在想什么？";
+"Your email address" = "您的電子郵件";
+"Send" = "发送";
+
+// Credits page
+"Balance" = "金额余款";
+
+"Buy Credits" = "购买金额";
+
+"Get Credits" = "购买金额";
+
+"There is not enough available credits to enable this function. Would you like to buy more credits now?" = "没有足够的可用信用来启用该功能。你想现在买更多信用？";
+
+// Premium features
+
+"Balance is not enough" = "余款金额不足以";
+
+"Please buy more credits to continue" = "请购买更多的金额然后继续";
+
+"Please confirm" = "请确认";
+
+"Are you sure to remove FEATURED" = "您确定要删除精选";
+
+"The post's rich text will be removed" = "这篇文章的高端富文本将被删除";
+
+"The post's video will be removed" = "这篇文章的视频将被删除";
+
+"Total credits" = "总金额";
+
+"Orange border around item" = "广告周围的加橙色边框";
+
+"Header image is replaced by video" = "标题图片换成视频";
+
+"Color text and images in the listing" = "内容加彩色字体和图片";
+
+"The orange border around item will be removed" = "围绕项目的橙色边框将被删除";
+
+"Bold the title of my listing and stand out" = "标题和脱颖而出";
+
+// TODO: Enhance later
+
+"Feature my ad in the listings (Free!)" = "让我的广告突出（免费）";
+
+"Enable video upload (Free!)" = "上载视频广告（免费）";
+
+"Enable Rich Text editing (Free!)" = "使用高端富文本内容输入（免费）";
+
+"Bold the title of my listing (Free!)" = "我上市的大胆标题 (免费)";
+
+"Upgrade your ad and stand out!\nSpecial Promotion!Now FREE." = "升级您的广告，脱颖而出！\n特价促销！现在免费的。";
+
+// Ad descriptions
+
+"Descriptions" = "内容";
+
+"Pick Image" = "选择图片";
+
+"Insert Image From Device" = "插入图片从设备";
+
+"Alt" = "键";
+
+"Image scale, 0.5 by default" = "50% 图像比例";
+
+"Text Color" = "文字颜色";
+
+"Sorry" = "抱歉";
+
+"Error while trying access your camera!" = "错误尝试访问你的相机！";
+
+"Editing is free because you already purchased." = "编辑是免费的，因为你已经购买。";
+
+// Error message from parse
+"The object is too large -- should be less than 128 kB." = "对象是太大 - 应小于128 KB。";
+
+// Walk through page
+"Next" = "下一个";
+
+"Skip" = "跳跃";
+
+"Start" = "开始";
+
+"Please add an email to your facebook account and then try again!" = "请添加电子邮件到你的Facebook帐户，然后重试！";
+
+"Your info is invalid!" = "你的信息是无效的！";
+
+"Failed to detect location" = "无法检测位置";
+
+"Thank you for your rating" = "感谢您的评分";
+
+"You rated" = "你评了";
+
+"Rate it" = "你这个帖子";
+
+"WEBSITE" = "网站";
+
+"Website" = "网站";
+
+"RECENT POSTING" = "最近发生";
+
+"Use my location" = "使用我的位置";
+
+"Feature is not available" = "功能不可用";
+
+"New post by" = "新帖子";
+
+"New" = "新";
+
+"FOLLOWING" = "关注";
+
+"All" = "所有";
+
+"FREE\nYou can edit more complex content" = "免费\n您可以编辑更复杂的内容";
+
+"FREE\nAdd a 9 seconds video" = "免费\n添加9秒的视频";
+
+"By browsing, signing up or logging in. I hereby agree to Sosokan's" = "从此浏览,登入或注册,我已阅读并同意Sosokan";
+
+"Terms and Conditions" = "的使用条款";
+
+"Privacy Policy" = "隐私政策";
+
+"Thank you for your support!" = "感谢您的支持！";
+
+"Like" = "赞";
+
+"Share" = "分享";
+
+"Report" = "举报";
+
+// Connect page
+"I'm using Sosokan. A COMMUNITY DRIVEN CLASSIFIEDS APP. You can find and post local classifieds and forums for your every needs such as jobs, housing, for sale, personals, services, local community, and events. And the best of it, it is FREE! Start marketing on Sosokan! Download it at below link:"
+= "搜搜看, 社区分类资讯在手中搜搜看是一个“免费”多功能资讯与分类平台，内容包括工作聘请，出租，社区信息，地产，物品买卖，商业广告推广等等.”  赶紧下载搜搜看吧";
+
+"Someone sent an invitation to you on Sosokan" = "搜搜看邀请你";
+
+"CONNECT" = "添加好友";
+
+"CONNECT NEARBY FRIENDS" = "连接邻居";
+
+"SELECT INVITATION MODE" = "选择邀请模式";
+
+"Contact" = "联系";
+
+// Code verification page
+"Verification code has been sent to your phone" = "验证码已发送到您的手机";
+
+"Phone" = "电话";
+
+"Code" = "码";
+
+"Enter code" = "输入代码";
+
+"SUBMIT" = "提交";
+
+// Bottom bar
+
+"PROFILE" = "简介";
+
+"BROWSE" = "浏览";

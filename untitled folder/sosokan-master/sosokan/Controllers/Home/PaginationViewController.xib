@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaginationViewController" customModule="Sosokan" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomBarContainerView" destination="wXT-ux-aJn" id="Zgn-x4-ukN"/>
+                <outlet property="bottomBarContainerViewBottomConstraint" destination="sf3-5Q-UrB" id="tvy-DQ-0b8"/>
+                <outlet property="navigationTableView" destination="8b8-Mv-AgB" id="Fp8-UT-m79"/>
+                <outlet property="navigationTableViewBottomConstaint" destination="iXr-cz-Akl" id="WFl-Qc-isN"/>
+                <outlet property="plusButton" destination="5Pl-ve-cOf" id="nJK-3Y-VYp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wXT-ux-aJn">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="O2S-JX-iB4"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8b8-Mv-AgB">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Pl-ve-cOf">
+                    <rect key="frame" x="275" y="517" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="oDK-Pl-Dg2"/>
+                        <constraint firstAttribute="height" constant="100" id="xTT-m7-3a5"/>
+                    </constraints>
+                    <state key="normal" image="post-ad">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="plusButtonTapped:" destination="-1" eventType="touchUpInside" id="xxc-hi-ZdG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8b8-Mv-AgB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="D47-Ga-qs8"/>
+                <constraint firstAttribute="trailing" secondItem="wXT-ux-aJn" secondAttribute="trailing" id="HTp-LO-HIK"/>
+                <constraint firstAttribute="trailing" secondItem="8b8-Mv-AgB" secondAttribute="trailing" id="TPe-iC-r90"/>
+                <constraint firstAttribute="bottom" secondItem="8b8-Mv-AgB" secondAttribute="bottom" id="iXr-cz-Akl"/>
+                <constraint firstItem="wXT-ux-aJn" firstAttribute="top" secondItem="5Pl-ve-cOf" secondAttribute="bottom" id="lQa-Pt-GL1"/>
+                <constraint firstAttribute="bottom" secondItem="wXT-ux-aJn" secondAttribute="bottom" id="sf3-5Q-UrB"/>
+                <constraint firstItem="8b8-Mv-AgB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="voH-Q5-1dx"/>
+                <constraint firstAttribute="trailing" secondItem="5Pl-ve-cOf" secondAttribute="trailing" id="wEy-dc-VF3"/>
+                <constraint firstItem="wXT-ux-aJn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xw8-rB-qAF"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="post-ad" width="72" height="72"/>
+    </resources>
+</document>

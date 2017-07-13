@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--MY POSTS-->
+        <scene sceneID="Mpw-Gx-E6e">
+            <objects>
+                <viewController storyboardIdentifier="adListVCID" id="rsX-lc-FEp" customClass="FavoriteViewController" customModule="Sosokan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dQZ-FP-p4G"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pzv-tt-UTu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xy8-dD-Nbi">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search here" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kFI-Ul-XDA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                                <color key="tintColor" red="1" green="0.61960784310000006" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="9nb-9u-6dX"/>
+                                </constraints>
+                                <color key="textColor" red="0.1960784314" green="0.2156862745" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                            </textField>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hfI-An-56Y">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewLayout key="collectionViewLayout" id="adp-QS-r0b" customClass="AdLayout" customModule="Sosokan" customModuleProvider="target"/>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="rsX-lc-FEp" id="NN7-lH-dWk"/>
+                                    <outlet property="delegate" destination="rsX-lc-FEp" id="8WA-Wa-eeh"/>
+                                </connections>
+                            </collectionView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ki5-kP-oen">
+                                <rect key="frame" x="0.0" y="603" width="375" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Y80-vp-ncJ"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="" image="homeTabBarIcon"/>
+                                    <segment title="" image="searchTabBarIcon"/>
+                                    <segment title="" image="addTabBarIcon"/>
+                                    <segment title="" image="heartTabBarIcon"/>
+                                    <segment title="" image="gearTabBarIcon"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfo-Qn-PHh">
+                                <rect key="frame" x="275" y="503" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1vr-yr-BBN"/>
+                                    <constraint firstAttribute="height" constant="100" id="LQD-UC-9Sx"/>
+                                </constraints>
+                                <state key="normal" image="post-ad"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pzv-tt-UTu" firstAttribute="top" secondItem="hfI-An-56Y" secondAttribute="bottom" id="6h4-xR-jJQ"/>
+                            <constraint firstItem="Pzv-tt-UTu" firstAttribute="top" secondItem="Ki5-kP-oen" secondAttribute="bottom" constant="-50" id="7US-Pk-MvN"/>
+                            <constraint firstItem="hfI-An-56Y" firstAttribute="top" secondItem="kFI-Ul-XDA" secondAttribute="bottom" id="H3O-ec-FxC"/>
+                            <constraint firstItem="Pzv-tt-UTu" firstAttribute="top" secondItem="Vfo-Qn-PHh" secondAttribute="bottom" id="KCF-Zm-SNV"/>
+                            <constraint firstItem="kFI-Ul-XDA" firstAttribute="leading" secondItem="xy8-dD-Nbi" secondAttribute="leading" id="VN8-lk-BpS"/>
+                            <constraint firstAttribute="trailing" secondItem="kFI-Ul-XDA" secondAttribute="trailing" id="bd8-Y9-VVF"/>
+                            <constraint firstItem="hfI-An-56Y" firstAttribute="leading" secondItem="xy8-dD-Nbi" secondAttribute="leading" id="f5T-u1-Qea"/>
+                            <constraint firstAttribute="trailing" secondItem="Vfo-Qn-PHh" secondAttribute="trailing" id="fgx-rN-bLA"/>
+                            <constraint firstAttribute="trailing" secondItem="Ki5-kP-oen" secondAttribute="trailing" id="k2g-NF-YRu"/>
+                            <constraint firstAttribute="trailing" secondItem="hfI-An-56Y" secondAttribute="trailing" id="mxk-9B-vvb"/>
+                            <constraint firstItem="Ki5-kP-oen" firstAttribute="leading" secondItem="xy8-dD-Nbi" secondAttribute="leading" id="o9U-qx-6eL"/>
+                            <constraint firstItem="kFI-Ul-XDA" firstAttribute="top" secondItem="dQZ-FP-p4G" secondAttribute="bottom" id="tR7-2I-Cdt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="MY POSTS" id="GV9-0h-bfl">
+                        <barButtonItem key="leftBarButtonItem" image="left-menu" id="UIO-cD-AgA">
+                            <connections>
+                                <action selector="leftMenuButtonDidTouched:" destination="rsX-lc-FEp" id="IGJ-3g-p9Q"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="hfI-An-56Y" id="2e9-FC-1oe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gbh-gK-3aC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2381" y="-962"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HKn-eO-ylX">
+            <objects>
+                <navigationController storyboardIdentifier="favoriteNCID" automaticallyAdjustsScrollViewInsets="NO" id="4uA-12-hg1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="trT-NU-y1e">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.2156862745" green="0.19215686269999999" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="0.61960784310000006" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rsX-lc-FEp" kind="relationship" relationship="rootViewController" id="NMf-XD-luK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UEV-J0-u9t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1702" y="-962"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="addTabBarIcon" width="34" height="34"/>
+        <image name="gearTabBarIcon" width="18" height="18"/>
+        <image name="heartTabBarIcon" width="20" height="18"/>
+        <image name="homeTabBarIcon" width="20" height="18"/>
+        <image name="left-menu" width="27" height="17"/>
+        <image name="post-ad" width="102" height="102"/>
+        <image name="searchTabBarIcon" width="20" height="20"/>
+    </resources>
+</document>

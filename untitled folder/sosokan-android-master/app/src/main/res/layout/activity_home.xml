@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp">
+    <!--TOOLBAR-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="@color/white"
+        android:paddingTop="0dp">
+
+        <ImageView
+            android:id="@+id/ibMenuLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_sort_black_36dp" />
+
+        <ImageButton
+            android:id="@+id/ibCities"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_place_black_24dp"
+            android:paddingLeft="20dp" />
+
+        <TextView
+            android:id="@+id/tvTitleCategoryHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/ic_arrow_drop_down_pink_24dp"
+            android:gravity="center"
+            android:text="@string/all"
+            android:textAllCaps="true"
+
+            android:textColor="@color/pink_text_category"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/ibViewHomeFragment"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/view_grid"
+            android:contentDescription="@string/app_name"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/ibSearch"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="13dp"
+
+            android:background="@drawable/ic_search_black_24dp"
+            android:contentDescription="@string/app_name" />
+
+        <CheckBox
+            android:id="@+id/chbViewHomeFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:background="@drawable/checkbox_list_grid_new"
+            android:button="@drawable/checkbox_list_grid_new"
+            android:checked="true"
+            android:visibility="gone" />
+
+
+        <ImageButton
+            android:id="@+id/ibMenuRight"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:background="@color/white"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/btn_menu_right"
+            android:visibility="gone" />
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+            </android.support.v7.widget.Toolbar>
+
+            <!--SEACH HOME-->
+            <LinearLayout
+                android:id="@+id/searchHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <HorizontalScrollView
+                    android:id="@+id/hsvTabMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/llTabHost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" />
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </android.support.design.widget.CoordinatorLayout>
+
+    <!--LL CATEGORY-->
+    <LinearLayout
+        android:id="@+id/llCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/grey" />
+
+        <com.sosokan.android.control.multi.level.menu.MultiLevelListView
+            android:id="@+id/listViewCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:alwaysExtended="false"
+            app:nestType="multiple" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_categories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:scrollbars="vertical"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

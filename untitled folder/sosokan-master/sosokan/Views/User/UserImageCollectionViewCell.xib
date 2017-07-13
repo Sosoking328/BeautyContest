@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirLTStd-Roman.otf">
+            <string>AvenirLTStd-Roman</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UserImageCollectionViewCell" id="gTV-IL-0wX" customClass="UserImageCollectionViewCell" customModule="Sosokan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rbj-a4-pcL">
+                        <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                    </imageView>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WxR-hK-xa2">
+                        <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                        <color key="backgroundColor" red="1" green="0.38431372549999998" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="AvenirLTStd-Roman" family="Avenir LT Std" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rbj-a4-pcL" secondAttribute="bottom" id="0G8-F0-Ecx"/>
+                <constraint firstItem="rbj-a4-pcL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6vN-kb-Upo"/>
+                <constraint firstItem="WxR-hK-xa2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7hc-xw-ptY"/>
+                <constraint firstAttribute="trailing" secondItem="WxR-hK-xa2" secondAttribute="trailing" id="AAw-3w-LcT"/>
+                <constraint firstAttribute="bottom" secondItem="WxR-hK-xa2" secondAttribute="bottom" id="Iwu-P3-Llh"/>
+                <constraint firstItem="rbj-a4-pcL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bxt-4z-TVP"/>
+                <constraint firstItem="WxR-hK-xa2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="e5Z-2S-YlH"/>
+                <constraint firstAttribute="trailing" secondItem="rbj-a4-pcL" secondAttribute="trailing" id="sLb-CU-PDP"/>
+                <constraint firstItem="rbj-a4-pcL" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="viU-nt-m9w"/>
+            </constraints>
+            <size key="customSize" width="146" height="108"/>
+            <connections>
+                <outlet property="imageView" destination="rbj-a4-pcL" id="xN2-XJ-T47"/>
+                <outlet property="moreLabel" destination="WxR-hK-xa2" id="AhM-nW-AFa"/>
+            </connections>
+            <point key="canvasLocation" x="-59" y="219"/>
+        </collectionViewCell>
+    </objects>
+</document>

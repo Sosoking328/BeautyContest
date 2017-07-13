@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FollowUserCollectionViewCell" id="gTV-IL-0wX" customClass="FollowUserCollectionViewCell" customModule="Sosokan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="214" height="248"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="214" height="248"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqC-CU-Qiu" customClass="MaterialButton">
+                        <rect key="frame" x="8" y="216" width="198" height="24"/>
+                        <state key="normal" title="UNFOLLOW"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                <color key="value" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <view contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Mi6-RR-KpY">
+                        <rect key="frame" x="6" y="6" width="202" height="202"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Dxc-Ue-acq">
+                                <rect key="frame" x="64" y="8" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="LjE-L1-i0w"/>
+                                    <constraint firstAttribute="height" constant="75" id="vQr-X6-xbK"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="JONATHAN LUCKY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hH-P0-ySG">
+                                <rect key="frame" x="8" y="83" width="186" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1hH-P0-ySG" secondAttribute="trailing" constant="8" id="0Ed-Dg-7Gq"/>
+                            <constraint firstItem="1hH-P0-ySG" firstAttribute="top" secondItem="Dxc-Ue-acq" secondAttribute="bottom" id="2zO-8i-UsV"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1hH-P0-ySG" secondAttribute="bottom" constant="8" id="6As-FI-uCb"/>
+                            <constraint firstAttribute="width" secondItem="Mi6-RR-KpY" secondAttribute="height" multiplier="1:1" id="IpV-bP-6BA"/>
+                            <constraint firstItem="Dxc-Ue-acq" firstAttribute="centerX" secondItem="Mi6-RR-KpY" secondAttribute="centerX" id="TcX-Wp-glS"/>
+                            <constraint firstItem="1hH-P0-ySG" firstAttribute="leading" secondItem="Mi6-RR-KpY" secondAttribute="leading" constant="8" id="URe-QF-vjq"/>
+                            <constraint firstItem="Dxc-Ue-acq" firstAttribute="top" secondItem="Mi6-RR-KpY" secondAttribute="top" constant="8" id="w4m-Ir-I89"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iqC-CU-Qiu" secondAttribute="trailing" constant="8" id="Lle-Vc-hrD"/>
+                <constraint firstItem="iqC-CU-Qiu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Mgp-Gu-AaN"/>
+                <constraint firstItem="iqC-CU-Qiu" firstAttribute="top" secondItem="Mi6-RR-KpY" secondAttribute="bottom" constant="8" id="Wje-gS-K6W"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iqC-CU-Qiu" secondAttribute="bottom" constant="8" id="ccA-a9-vNB"/>
+                <constraint firstItem="Mi6-RR-KpY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="m9m-1a-MJk"/>
+                <constraint firstItem="Mi6-RR-KpY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="6" id="mp8-AO-VFn"/>
+                <constraint firstAttribute="trailing" secondItem="Mi6-RR-KpY" secondAttribute="trailing" constant="6" id="rpw-XL-y0g"/>
+            </constraints>
+            <size key="customSize" width="214" height="304"/>
+            <connections>
+                <outlet property="containerView" destination="Mi6-RR-KpY" id="wYD-Bk-pjc"/>
+                <outlet property="unfollowButton" destination="iqC-CU-Qiu" id="ltL-Qi-n9C"/>
+                <outlet property="userImageView" destination="Dxc-Ue-acq" id="euf-H5-bbL"/>
+                <outlet property="userNameLabel" destination="1hH-P0-ySG" id="qIS-0B-eXv"/>
+            </connections>
+            <point key="canvasLocation" x="302" y="420"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,176 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-22 00:37-0400\n"
+"PO-Revision-Date: 2017-06-21 22:39-0456\n"
+"Last-Translator:   <me@me.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.7.12\n"
+
+#: .\sosokan\models.py:252
+msgid "30+ days ago"
+msgstr "30+ 几天前"
+
+#: .\sosokan\settings.py:15
+msgid "Bulgarian"
+msgstr ""
+
+#: .\sosokan\settings.py:16
+msgid "Belarusian"
+msgstr ""
+
+#: .\sosokan\settings.py:17
+msgid "Bengali"
+msgstr ""
+
+#: .\sosokan\settings.py:19
+msgid "Bosnian"
+msgstr ""
+
+#: .\sosokan\settings.py:21
+msgid "Czech"
+msgstr ""
+
+#: .\sosokan\settings.py:22
+msgid "Welsh"
+msgstr ""
+
+#: .\sosokan\settings.py:24
+msgid "German"
+msgstr ""
+
+#: .\sosokan\settings.py:25
+msgid "Greek"
+msgstr ""
+
+#: .\sosokan\settings.py:26
+msgid "English"
+msgstr "英语"
+
+#: .\sosokan\settings.py:30
+msgid "Spanish"
+msgstr ""
+
+#: .\sosokan\settings.py:40
+msgid "French"
+msgstr ""
+
+#: .\sosokan\settings.py:45
+msgid "Hebrew"
+msgstr ""
+
+#: .\sosokan\settings.py:46
+msgid "Hindi"
+msgstr ""
+
+#: .\sosokan\settings.py:47
+msgid "Croatian"
+msgstr ""
+
+#: .\sosokan\settings.py:48
+msgid "Hungarian"
+msgstr ""
+
+#: .\sosokan\settings.py:53
+msgid "Italian"
+msgstr ""
+
+#: .\sosokan\settings.py:54
+msgid "Japanese"
+msgstr ""
+
+#: .\sosokan\settings.py:59
+msgid "Korean"
+msgstr ""
+
+#: .\sosokan\settings.py:74
+#, fuzzy
+#| msgid "English"
+msgid "Polish"
+msgstr "英语"
+
+#: .\sosokan\settings.py:75
+msgid "Portuguese"
+msgstr ""
+
+#: .\sosokan\settings.py:78
+msgid "Russian"
+msgstr ""
+
+#: .\sosokan\settings.py:94 .\sosokan\settings.py:95
+msgid "Vietnamese"
+msgstr ""
+
+#: .\sosokan\templates\base.html:11
+msgid "Sosokan - Your World Classified"
+msgstr ""
+
+#: .\sosokan\templates\base_new.html:161 .\sosokan\templates\base_new.html:245
+msgid "home"
+msgstr "首页"
+
+#: .\sosokan\templates\base_new.html:164 .\sosokan\templates\base_new.html:248
+msgid "discover"
+msgstr "发现"
+
+#: .\sosokan\templates\base_new.html:166 .\sosokan\templates\base_new.html:258
+msgid "about"
+msgstr "关于"
+
+#: .\sosokan\templates\base_new.html:168 .\sosokan\templates\base_new.html:260
+msgid "contact"
+msgstr "联系"
+
+#: .\sosokan\templates\base_new.html:171
+msgid "Post"
+msgstr "岗位"
+
+#: .\sosokan\templates\base_new.html:173
+msgid "Profile"
+msgstr "轮廓"
+
+#: .\sosokan\templates\base_new.html:174
+msgid "Logout"
+msgstr "登出"
+
+#: .\sosokan\templates\base_new.html:176
+msgid "Sign in"
+msgstr "签到"
+
+#: .\sosokan\templates\base_new.html:181
+msgid "language"
+msgstr "语言"
+
+#: .\sosokan\templates\base_new.html:189
+msgid "Chinese"
+msgstr "中文"
+
+#: .\sosokan\templates\base_new.html:198
+msgid "Search"
+msgstr "搜索"
+
+#: .\sosokan\templates\base_new.html:250
+msgid "tips"
+msgstr "买卖贴士"
+
+#: .\sosokan\templates\base_new.html:252
+msgid "media"
+msgstr "媒体"
+
+#: .\sosokan\templates\base_new.html:254
+msgid "join"
+msgstr "加入"
+
+#: .\sosokan\templates\base_new.html:256
+msgid "FAQ"
+msgstr "常问问题"

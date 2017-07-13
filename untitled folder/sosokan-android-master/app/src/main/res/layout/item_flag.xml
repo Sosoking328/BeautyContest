@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlItemFlag"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rlTitleDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/iconCategory"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/nameFlagChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/rbFlag"
+        android:layout_width="@dimen/item_offset"
+        android:layout_height="@dimen/item_offset"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:button="@drawable/checkbox_selector"
+        android:src="@drawable/ic_checked"
+        android:text="" />
+
+   <!-- <RadioButton
+        android:id="@+id/rbFlag"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:button="@drawable/checkbox_selector"
+        android:text=""  />-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/grey"
+        android:layout_below="@+id/rlTitleDescription"/>
+
+
+</RelativeLayout>
+
+

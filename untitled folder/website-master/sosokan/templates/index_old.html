@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+{% load humanize %}
+{% load i18n %}
+
+  <script type="text/javascript">
+      window.CSRF_TOKEN = "{{ csrf_token }}";
+    </script>
+
+
+ <div id="wrapper"  ng-app="Sosokan" id="loading-bar-container">
+  <div class="main-content" ng-controller="AdsCtrl">
+    <div class="prj-header margin-bottom-30">
+      <div>
+        <select id="id_Customer" name="Customer">
+          {% for cat in categories %}
+              <option value="{{ cat.id }}">{{ cat.name }}</option>
+          {% endfor %}
+          </select>
+      </div>
+      <ul class="filters">
+        {% for cat in categories %}
+        <li><a class="active" href="#">{{cat.name}}</a></li>
+        {% endfor %}
+      </ul>
+      <!-- /.filters -->
+    </div>
+    <!-- /.prj-header -->
+
+    <div class="prj-list row" id="posts">
+      {% include 'posts.html' %}
+    </div>
+    <div class="text-center">
+      <a id="lazyLoadLink" href="javascript:void(0);" data-page="2" class="btn btn-success">Load More Results</a>
+    </div>
+  </div>
+  <!-- /.main-content -->
+</div><!--/#wrapper -->
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script type="text/javascript">
+  (function($) {
+  $('#lazyLoadLink').on('click', function() {
+    var link = $(this);
+    var page = link.data('page');
+    
+    $.ajax({
+      type: 'post',
+      url: '/lazy_load_posts/',
+      data: {
+        'page': page,
+        'csrfmiddlewaretoken': window.CSRF_TOKEN // from index.html
+      },
+      success: function(data) {
+        // if there are still more pages to load,
+        // add 1 to the "Load More Posts" link's page data attribute
+        // else hide the link
+        if (data.has_next) {
+            link.data('page', page+1);
+        } else {
+          link.hide();
+        }
+        // append html to the posts div
+        $('#posts').append(data.posts_html);
+      },
+      error: function(xhr, status, error) {
+        // error!
+      }
+    });
+  });
+}(jQuery));
+</script>
+
+
+{% endblock %}

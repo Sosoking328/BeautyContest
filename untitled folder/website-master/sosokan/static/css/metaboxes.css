@@ -1,0 +1,7 @@
+#minelife_gallery_settings, #minelife_video_settings, #minelife_audio_settings,body.post-type-post #formatdiv{
+	display:none;
+}
+.postbox-container .meta-box-sortables input[type=text],
+.postbox-container .meta-box-sortables textarea{
+	width:100%
+}

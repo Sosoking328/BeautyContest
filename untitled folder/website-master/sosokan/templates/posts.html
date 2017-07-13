@@ -1,0 +1,29 @@
+{% load humanize %}
+    {% for ad in ads %}
+      <div class="col-lg-4 col-md-6 col-xs-12 margin-bottom-30">
+        <a href="/ad/{{ad.id}}" class="prj-item">
+          <div class="top-project-section">
+            <div class="project-icon">
+              <img  src="{% if ad.imageHeader %} {{ad.imageHeader.url}} {% else %} {{ ad.defualt_image }} {% endif %}" title="{{ad.name}}" alt="">
+            </div>
+            <h3>{{ad.name}}</h3>
+            <div class="meta">
+              <p class="author">
+                by <span>{{ad.user.username}}</span>
+              </p>
+            </div>
+          </div>
+          <div class="bottom-project-section">
+            <div class="meta">
+              <div class="points">
+                <i class="fa fa-heart-o"></i> {{ad.rating_likes}}
+              </div>
+              <div class="views">
+                <i class="fa fa-eye"></i> {{ad.views}}
+              </div>
+              <span class="feedable-time timeago">{{ ad.createdAt }}</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      {% endfor %}

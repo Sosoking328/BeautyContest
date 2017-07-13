@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_margin="1dp"
+    android:background="@drawable/border_corner"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+
+    <RelativeLayout
+        android:id="@+id/rlImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <VideoView
+            android:id="@+id/videoPreviewListAdvertise"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/advertise_cover_height"
+            android:visibility="gone" />
+
+        <!-- <com.sosokan.android.ui.view.SquareImageView
+             android:id="@+id/thumbnail"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:adjustViewBounds="true"
+             android:minHeight="@dimen/advertise_cover_height"
+             android:scaleType="fitXY"
+             android:background="@drawable/border_corner"
+             android:src="@drawable/bg_top_new_post" />-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_image_cover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@color/cardview_dark_background"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardBackgroundColor="@color/cardview_dark_background"
+            card_view:cardElevation="10dp">
+
+            <com.sosokan.android.control.RoundedImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:minHeight="@dimen/advertise_cover_height"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_top_new_post"
+                app:border_color="@android:color/white"
+                app:corner_radius="2dip"
+                app:mutate_background="false"
+                app:oval="false" />
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/card_view_image_cover"
+            android:layout_marginTop="100dp"
+            android:padding="10dp"
+            android:paddingRight="@dimen/advertise_title_padding"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/advertise_created_date"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <ImageButton
+                android:id="@+id/ibFavoritePostInList"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_favorite_border_white_30dp"
+                android:padding="10dp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tvNumberFavoriteInList"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center_vertical"
+                android:text="1"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/advertise_created_date"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ibSharePostInList"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_share_white_30dp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlCreatedDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/titleCardHomeView"
+        android:layout_toRightOf="@+id/titleCardHomeView"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingRight="5dp">
+
+            <ImageButton
+                android:id="@+id/ibViewPostInList"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/view" />
+
+            <TextView
+                android:id="@+id/tvViewPostInList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ibViewPostInList"
+                android:layout_centerInParent="true"
+                android:text="0"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/advertise_created_date" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvDisplayCreatedType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tvCreatedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:drawableLeft="@drawable/ic_query_builder_grey_18dp"
+            android:drawablePadding="2dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="1111"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/advertise_created_date" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/titleCardHomeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlCreatedDate" android:lines="2"
+        android:paddingLeft="@dimen/advertise_title_padding"
+        android:paddingRight="@dimen/advertise_title_padding"
+        android:paddingTop="3dp"
+        android:text="@string/text_all"
+        android:textColor="@color/black"
+        android:textSize="@dimen/advertise_title" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleCardHomeView"
+        android:maxLines="3"
+        android:paddingBottom="@dimen/advertise_padding_bottom"
+        android:paddingLeft="@dimen/advertise_title_padding"
+        android:paddingRight="@dimen/advertise_title_padding"
+        android:textSize="@dimen/advertise"
+        android:visibility="gone" />
+
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/indicator_unselected"
+        android:visibility="gone" />
+
+
+    <!--<WebView
+        android:id="@+id/webViewDescription"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />-->
+</LinearLayout>

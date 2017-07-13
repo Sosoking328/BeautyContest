@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+{% load humanize %}
+ <form method="post" action=""
+ enctype="multipart/form-data" class="form-horizontal">
+                                                                            {% csrf_token %}
+                                                                            {{ form.as_p }}
+                                                                            <div align="center" class="pointbtn">
+                                                                                <button type="submit"
+                                                                                        class="btn btn_new1 danger">Submit
+                                                                                </button>
+                                                                            </div>
+                                                                        </form>
+{% endblock %}

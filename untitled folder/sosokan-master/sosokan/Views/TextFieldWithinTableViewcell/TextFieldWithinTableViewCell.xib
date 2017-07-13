@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextFieldWithinTableViewCell" id="KGk-i7-Jjw" customClass="TextFieldWithinTableViewCell" customModule="Sosokan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search here" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="uPy-9J-584">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                        <color key="tintColor" red="1" green="0.61960784310000006" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.1960784314" green="0.2156862745" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xby-ri-Ciq">
+                        <rect key="frame" x="0.0" y="43" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="vMt-JV-5F9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="uPy-9J-584" secondAttribute="trailing" id="3da-nv-dqq"/>
+                    <constraint firstItem="uPy-9J-584" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="IDa-9F-dGF"/>
+                    <constraint firstAttribute="bottom" secondItem="xby-ri-Ciq" secondAttribute="bottom" id="XSF-LY-bOg"/>
+                    <constraint firstItem="xby-ri-Ciq" firstAttribute="top" secondItem="uPy-9J-584" secondAttribute="bottom" id="jyK-RR-ypF"/>
+                    <constraint firstAttribute="trailing" secondItem="xby-ri-Ciq" secondAttribute="trailing" id="oKv-eA-2k7"/>
+                    <constraint firstItem="uPy-9J-584" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="p5c-3v-bgu"/>
+                    <constraint firstItem="xby-ri-Ciq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wgF-IY-Mbc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textField" destination="uPy-9J-584" id="NIA-km-1jl"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="JustifiedTextView">
+        <attr name="text" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="RoundedImageView">
+        <attr name="android:scaleType" />
+        <attr name="appBackground" format="reference|color" />
+        <attr name="border_color" format="color" />
+        <attr name="border_width" format="dimension" />
+        <attr name="mutate_background" format="boolean" />
+        <attr name="oval" format="boolean" />
+        <attr name="corner_radius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ProgressWheel">
+        <attr name="progressIndeterminate" format="boolean" />
+        <attr name="barColor" format="color" />
+        <attr name="rimColor" format="color" />
+        <attr name="rimWidth" format="dimension" />
+        <attr name="spinSpeed" format="float" />
+        <attr name="barSpinCycleTime" format="integer" />
+        <attr name="circleRadius" format="dimension" />
+        <attr name="fillRadius" format="boolean" />
+        <attr name="barWidth" format="dimension" />
+        <attr name="linearProgress" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="MultiLevelListView">
+        <attr name="nestType">
+            <enum name="single" value="0" />
+            <enum name="multiple" value="1" />
+        </attr>
+
+        <attr name="alwaysExtended" format="boolean" />
+        <attr name="list" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RangeSeekBar">
+        <attr name="absoluteUnitValue" format="integer|float"/>
+        <attr name="absoluteMinValue" format="integer|float"/>
+        <attr name="absoluteMaxValue" format="integer|float"/>
+        <attr name="singleThumb" format="boolean"/>
+    </declare-styleable>
+</resources>

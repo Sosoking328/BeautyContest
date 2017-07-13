@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/border_corner"
+    android:orientation="horizontal"
+    android:padding="10dp"
+
+    card_view:cardBackgroundColor="@color/cardview_dark_background"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="1dp">
+
+        <com.sosokan.android.ui.view.SquareImageView
+            android:id="@+id/iconCategoryPopular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/app_name" />
+
+        <RadioButton
+            android:id="@+id/rbCategoryPopular"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+
+            android:layout_margin="5dp"
+            android:button="@drawable/checkbox_selector"
+
+            android:text="" />
+
+        <TextView
+            android:id="@+id/titleCategoryPopular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="All Sell"
+            android:textAllCaps="true"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/text_16"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+

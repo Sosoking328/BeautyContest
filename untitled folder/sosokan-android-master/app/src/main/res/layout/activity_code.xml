@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white"
+    android:gravity="top"
+    tools:context=".ui.activity.VerifyCodeActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rlNavigationVerify"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibBackVerify"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_arrow_back_black_30dp" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Display1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:text="@string/verify_code"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/codesLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fourdigitsTextView"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="10dp"
+        android:visibility="visible"
+        android:weightSum="100" >
+
+        <EditText
+            android:id="@+id/editCode1"
+            style="@style/codeNumber" />
+
+        <EditText
+            android:id="@+id/editCode2"
+            style="@style/codeNumber" />
+
+        <EditText
+            android:id="@+id/editCode3"
+            style="@style/codeNumber" />
+
+        <EditText
+            android:id="@+id/editCode4"
+            style="@style/codeNumber" />
+    </LinearLayout>
+
+    <Button
+        style="@style/verifiedButtonStyle"
+        android:paddingBottom="22dp"
+        android:paddingTop="22dp"
+        android:id="@+id/btnVerified"
+        android:enabled="false"
+        android:layout_below="@+id/codesLayout"
+        android:text="@string/verified" />
+
+    <TextView
+        android:id="@+id/fourdigitsTextView"
+        style="@style/setNumberHeading2"
+        android:padding="20dp"
+        android:text="@string/please_enter_4_digits_sosokan"
+        android:layout_below="@+id/rlNavigationVerify"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

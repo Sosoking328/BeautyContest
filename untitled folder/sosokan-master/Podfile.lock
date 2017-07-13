@@ -1,0 +1,145 @@
+PODS:
+  - Alamofire (4.4.0)
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - CCBottomRefreshControl (0.5.2)
+  - CHTCollectionViewWaterfallLayout (0.9.5):
+    - CHTCollectionViewWaterfallLayout/ObjC (= 0.9.5)
+  - CHTCollectionViewWaterfallLayout/ObjC (0.9.5)
+  - CLImageEditor/Core (0.1.8)
+  - CLImageEditor/ResizeTool (0.1.8):
+    - CLImageEditor/Core
+  - Cosmos (9.0.0)
+  - DateToolsSwift (2.0.3)
+  - DKImagePickerController (3.5.1):
+    - DKImagePickerController/Camera (= 3.5.1)
+    - DKImagePickerController/ImageManager (= 3.5.1)
+  - DKImagePickerController/Camera (3.5.1)
+  - DKImagePickerController/ImageManager (3.5.1)
+  - Doorbell (0.0.8)
+  - DZNEmptyDataSet (1.8.1)
+  - FBSDKCoreKit (4.22.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.22.0):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.22.0):
+    - FBSDKCoreKit
+  - FZAccordionTableView (0.2.3)
+  - HexColors (2.3.0)
+  - JSQMessagesViewController (7.3.4):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
+  - Kingfisher (3.6.2)
+  - Localize-Swift (1.7.1)
+  - LocationPicker (1.0.3)
+  - Material (2.6.3):
+    - Material/Core (= 2.6.3)
+  - Material/Core (2.6.3)
+  - MobilePlayer (1.2.0)
+  - PageMenu (2.0.0)
+  - PagingMenuController (2.2.0)
+  - RichEditorView (4.0.0)
+  - Ringcaptcha (1.8.4)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - STPopup (1.8.2)
+  - SVProgressHUD (2.1.2)
+  - SwiftyJSON (3.1.4)
+  - Then (2.1.0)
+  - TPKeyboardAvoiding (1.3.1)
+  - TSMessages (0.9.13):
+    - HexColors (~> 2.3.0)
+  - TTRangeSlider (1.0.5)
+  - UICollectionViewLeftAlignedLayout (1.0.2)
+  - UIScrollView-InfiniteScroll (1.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - CCBottomRefreshControl
+  - CHTCollectionViewWaterfallLayout
+  - CLImageEditor/ResizeTool
+  - Cosmos
+  - DateToolsSwift
+  - DKImagePickerController
+  - Doorbell
+  - DZNEmptyDataSet
+  - FBSDKCoreKit
+  - FBSDKLoginKit
+  - FBSDKShareKit
+  - FZAccordionTableView
+  - JSQMessagesViewController
+  - Kingfisher
+  - Localize-Swift
+  - LocationPicker
+  - Material
+  - MobilePlayer
+  - PageMenu
+  - PagingMenuController
+  - RichEditorView (~> 4.0)
+  - Ringcaptcha
+  - SDWebImage
+  - STPopup
+  - SVProgressHUD
+  - SwiftyJSON
+  - Then
+  - TPKeyboardAvoiding
+  - TSMessages (from `https://github.com/KrauseFx/TSMessages.git`)
+  - TTRangeSlider
+  - UICollectionViewLeftAlignedLayout
+  - UIScrollView-InfiniteScroll
+
+EXTERNAL SOURCES:
+  TSMessages:
+    :git: https://github.com/KrauseFx/TSMessages.git
+
+CHECKOUT OPTIONS:
+  TSMessages:
+    :commit: dd843df9a04a756210b2ed51caf1f2b9aafee508
+    :git: https://github.com/KrauseFx/TSMessages.git
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  CCBottomRefreshControl: 389780b4488321c91d18f66a6da5ef9606df6de5
+  CHTCollectionViewWaterfallLayout: 775ff73f48cfc13859b62d8bceb96e772e4a0318
+  CLImageEditor: 0d4d5a14aa317c097418b05b5736fec4b8a90dcf
+  Cosmos: 33eee62b2a0418452aef470f711f83c3ea061b7b
+  DateToolsSwift: bf69bf9056d9e53c5c03f06e51f219b9b8b02f9e
+  DKImagePickerController: 8db7e76a88a7a66a893ba30e935cc4c9bb7ed335
+  Doorbell: 525f5e527d8a65959cb939d2083e7d78e32a1ab2
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FBSDKCoreKit: c693bad19feb225469eeff14452ba364522ee48b
+  FBSDKLoginKit: 1fa529fc622d7b32ebeaffbecd377180833c6d30
+  FBSDKShareKit: 21ab3c8d173f4fa20c47c1061f3a9fac5950b5fa
+  FZAccordionTableView: e64f49c71c32d750feda14025b088bcd25d1a71f
+  HexColors: 6ad3947c3447a055a3aa8efa859def096351fe5f
+  JSQMessagesViewController: 39fed975e3c9f8eba7292071e29eeb541d105e66
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  Kingfisher: 2c94e72c6830622c71d06adf4ea024c37d316830
+  Localize-Swift: 6cabc1087c0e910e77bfa87c2ed3f65c80c0b2df
+  LocationPicker: d54d59c9d14d52496e3e8167e67f13440d6bcf1e
+  Material: af607a7ec0e9978ef85cf189a3d8ceeeb650400f
+  MobilePlayer: 069b13482499f14c25b6ce53f63a91e17975b073
+  PageMenu: 9c38fd7e0d9ef4b1408320f55bb907bbc0e538dc
+  PagingMenuController: 6176618987bb170096664f2da097313e45ed9c31
+  RichEditorView: e5990b1a092539559def9df135e064b29ab97e68
+  Ringcaptcha: a9a700033f8a7cc3dc46f9ba5d273cc0f083aef8
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  STPopup: b69b3e7484ef7d2baec5f9ab2939f8a7bcdfe218
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  Then: 8496793c8fcac95482b943909b440724c7d8d82c
+  TPKeyboardAvoiding: 0d6af20e95e2850f4c621841225b59ec7d8dd852
+  TSMessages: eb3cf27b6900684a21bad4fe9ea426e287b8c839
+  TTRangeSlider: 2f2ce4a33b32bb323c6575b9f5161c4664459c58
+  UICollectionViewLeftAlignedLayout: 830bf6fa5bab9f9b464f62e3384f9d2e00b3c0f6
+  UIScrollView-InfiniteScroll: a90df4ba4a7ca1926128ade34a850ddbdf74c564
+
+PODFILE CHECKSUM: aab4ca3a0f586b9afe5f90141a2464b9837d7db7
+
+COCOAPODS: 1.2.1

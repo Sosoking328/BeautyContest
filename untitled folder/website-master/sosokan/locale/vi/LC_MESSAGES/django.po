@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-03 20:10-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\sosokan\settings.py:24
+msgid "Bulgarian"
+msgstr ""
+
+#: .\sosokan\settings.py:25
+msgid "Belarusian"
+msgstr ""
+
+#: .\sosokan\settings.py:26
+msgid "Bengali"
+msgstr ""
+
+#: .\sosokan\settings.py:28
+msgid "Bosnian"
+msgstr ""
+
+#: .\sosokan\settings.py:30
+msgid "Czech"
+msgstr ""
+
+#: .\sosokan\settings.py:31
+msgid "Welsh"
+msgstr ""
+
+#: .\sosokan\settings.py:33
+msgid "German"
+msgstr ""
+
+#: .\sosokan\settings.py:34
+msgid "Greek"
+msgstr ""
+
+#: .\sosokan\settings.py:35
+msgid "English"
+msgstr ""
+
+#: .\sosokan\settings.py:39
+msgid "Spanish"
+msgstr ""
+
+#: .\sosokan\settings.py:49
+msgid "French"
+msgstr ""
+
+#: .\sosokan\settings.py:54
+msgid "Hebrew"
+msgstr ""
+
+#: .\sosokan\settings.py:55
+msgid "Hindi"
+msgstr ""
+
+#: .\sosokan\settings.py:56
+msgid "Croatian"
+msgstr ""
+
+#: .\sosokan\settings.py:57
+msgid "Hungarian"
+msgstr ""
+
+#: .\sosokan\settings.py:62
+msgid "Italian"
+msgstr ""
+
+#: .\sosokan\settings.py:63
+msgid "Japanese"
+msgstr ""
+
+#: .\sosokan\settings.py:68
+msgid "Korean"
+msgstr ""
+
+#: .\sosokan\settings.py:83
+msgid "Polish"
+msgstr ""
+
+#: .\sosokan\settings.py:84
+msgid "Portuguese"
+msgstr ""
+
+#: .\sosokan\settings.py:87
+msgid "Russian"
+msgstr ""
+
+#: .\sosokan\settings.py:103
+msgid "Vietnamese"
+msgstr ""
+
+#: .\sosokan\settings.py:104
+msgid "Simplified Chinese"
+msgstr ""

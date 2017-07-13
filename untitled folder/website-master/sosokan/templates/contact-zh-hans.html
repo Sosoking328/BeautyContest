@@ -1,0 +1,208 @@
+{% extends "base_new.html" %}
+{% load staticfiles %}
+{% load humanize %}
+{% load imagekit %}
+{% block content %}
+
+        <!--
+        ==================================================
+            Global Page Section Start
+        ================================================== -->
+        <section class="global-page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block">
+                            <h2>Contact</h2>
+                            <ol class="breadcrumb">
+                                <li>
+                                    <a href="index-cn.html">
+                                        <i class="ion-ios-home"></i>
+                                        首页
+                                    </a>
+                                </li>
+                                <li class="active">联系</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--/#page-header-->
+
+
+        <!--
+        ==================================================
+            Contact Section Start
+        ================================================== -->
+
+
+        <section id="contact-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="block">
+                            <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">联系我们</h2>
+                            <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+                              悄悄告诉搜搜看，你搜到了什么宝物！<BR>
+                              搜搜看已经迫不及待啦！<BR>
+                              欢迎搜搜客们通过以下方式说出发表您想对搜搜看说的心里话！
+
+                            </p>
+                        <div class="block">
+                            <br>
+
+                            <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">媒体合作</h2>
+                            <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+                              搜搜看一直是活跃分子，热衷于各种刷脸的大场面活动。<BR>
+                              欢迎媒体朋友们来捧场，致电时请指明合作方式和其他细节。
+
+                            </p>
+                        </div>
+                        <div class="block">
+                            <br>
+
+                            <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">业务合作</h2>
+                            <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+                              搜搜看是一个以社区化为基础的中英双语买卖市场平台.<br>
+                              如果你想你所在的社区推广您的产业业务，<br>
+                              或者让更多语的社区了解到您，请致电搜搜看, <br>
+                              我们会为您量身定做一个推广互动包！
+
+                            </p>
+                        </div>
+                        <div class="block">
+                            <br>
+
+                            <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">商家验证入驻</h2>
+                            <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+                            如果您已经有了自己的实体小店或是网店，<br>
+                            还想多一家搜搜看小店，请不要犹豫联系加入我们的搜搜看小店队伍。<br>
+                            我们需要您提供真实的卖家资料，经过审核之后，<br>
+                            您就可以成为尊贵的搜搜看验证商户啦！
+
+                            </p>
+                        </div>
+                        <div class="block">
+                            <br>
+
+                            <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">用户举报</h2>
+                            <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+                              搜搜看尽最大的力量监管平台上的商品发布更新与交易，<br>
+                              但由于买卖市场的特殊性质，搜搜看不能控制所有产品信息的真实性与用户的可信度。<br>
+                              搜搜看管理员在监管违规行为的同时，希望大家提高交易警惕. <br>
+                              如发现欺诈行为或者其他违规行为的发生时积极举报, <br>
+                              让我们一起打造一个安全，信任，真诚交易的搜搜看买卖市场。 <br>
+
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="contact-form">
+                        <form id="contact-form" method="post" action="sendmail.php" role="form">
+
+                          <br>
+                          <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">联系表格</h2>
+
+                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
+                                <input type="text" placeholder="名称" class="form-control" name="name" id="name">
+                            </div>
+
+                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".8s">
+                                <input type="email" placeholder="电邮" class="form-control" name="email" id="email" >
+                            </div>
+
+                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
+                                <input type="text" placeholder="主题" class="form-control" name="subject" id="subject">
+                            </div>
+
+                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.2s">
+                                <textarea rows="6" placeholder="信息" class="form-control" name="message" id="message"></textarea>
+                            </div>
+
+
+                            <div id="submit" class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
+                                <input type="submit" id="contact-submit" class="btn btn-default btn-send" value="发送">
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+                    <div class="col-md-6">
+                         <div class="map-area">
+                            <h2 class="subtitle  wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">其它联系方式</h2>
+                            <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+                              公司名称：搜搜看科技公司  Sosokan Technology, Inc.<BR>
+                              公司地址: 224 W 35th Street Suite 500. New York, NY 10001<BR>
+                              客服反馈：Feedback@Sosokanapp.com<BR>
+                              工作招聘：Career@Sosokanapp.com<BR>
+                              商业合作：Partner@Sosokanapp.com<BR>
+                              媒体报道：Media@Sosokanapp.com<BR>
+                              市场推广：Marketing@Sosokanapp.com<BR>
+                              违规举报：Report@Sosokanapp.com<BR>
+                              产品支持： Support@Sosokanapp.com<BR>
+                              其它联系：Contact@Sosokanapp.com<BR>
+
+                            </p>
+                            <div class="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.277552998015!2d90.3678744!3d23.773128800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0ae4adf3cb9%3A0x7f2cf443b764e4a4!2sShishu+Mela!5e0!3m2!1sen!2s!4v1435516022247" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row address-details">
+                    <div class="col-md-3">
+                        <div class="address wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".5s">
+                            <i class="ion-ios-location-outline"></i>
+                            <p>224 W 35th Street #500 <br>New York, NY 10001</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="email wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".7s">
+                            <i class="ion-ios-email-outline"></i>
+                            <p>Info@Sosokanapp.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="phone wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".9s">
+                            <i class="ion-ios-telephone-outline"></i>
+                            <p>Line1: (212) 216-0620</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="phone wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".9s">
+                            <i class="ion-ios-telephone-outline"></i>
+                            <p>Line2: (212) 216-0910</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <!--
+        ==================================================
+            Call To Action Section Start
+        ================================================== -->
+        <section id="call-to-action">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block">
+                            <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">有兴趣加入搜搜看团队？</h1>
+                            <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">请把简历发送到 HR@SosokanApp.com</p>
+                            <a href="contact-cn.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">联系搜搜看！</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+ {% endblock %}

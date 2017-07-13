@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DatePicker" customModule="sosokan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="261"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="7cd-O3-whi">
+                    <rect key="frame" x="0.0" y="45" width="375" height="216"/>
+                    <date key="date" timeIntervalSinceReferenceDate="479394681.24458498">
+                        <!--2016-03-11 13:11:21 +0000-->
+                    </date>
+                    <connections>
+                        <action selector="datePickerChangedValue:" destination="iN0-l3-epB" eventType="valueChanged" id="eUL-Lq-F6z"/>
+                    </connections>
+                </datePicker>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o66-Z9-zdB">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaL-o9-3y6">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="dQI-dp-vHN"/>
+                                <constraint firstAttribute="width" constant="60" id="sZ4-yA-28i"/>
+                            </constraints>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="0.29803921570000003" green="0.78823529410000004" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="dQI-dp-vHN"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="cancelButtonDidTouched:" destination="iN0-l3-epB" eventType="touchUpInside" id="2ih-lR-cBO"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqG-Q7-3jt">
+                            <rect key="frame" x="315" y="0.0" width="60" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="dLl-W5-Mg3"/>
+                                <constraint firstAttribute="height" constant="44" id="hc0-r8-mvj"/>
+                            </constraints>
+                            <state key="normal" title="Done">
+                                <color key="titleColor" red="0.29803921570000003" green="0.78823529410000004" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="hc0-r8-mvj"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="doneButtonDidTouched:" destination="iN0-l3-epB" eventType="touchUpInside" id="bqF-5S-VrM"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Znq-ss-wLS">
+                            <rect key="frame" x="60" y="0.0" width="255" height="45"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Znq-ss-wLS" secondAttribute="bottom" id="0Hp-FH-wuP"/>
+                        <constraint firstAttribute="bottom" secondItem="jaL-o9-3y6" secondAttribute="bottom" id="8iP-lY-arn"/>
+                        <constraint firstItem="eqG-Q7-3jt" firstAttribute="leading" secondItem="Znq-ss-wLS" secondAttribute="trailing" id="8xR-by-gdk"/>
+                        <constraint firstItem="eqG-Q7-3jt" firstAttribute="top" secondItem="o66-Z9-zdB" secondAttribute="top" id="Bbu-hl-csl"/>
+                        <constraint firstAttribute="height" constant="45" id="NOL-OA-2SD"/>
+                        <constraint firstAttribute="bottom" secondItem="eqG-Q7-3jt" secondAttribute="bottom" id="SWl-D4-Idw"/>
+                        <constraint firstItem="jaL-o9-3y6" firstAttribute="leading" secondItem="o66-Z9-zdB" secondAttribute="leading" id="f7e-D8-96H"/>
+                        <constraint firstItem="jaL-o9-3y6" firstAttribute="top" secondItem="o66-Z9-zdB" secondAttribute="top" id="kal-03-wnV"/>
+                        <constraint firstItem="Znq-ss-wLS" firstAttribute="top" secondItem="o66-Z9-zdB" secondAttribute="top" id="skb-HE-a29"/>
+                        <constraint firstItem="Znq-ss-wLS" firstAttribute="leading" secondItem="jaL-o9-3y6" secondAttribute="trailing" id="vdW-hd-9X8"/>
+                        <constraint firstAttribute="trailing" secondItem="eqG-Q7-3jt" secondAttribute="trailing" id="xID-6U-qF5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="o66-Z9-zdB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="42C-D1-Egv"/>
+                <constraint firstItem="7cd-O3-whi" firstAttribute="top" secondItem="o66-Z9-zdB" secondAttribute="bottom" id="AvZ-7d-XqK"/>
+                <constraint firstAttribute="trailing" secondItem="o66-Z9-zdB" secondAttribute="trailing" id="R8I-7Q-SoT"/>
+                <constraint firstAttribute="trailing" secondItem="7cd-O3-whi" secondAttribute="trailing" id="RfB-56-fbo"/>
+                <constraint firstItem="o66-Z9-zdB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WvF-7l-FbQ"/>
+                <constraint firstAttribute="bottom" secondItem="7cd-O3-whi" secondAttribute="bottom" id="djb-pE-8el"/>
+                <constraint firstItem="7cd-O3-whi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mhj-TL-48h"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelButton" destination="jaL-o9-3y6" id="cmN-ro-x4J"/>
+                <outlet property="datePicker" destination="7cd-O3-whi" id="jWb-dr-PXb"/>
+                <outlet property="doneButton" destination="eqG-Q7-3jt" id="Zbx-3P-BLD"/>
+                <outlet property="titleLabel" destination="Znq-ss-wLS" id="eZ9-J6-eqS"/>
+            </connections>
+            <point key="canvasLocation" x="244.5" y="525.5"/>
+        </view>
+    </objects>
+</document>

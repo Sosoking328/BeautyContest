@@ -1,0 +1,289 @@
+{% extends "base_new.html" %}
+{% load staticfiles %}
+{% load humanize %}
+{% load imagekit %}
+{% block content %}
+        <!--
+        ==================================================
+            Global Page Section Start
+        ================================================== -->
+        <section class="global-page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block">
+                            <h2>Contact</h2>
+                            <ol class="breadcrumb">
+                                <li>
+                                    <a href="index-cn.html">
+                                        <i class="ion-ios-home"></i>
+                                        首页
+                                    </a>
+                                </li>
+                                <li class="active">买卖小贴士</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--/#page-header-->
+
+
+        <!--
+        ==================================================
+            Contact Section Start
+        ================================================== -->
+
+
+        <section id="contact-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="block">
+                            <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">防骗小贴士-如何安全在搜搜看市场交易</h2>
+                            <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+                              搜搜看希望大家通过我们的平台淘到心仪好物，因此对于行骗行为与假冒伪劣产品会给予严格监管，一经发现，封贴和永久性删除帐号。
+                              为了帮助大家擦亮双眼，以下是搜搜看总结出的防骗贴士，希望大家在交易前仔细浏览阅读。
+
+                            </p>
+
+                            <img src="{% static 'images/tips/tips1.png' %}" width=250 align="middle">
+                            <BR><img src="{% static 'images/separator.png' %}" width=800>
+                        <div class="block">
+                            <br>
+
+                            <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">1. 护肤品和化妆品小样</h2>
+                            <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+                            批量的化妆品小样不建议购买。<BR>
+                            通常来说，买化妆品所赠送的化妆品小样数量是有限的，如果一个买家有源源不断的库存，且种类繁多，请搜搜粉们保持警惕。<BR>
+                            除了小样，正装化妆品/护肤品购买之前务必问清：购买来源，保质期，用量多少以及包装是否有损坏。<BR><BR>
+
+                            ***切记：购买来源非常重要，谨防一些不良买家从某些平台买来的假货二次售卖。<BR>
+
+                            <BR>
+                            </p>
+
+                              <img src="{% static 'images/tips/tips2.png' %}" width=500 align="middle">
+                              <BR><img src="{% static 'images/separator.png' %}" width=800>
+
+                        </div>
+
+                        <div class="block">
+                            <br>
+
+                            <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">2. 鞋包配饰等奢侈品</h2>
+                            <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+                              搜搜看规定，超过600美金的奢侈品需要卖家出示交易证明以及真伪证明。<BR>
+                              购买奢侈品牌前，千万不要被一些高仿假冒奢侈品鱼目混珠骗去钱财。<BR>
+                              最好要求卖家可以提供验货凭证，下单时索要收据，写清楚金额和交易详情，并附上签名。<BR>
+                              若是真的上当受骗，这些都可以作为申诉的证据。总之，详细记录交易情况对于上受骗后申诉可以作为重要的证据材料。
+
+
+                            <BR>
+                            </p>
+
+                              <img src="{% static 'images/tips/tips3.png' %}" width=500>
+                              <BR><img src="{% static 'images/separator.png' %}" width=800>
+
+                        </div>
+
+                        <div class="block">
+                            <br>
+
+                            <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">3. 大额交易请通过可信的付款平台</h2>
+                            <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+                              大额交易请选择Paypal， Chase Quick Pay 或者其他保证能追回骗款的支付平台。<BR>
+                              买大额商品的时候如果买方愿意付Paypal手续费而卖方也不愿意时，那买方就要多一个戒心了。<BR>
+                              不建议大家用人民币支付的方式进行交易，支付宝和微信红包交易里面的钱追回来远比Paypal难得多。<BR>
+
+
+
+                            <BR>
+                            </p>
+
+                              <img src="{% static 'images/tips/paypal.png' %}" width=500>
+                              <BR><img src="{% static 'images/separator.png' %}" width=800>
+
+                        </div>
+
+                        <div class="block">
+                            <br>
+
+                            <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">4. 邮寄时请记录保存单号</h2>
+                            <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+                              有必要时请在USPS包装并全程录像。<BR>
+                              邮寄记录小票对于上当受骗后申诉可以作为重要的证据材料。
+
+
+
+                            <BR>
+                            </p>
+
+                              <img src="{% static 'images/tips/tips4.png' %}" width=500>
+                              <BR><img src="{% static 'images/separator.png' %}" width=800>
+
+                        </div>
+
+                        <div class="block">
+                            <br>
+
+                            <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">5. 收款与发货</h2>
+                            <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+                              付款后请及时刷新发货详情<BR>
+                              如果收款后东西3天没有寄出来，超过一周没有更新，买家们就要有所警惕了。<BR>
+                              您可能遇到了两种受骗情况：东西从中国发货；或者卖家根本没有这个东西。<BR>
+                              遇到此种情况请尽快申请退款。
+
+
+
+                            <BR>
+                            </p>
+
+                              <img src="{% static 'images/tips/tips5.png' %}" width=500>
+                              <BR><img src="{% static 'images/separator.png' %}" width=800>
+
+                        </div>
+
+                        <div class="block">
+                            <br>
+
+                            <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">6. 同城面交</h2>
+                            <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+                              同城面交请注意安全，买卖方尽量选择两方折中的距离，闹市区，白天时间交易。<BR>
+                              请避免在夜晚，或者在偏僻的野外交易，不建议去买卖方家里交易。<BR>
+                              无论选择面对面交易或者网上交易，搜搜看建议双方协商确认后价格，避免不必要的误会与不便。<BR>
+                              对于买卖双方来说，一旦发现对方有对话诡异或者不安全的隐患，请立即取消交易。<BR>
+                              你的人身安全比任何商品都重要哦~
+
+
+
+
+                            <BR>
+                            </p>
+
+                              <img src="{% static 'images/tips/tips6.png' %}" width=500>
+                              <BR><img src="{% static 'images/separator.png' %}" width=800>
+
+                        </div>
+
+                        <div class="block">
+                            <br>
+
+                            <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">7. 交易之前准备工作</h2>
+                            <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+                              交易之前请确定好以上六点都详细阅读了。如果还有任何不确定的因素，<BR>
+                              可以通过搜索关键字在搜搜看的数据库里面找到买卖方尽可能多的历史交易或者更多相关信息。<BR>
+                              仔细对照搜搜看已经公布的黑名单。
+
+
+
+                            <BR>
+                            </p>
+
+                              <img src="{% static 'images/tips/tips7.png' %}" width=500>
+                              <BR><img src="{% static 'images/separator.png' %}" width=800>
+
+                        </div>
+
+                        <div class="block">
+                            <br>
+
+                            <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">8.卖家评论</h2>
+                            <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+                              在完成一笔交易后，搜搜看鼓励大家买卖双方互给一个评价。<BR>
+                              如果有需要，可以关注对方，这样有助于第一时间看看有没有新货出售，还可以给其他买家多一个购买信息参照。<BR>
+                              构建一个温馨有爱的搜搜社区就靠你们啦~
+
+
+
+                            <BR>
+                            </p>
+
+                              <img src="{% static 'images/tips/tips8.png' %}" width=500>
+                              <BR><img src="{% static 'images/separator.png' %}" width=800>
+
+                        </div>
+
+                        <div class="block">
+                            <br>
+
+                            <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">快速售卖秘籍</h2>
+                            <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+                              搜搜看非常能理解各位卖家想将闲置货物尽快售出的急切心情，为此总结了售卖秘籍，供各位搜搜客们参考。<BR>
+                              主要侧重强调从发帖和与买家互动两方面来进行细节展开。<BR>
+
+                                <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">发帖</h2>
+                                <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+
+                              完整一个帖子的发布对于让买家全面地了解产品至关重要，这样也增加了产品本身和卖家的可信度。<BR>
+                              一篇完整的帖子包括给力的产品名称，产品描述，地址，交易方式和联系方式。<BR>
+                              图片和视频的发布可以更形象的提高买家对产品的了解，直接准确传达商品信息。如果在视频的展示中进行语音解说，更有加分效果。<BR>
+                              如需了解发布帖子的教程请在APP内搜索”搜搜看发帖流程”。
+
+
+
+
+                            <BR>
+                            </p>
+
+                              <img src="{% static 'images/tips/tips9.png' %}" width=400>
+                              <BR><img src="{% static 'images/separator.png' %}" width=800>
+
+                              <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">互动</h2>
+                              <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+
+                                搜搜看鼓励用户们在App内建立自己的社交圈，从而来推广自己的售卖商品。<BR>
+                                无论对个人用户还是商业用户来说，我们坚信在买家卖家友好关系基础上的交易是搜搜一直想努力达到的结果。<BR>
+                                1.在询问商品的详情时，请保持一颗良好的心态，不管买卖成不成，都要以尊敬的态度进行交流。<BR>
+                                卖方有义务向买方展示商品的各细节及交易后使用所注意的事项，买房在下单之前请务必全面了解索要购买商品的详情。<BR>
+                                这样可以尽量减少商品交易中的纠纷和误会。若是此笔交易不成功，还会有更多的产品交易选择。<BR><BR>
+
+                                2. 交易成功后请双方也保持联系方式，若是遇到使用产品的问题，也可找到协商解决方式。<BR>
+                                让买房买的有保障。同时，对于一些商家来说，得到顾客的信任是给自己的小店信用加分的，<BR>
+                                我们鼓励卖家和买家互相打分评论，有助于给搜搜看的用户们一个交易参考信息。<BR>
+
+
+
+
+
+                              <BR>
+                              </p>
+
+                                <img src="{% static 'images/tips/tips9.png' %}" width=400>
+                                <BR><img src="{% static 'images/separator.png' %}" width=800>
+
+                        </div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <!--
+        ==================================================
+            Call To Action Section Start
+        ================================================== -->
+        <section id="call-to-action">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block">
+                            <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">有兴趣加入搜搜看团队？</h1>
+                            <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">请把简历发送到 HR@SosokanApp.com</p>
+                            <a href="contact-cn.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">联系搜搜看！</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+ {% endblock %}

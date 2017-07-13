@@ -1,0 +1,195 @@
+{% load staticfiles %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+<!doctype html ng-app="Sosokan">
+<html lang="en-US">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable = yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% trans "Sosokan - Your World Classified" %}</title>
+
+    
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '']);
+    _gaq.push(['_setDomainName', 'none']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_trackPageview']);
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+      <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:description" content=""/>
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    <!-- Google Webfonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="{% static 'latest/css/animate.css' %}">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="{% static 'latest/css/icomoon.css' %}">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="{% static 'latest/css/magnific-popup.css' %}">
+    <!-- Salvattore -->
+    <link rel="stylesheet" href="{% static 'latest/css/salvattore.css' %}">
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="{% static 'latest/css/style.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'latest/css/base.css' %}">
+    <!-- Modernizr JS -->
+    <script src="{% static 'latest/js/modernizr-2.6.2.min.js' %}"></script>
+    <script src="{% static 'latest/js/jquery.min.js' %}"></script>
+    <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBueyERw9S41n4lblw5fVPAc9UqpAiMgvM&#038;ver=2014-07-18'></script>
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js?ver=2014-07-18'></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+                     /*SEARCH FORM*/
+          .search-form {
+              border-radius: 30px 30px 30px 30px;
+              width: 600px;
+          }
+          .form-control{
+            border: 2px solid #f9bd7c;
+          }
+
+    </style>
+
+  </head>
+  <body>
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header" style="margin-left: 60px">
+              <a class="navbar-brand" href="/"><img src="{% static 'images/logo_black.png' %}" style="height: 80px; margin-top: -15px"></a>
+            </div>
+                  <form class="navbar-form navbar-left" action="/search/" method="get" style="margin: auto; width: 500px; margin-top: 10px; margin-left: 100px" role="search">
+                <div class="form-group">
+                  <input type="text"  name="keyword" value="" class="form-control search-form" style="width: 300px" placeholder="Search">
+                </div>
+              </form>
+             <div style="margin-right: 30px">
+               <a href="{% url 'post_ad' %}" class="btn btn-sm btn-warning navbar-btn btns">Post</a>
+                {% if user.is_authenticated %}
+                <a href="/profile/{{ user.username }}" class="btn btn-sm btn-warning navbar-btn btns">Profile</a>
+                <a href="{% url 'account_logout' %}" class="btn btn-sm btn-warning navbar-btn btns">Logout</a>
+                {% else %}
+                <a href="{% url 'account_login' %}" class="btn btn-sm btn-warning navbar-btn btns">Sign in</a>
+                {% endif %}
+            </div>
+            
+            <div style="float:right;"><form action="/i18n/setlang/" method="post">
+            {% csrf_token %}
+            <select name="language" data-placeholder="Choose a Language..." onchange="this.form.submit()">
+  <option value="en" {% if LANGUAGE_CODE == 'en' %}selected {% endif %}>English</option>
+  <option value="zh-hans" {% if LANGUAGE_CODE == 'zh-hans' %}selected {% endif %}>Chinese</option>
+  
+  
+</select>
+</form>
+
+</div>
+          </div>
+
+        </nav>
+        <style type="text/css">
+            .btns{
+                border-radius: 25px;
+            }
+        </style>
+        
+<!-- 
+    <div id="fh5co-offcanvass">
+        <a href="#" class="fh5co-offcanvass-close js-fh5co-offcanvass-close">Menu <i class="icon-cross"></i> </a>
+        <h1 class="fh5co-logo"><a class="navbar-brand" href="index.html">Soskan</a></h1>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <h3 class="fh5co-lead">Connect with us</h3>
+        <p class="fh5co-social-icons">
+            <a href="#"><i class="icon-twitter"></i></a>
+            <a href="#"><i class="icon-facebook"></i></a>
+            <a href="#"><i class="icon-instagram"></i></a>
+            <a href="#"><i class="icon-dribbble"></i></a>
+            <a href="#"><i class="icon-youtube"></i></a>
+        </p>
+    </div>
+    <header id="fh5co-header" role="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="#" class="fh5co-menu-btn js-fh5co-menu-btn"><i class="icon-menu"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+ -->
+
+    
+{% block content %}
+{% endblock %}
+    <footer id="fh5co-footer">
+        
+        <div class="container">
+            <div class="row row-padded">
+                <div class="col-md-12 text-center">
+                    <p class="fh5co-social-icons">
+                        <a href="#"><i class="icon-twitter"></i></a>
+                        <a href="#"><i class="icon-facebook"></i></a>
+                        <a href="#"><i class="icon-instagram"></i></a>
+                        <a href="#"><i class="icon-dribbble"></i></a>
+                        <a href="#"><i class="icon-youtube"></i></a>
+                    </p>
+                    <p><small>&copy; sosokanapp.com </small></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    
+    <!-- jQuery Easing -->
+    <script src="{% static 'latest/js/jquery.easing.1.3.js' %}"></script>
+    <!-- Bootstrap -->
+    <script src="{% static 'latest/js/bootstrap.min.js' %}"></script>
+    <!-- Waypoints -->
+    <script src="{% static 'latest/js/jquery.waypoints.min.js' %}"></script>
+    <!-- Magnific Popup -->
+    <script src="{% static 'latest/js/jquery.magnific-popup.min.js' %}"></script>
+    <!-- Salvattore -->
+    <script src="{% static 'latest/js/salvattore.min.js' %}"></script>
+    <!-- Main JS -->
+    <script src="{% static 'latest/js/main.js' %}"></script>
+
+<!-- angular code -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="http://cdn.jsdelivr.net/restangular/1.1.3/restangular.min.js"></script>
+<script src="http://cdn.jsdelivr.net/underscorejs/1.5.1/underscore-min.js"></script>
+
+ <script type="text/javascript" src="{% static 'latest/js/angular/app.js' %}" ></script>
+
+</body>
+</html>

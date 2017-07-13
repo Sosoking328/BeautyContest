@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+
+        layout_gravity="center"
+        id="@+id/tab_home"
+        inActiveColor="#000000"
+        activeColor="#000000"
+
+        icon="@drawable/ic_home_black_24dp"
+        title="" />
+    <tab
+
+        inActiveColor="#bbb4ab"
+        activeColor="#bbb4ab"
+
+        layout_gravity="center"
+        id="@+id/tab_search"
+        icon="@drawable/ic_search_grey_36dp"
+        title="" />
+    <tab
+        id="@+id/tab_add_post"
+        inActiveColor="#ff9a4c"
+        activeColor="#ff9a4c"
+        icon="@drawable/ic_add_circle_orange_24dp"
+        badgeBackgroundColor="#ff9a4c"
+        title="" />
+    <tab
+        inActiveColor="#bbb4ab"
+        activeColor="#bbb4ab"
+
+        layout_gravity="center"
+        id="@+id/tab_favorite"
+        icon="@drawable/ic_favorite_border_white_30dp"
+        title="" />
+    <tab
+        inActiveColor="#bbb4ab"
+        activeColor="#bbb4ab"
+
+        id="@+id/tab_setting"
+        icon="@drawable/ic_settings_applications_grey_36dp"
+        title="" />
+</tabs>

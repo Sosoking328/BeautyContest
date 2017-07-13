@@ -1,0 +1,765 @@
+/* 
+  Localizable.strings
+  sosokan
+
+  Created by An Phan on 5/30/16.
+  Copyright © 2016 icanstudioz inc. All rights reserved.
+*/
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "2BB-EB-ews"; */
+"Settings" = "Settings";
+
+/* Class = "UITextField"; placeholder = "sosokan@mail.com"; ObjectID = "Csa-PC-tQS"; */
+"Csa-PC-tQS.placeholder" = "sosokan@mail.com";
+
+/* Class = "UITabBarItem"; title = "Setting"; ObjectID = "HYT-fX-SmA"; */
+"Setting" = "Setting";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "PI0-HH-FH7"; */
+"Save" = "Save";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "XZ8-xb-OVd"; */
+"Email" = "Email";
+
+/* Class = "UILabel"; text = "Choose your language"; ObjectID = "Zv5-yl-niO"; */
+"Choose your language" = "Choose your language";
+
+/* Class = "UILabel"; text = "Version"; ObjectID = "cGW-wb-v2i"; */
+"Version" = "Version";
+
+/* Class = "UIButton"; normalTitle = "Verify"; ObjectID = "fsj-mD-FV7"; */
+"Verify" = "Verify";
+
+/* Class = "UITextField"; placeholder = "123456789"; ObjectID = "mjH-Or-ayq"; */
+"123456789" = "123456789";
+
+/* Class = "UITextField"; placeholder = "+00"; ObjectID = "pAl-Cj-J5q"; */
+"+00" = "+00";
+
+/* Class = "UILabel"; text = "notify me of new ads"; ObjectID = "r6u-bo-CQG"; */
+"notify me of new ads" = "notify me of new ads";
+
+/* Class = "UILabel"; text = "Telephone"; ObjectID = "uqn-To-5V0"; */
+"Telephone" = "Telephone";
+
+"Ok" = "Ok";
+
+"No" = "No";
+
+// Tabbar
+"Home" = "Home";
+
+"Browse" = "Browse";
+
+"Post" = "Post";
+
+"Favorites" = "Favorites";
+
+"Settings" = "Settings";
+
+// Messages
+"Saved Successfully" = "Saved Successfully";
+
+"Welcome Back" = "Welcome Back";
+
+"Incorrect password" = "Incorrect password";
+
+"Email is not valid" = "Email is not valid";
+
+"Alert!" = "Alert!";
+
+"Please Enter your Email" = "Please Enter your Email";
+
+"The phone number you entered is not valid!" = "The phone number you entered is not valid!";
+
+// Browse tab.
+
+/* Class = "UITextField"; placeholder = "Select a category"; ObjectID = "DgO-ke-0lZ"; */
+"Select a category" = "Select a category";
+
+/* Class = "UILabel"; text = "To date"; ObjectID = "GIl-Ts-Rma"; */
+"To date" = "To date";
+
+/* Class = "UIButton"; normalTitle = "Search"; ObjectID = "MaN-U4-hXd"; */
+"Search" = "Search";
+
+/* Class = "UILabel"; text = "Nearby"; ObjectID = "VnY-CI-MtV"; */
+"Nearby" = "Nearby";
+
+/* Class = "UILabel"; text = "Filter by category"; ObjectID = "doq-vA-HgX"; */
+"Filter by category" = "Filter by category";
+
+/* Class = "UITextField"; placeholder = "Select a distance"; ObjectID = "dpI-Ak-ONH"; */
+"Select a distance" = "Select a distance";
+
+/* Class = "UILabel"; text = "Highest price"; ObjectID = "iNZ-Fv-AQw"; */
+"Highest price" = "Highest price";
+
+/* Class = "UILabel"; text = "Lowest pirce"; ObjectID = "pLp-Z6-61F"; */
+"Lowest price" = "Lowest price";
+
+/* Class = "UILabel"; text = "From date"; ObjectID = "qZa-pi-FxT"; */
+"From date" = "From date";
+
+/* Class = "UITextField"; placeholder = "Select a subcategory"; ObjectID = "w1z-FJ-Ph1"; */
+"Select a subcategory" = "Select a subcategory";
+
+"Soso look ..." = "Soso look ...";
+
+//
+// Date picker
+"Cancel" = "Cancel";
+
+"Done" = "Done";
+
+"Select Date" = "Select Date";
+
+//
+// Post tab
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "0nX-Ba-gwq"; */
+"Title" = "Title";
+
+/* Class = "UITextView"; text = "Please enter your description here"; ObjectID = "2ej-8a-6DD"; */
+"Please enter your description here" = "Please enter your description here";
+
+/* Class = "UITextField"; placeholder = "Please enter your title here"; ObjectID = "Eco-u2-g6E"; */
+"Please enter your title here" = "Please enter your title here";
+
+/* Class = "UILabel"; text = "Call me"; ObjectID = "QXh-JS-ejb"; */
+"Call me" = "Call me";
+
+/* Class = "UILabel"; text = "Price"; ObjectID = "fm9-5l-DPf"; */
+"Price" = "Price";
+
+/* Class = "UIButton"; normalTitle = "Post My Ad"; ObjectID = "jXL-e9-YDc"; */
+"Post My Ad" = "Post My Ad";
+
+/* Class = "UILabel"; text = "Email me"; ObjectID = "mNf-ai-GCd"; */
+"Email me" = "Email me";
+
+/* Class = "UINavigationItem"; title = "Post an Ad"; ObjectID = "oOH-am-N9V"; */
+"Post an Ad" = "Post an Ad";
+
+/* Class = "UIButton"; normalTitle = "Add Location"; ObjectID = "uDL-hR-PNX"; */
+"Add Location" = "Add Location";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "wMb-1M-Ayw"; */
+"Description" = "Description";
+
+"Please login" = "Please login";
+
+"Loading..." = "Loading...";
+
+"Your post was not successful!" = "Your post was not successful!";
+
+"Post Successfully" = "Post Successfully";
+
+"Please enter your post title" = "Please enter your post title";
+
+"Please enter description" = "Please enter description";
+
+"Please add price" = "Please add price";
+
+"Please upload at least one Ad image" = "Please upload at least one Ad image";
+
+"Please select Email Me and / or Call Me" = "Please select Email Me and / or Call Me";
+
+"Please select category" = "Please select category";
+
+"Please select subcategory" = "Please select subcategory";
+
+//
+// HomeVC
+
+"Back" = "Back";
+
+"Advance" = "Advance";
+
+"go" = "go"; // Image name
+
+"Removed" = "Removed";
+
+"Saved" = "Saved";
+
+"Real Estate" = "Real Estate";
+
+"Search on Sosokan" = "Search on Sosokan";
+
+"Categories" = "Categories";
+
+"Featured items" = "Featured items";
+
+"Recently searched" = "Recently searched";
+
+"Nearby items" = "Nearby items";
+
+//
+// Keys
+"name" = "name";
+
+//
+// Ad detail
+"ABOUT" = "ABOUT";
+
+"LOCATION" = "LOCATION";
+
+"PHONE" = "PHONE";
+
+"EMAIL" = "EMAIL";
+
+"No mail account setup on device" = "No mail account setup on device";
+
+"Mail have been cancelled" = "Mail have been cancelled";
+
+"Mail have been saved" = "Mail have been saved";
+
+"Mail have been sent" = "Mail have been sent";
+
+"Mail have been sent fail" = "Mail have been sent fail";
+
+// Build scheme
+"Release" = "Release";
+
+"Debug"  = "Debug";
+
+"Error!" = "Error!";
+
+"ALL" = "ALL";
+
+"Try again!" = "Try again!";
+
+// Updated on July 17, 2015 by An Phan
+
+// Splash screen
+
+/* Class = "UIButton"; normalTitle = "SKIP"; ObjectID = "2XU-RL-lk0"; */
+"SKIP" = "SKIP";
+
+/* Class = "UIButton"; normalTitle = "SIGN UP"; ObjectID = "FoR-sc-qiO"; */
+"LOGIN/SIGN UP" = "LOGIN/SIGN UP";
+
+/* Class = "UIButton"; normalTitle = "VERIFY"; ObjectID = "LwW-Or-PCb"; */
+"VERIFY" = "VERIFY";
+
+/* Class = "UILabel"; text = "OR"; ObjectID = "ct4-Bh-soZ"; */
+"OR" = "OR";
+
+/* Class = "UIButton"; normalTitle = "LOG IN USING WECHAT"; ObjectID = "ksx-dR-rB3"; */
+"LOG IN USING WECHAT" = "LOG IN USING WECHAT";
+
+/* Class = "UITextField"; placeholder = "Type your phone number"; ObjectID = "pLD-g2-ek3"; */
+"Type your phone number" = "Type your phone number";
+
+/* Class = "UILabel"; text = "VERIFY BY PHONE"; ObjectID = "tA2-Yc-6xb"; */
+"VERIFY BY PHONE" = "VERIFY BY PHONE";
+
+/* Class = "UIButton"; normalTitle = "LOG IN USING FACEBOOK"; ObjectID = "y1l-ea-1Vg"; */
+"LOG IN USING FACEBOOK" = "LOG IN USING FACEBOOK";
+
+"The phone number you entered is not valid!" = "The phone number you entered is not valid!";
+
+"Select country" = "Select country";
+
+"SIGN UP" = "SIGN UP"; 
+
+// Left side menu
+
+"HOME" = "HOME";
+
+"MESSAGES" = "MESSAGES";
+
+"MY POSTS" = "MY POSTS";
+
+"FAVORITES" = "FAVORITES";
+
+"SUBSCRIPTIONS" = "SUBSCRIPTIONS";
+
+"SETTINGS" = "SETTINGS";
+
+"LOG OUT" = "LOG OUT";
+
+"classified" = "Listing";
+
+"classifieds" = "Listings";
+
+"Are you sure you want to sign out?" = "Are you sure you want to sign out?";
+
+"Sign out" = "Sign out";
+
+"We're sorry" = "We're sorry";
+
+"LOGIN" = "LOGIN";
+
+"You need to login to your Sosokan account first to see your messages!" = "You need to login to your Sosokan account first to see your messages!";
+
+"You need to login to your Sosokan account first to see your favorites!" = "You need to login to your Sosokan account first to see your favorites!";
+
+"You need to login to your Sosokan account first to see your posts!" = "You need to login to your Sosokan account first to see your posts!";
+
+"You need to login to your Sosokan account first to setup your subscriptions!" = "You need to login to your Sosokan account first to setup your subscriptions!";
+
+"You need to login to your Sosokan account first to post your classifieds!" = "You need to login to your Sosokan account first to post your classifieds!";
+
+// Home page
+
+"Search here" = "Search here";
+
+"No results." = "No results.";
+
+"You need to login to your Sosokan account first to use this function!" = "You need to login to your Sosokan account first to use this function!";
+
+"View" = "View";
+
+"Less than" = "Less than";
+
+"km" = "km";
+
+// HomeVC - Filter menu (menu on right)
+
+"ALL DISTANCE" = "ALL DISTANCE";
+
+"Distance" = "Distance";
+
+"Sort Order" = "Sort Order";
+
+"Most Recent" = "Most Recent";
+
+"Most Favorite" = "Most Favorite";
+
+"Within 1 miles" = "Within 1 miles";
+
+"Within 5 miles" = "Within 5 miles";
+
+"Within 10 miles" = "Within 10 miles";
+
+"Within 20 miles" = "Within 20 miles";
+
+"Within 25 miles" = "Within 25 miles";
+
+"Within 50 miles" = "Within 50 miles";
+
+"Within 100 miles" = "Within 100 miles";
+
+"Within 250 miles" = "Within 250 miles";
+
+"Within 500 miles" = "Within 500 miles";
+
+// Ad detail page
+
+"Are you sure you want to delete this Ad?" = "Are you sure you want to delete this Ad?";
+
+"Email is invalid!" = "Email is invalid!";
+
+"The ad is marked as expiration." = "The ad is marked as expiration.";
+
+"You need to login to your Sosokan account first to edit your classifieds!" = "You need to login to your Sosokan account first to edit your classifieds!";
+
+"You flagged this ad." = "You flagged this ad.";
+
+"CATEGORY" = "CATEGORY";
+
+"AVAILABILITY" = "AVAILABILITY";
+
+"PHONE" = "PHONE";
+
+"FAX" = "FAX";
+
+"EMAIL" = "EMAIL";
+
+"WEB" = "WEB";
+
+"Delete" = "Delete";
+
+"Full time" = "Full time";
+
+"DETAILS" = "DETAILS";
+
+// Edit ad options
+
+"EXPIRE" = "EXPIRE";
+
+"EDIT" = "EDIT";
+
+"DELETE" = "DELETE";
+
+"FLAG" = "FLAG";
+
+// Favorites / My posts / User posts
+
+"POSTS" = "POSTS";
+
+"MY POSTS" = "MY POSTS";
+
+// Create new ad
+
+"TITLE" = "TITLE";
+
+"DESCRIPTION" = "DESCRIPTION";
+
+"CATEGORY" = "CATEGORY";
+
+"SUBCATEGORY" = "SUBCATEGORY";
+
+"LOCATION" = "LOCATION";
+
+"EMAIL ME" = "EMAIL ME";
+
+"CALL ME" = "CALL ME";
+
+"PRICE" = "PRICE";
+
+"DISCOUNT" = "DISCOUNT";
+
+"Type your title here..." = "Type your title here...";
+
+"Describe your classifieds here" = "Describe your classifieds here";
+
+"Choose a location for your classifieds" = "Choose a location for your classifieds";
+
+"Enter a price for your classifieds" = "Enter a price for your classifieds";
+
+"Enter the percentage of your discount" = "Enter the percentage of your discount";
+
+"No location selected" = "No location selected";
+
+"EDIT POST" = "EDIT POST";
+
+"UPDATE" = "UPDATE";
+
+"None" = "None";
+
+"Updating..." = "Updating...";
+
+"Posting your ad..." = "Posting your ad...";
+
+"Missing email" = "Missing email";
+
+"You didn't set up email on your account!" = "You didn't set up email on your account!";
+
+"Missing phone" = "Missing phone";
+
+"You didn't set up phone number on your account!" = "You didn't set up phone number on your account!";
+
+"NEW POST" = "NEW POST";
+
+"POST" = "POST";
+
+"Select category" = "Select category";
+
+"Camera" = "Camera";
+
+"Choose an option!" = "Choose an option!";
+
+"Take a Photo" = "Take a Photo";
+
+"Choose from Camera Roll" = "Choose from Camera Roll";
+
+"FEATURE MY AD Free!" = "FEATURE MY AD Free!";
+
+"Featured ads will be shown first and stand out from others" = "Featured ads will be shown first and stand out from others";
+
+"TAP TO EDIT PHOTO" = "TAP TO EDIT PHOTO";
+
+"Premium feature" = "Premium feature";
+
+"duration" = "duration";
+
+"Choose from library" = "Choose from library";
+
+"Adding video is our premium feature will cost 0.99 credits to add a 9 seconds video. Do you want to continue?\nSpecial Promotion!!! All premium features are free until 12/31/2016." = "Adding video is our premium feature will cost 0.99 credits to add a 9 seconds video. Do you want to continue?\nSpecial Promotion!!! All premium features are free until 12/31/2016.";
+
+"Advance description will cost $0.99 in credits\nYou can edit more complex content.\nSpecial Promotion!!! All premium features are free until 12/31/2016." = "Advance description will cost $0.99 in credits\nYou can edit more complex content.\nSpecial Promotion!!! All premium features are free until 12/31/2016.";
+
+"Use basic description" = "Use basic description";
+
+"Continue" = "Continue";
+
+"You removed rich text, please re-enter a plain text description for the ad." = "You removed rich text, please re-enter a plain text description for the ad.";
+
+"Post Successfully!" = "Post Successfully!";
+
+"Update Successfully!" = "Update Successfully!";
+
+// Profile
+
+"My profile" = "My profile";
+
+"EDIT PROFILE" = "EDIT PROFILE";
+
+"PHOTO" = "PHOTO";
+
+"FAQ" = "FAQ";
+
+"INVITE FRIENDS" = "INVITE FRIENDS";
+
+"LOGOUT" = "LOGOUT";
+
+"Sign Up" = "Sign Up";
+
+"You need to login to your Sosokan account" = "You need to login to your Sosokan account";
+
+"Credits" = "Credits";
+
+// Edit profile
+
+"Internal Error" = "Internal Error";
+
+"COMPANY NAME" = "COMPANY NAME";
+
+"NAME" = "NAME";
+
+"NOTE" = "NOTE";
+
+"ADDRESS" = "ADDRESS";
+
+"CITY" = "CITY";
+
+"ZIP" = "ZIP";
+
+"STATE" = "STATE";
+
+"PHONE" = "PHONE";
+
+"FAX" = "FAX";
+
+"EMAIL" = "EMAIL";
+
+"Name of your company" = "Name of your company";
+
+"Name will be displayed" = "Name will be displayed";
+
+"Phone number" = "Phone number";
+
+"Fax number" = "Fax number";
+
+"Email address" = "Email address";
+
+"ALLOW PEOPLE TO EMAIL ME" = "ALLOW PEOPLE TO EMAIL ME";
+
+"ALLOW PEOPLE TO CALL ME" = "ALLOW PEOPLE TO CALL ME";
+
+"SAVE" = "SAVE";
+
+"PRIVATE SETTINGS" = "PRIVATE SETTINGS";
+
+"Note" = "Note";
+
+"Address" = "Address";
+
+"City" = "City";
+
+"Zip" = "Zip";
+
+"State" = "State";
+
+"Type here..." = "Type here...";
+
+"You" = "You";
+
+"MESSAGE" = "MESSAGE";
+
+// Invitation page
+
+"Invitation" = "Invitation";
+
+"You cancelled the invitation!" = "You cancelled the invitation!";
+
+"The invitation was sent!" = "The invitation was sent!";
+
+"You cancelled the invitation!" = "You cancelled the invitation!";
+
+"The invitation was failed!" = "The invitation was failed!";
+
+// No media permission
+
+"It looks like you have turned off permissions needed to attach media." = "It looks like you have turned off permissions needed to attach media.";
+
+"Open Settings" = "Open Settings";
+
+"Tap Privacy" = "Tap Privacy";
+
+"Tap Camera" = "Tap Camera";
+
+"Make sure Sosokan is turned ON" = "Make sure Sosokan is turned ON";
+
+"English" = "English";
+
+"Chinese (Simplified)" = "Chinese (Simplified)";
+
+// Extend expiration time drop down
+
+"Extend 1 month" = "Extend 1 month";
+
+"Extend 3 months" = "Extend 3 months";
+
+"Extend 6 months" = "Extend 6 months";
+
+"Extend 1 year" = "Extend 1 year";
+
+// Users list
+"Users" = "Users";
+
+// FEEDBACK
+"FEEDBACK" = "FEEDBACK";
+"Feedback" = "Feedback";
+//"Please advise your invaluable opinons and suggestions." = "请提供您的宝贵意见";
+"What's on your mind?" = "What's on your mind?";
+"Your email address" = "Your email address";
+"Send" = "Send";
+
+// Credits page
+"Balance" = "Balance";
+
+"Buy Credits" = "Buy Credits";
+
+"Get Credits" = "Get Credits";
+
+"There is not enough available credits to enable this function. Would you like to buy more credits now?" = "There is not enough available credits to enable this function. Would you like to buy more credits now?";
+
+// Premium features
+
+"Balance is not enough" = "Balance is not enough";
+
+"Please buy more credits to continue" = "Please buy more credits to continue";
+
+"Please comfirm" = "Please comfirm";
+
+"Are you sure to remove FEATURED" = "Are you sure to remove FEATURED";
+
+"The post's rich text will be removed" = "The post's rich text will be removed";
+
+"The post's video will be removed" = "The post's video will be removed";
+
+"Total credits" = "Total credits";
+
+"Orange border around item" = "Orange border around item";
+
+"Header image is replaced by video" = "Header image is replaced by video";
+
+"Color text and images in the listing" = "Color text and images in the listing";
+
+"The orange border around item will be removed" = "The orange border around item will be removed";
+
+"Bold the title of my listing and stand out" = "Bold the title of my listing and stand out";
+
+// TODO: Enhance later
+
+"Feature my ad in the listings (Free!)" = "Feature my ad in the listings (Free!)";
+
+"Enable video upload (Free!)" = "Enable video upload (Free!)";
+
+"Enable Rich Text editing (Free!)" = "Enable Rich Text editing (Free!)";
+
+"Bold the title of my listing (Free!)" = "Bold the title of my listing (Free!)";
+
+"Upgrade your ad and stand out!\nSpecial Promotion!Now FREE." = "Upgrade your ad and stand out!\nSpecial Promotion!Now FREE.";
+
+// Ad descriptions
+
+"Descriptions" = "Descriptions";
+
+"Pick Image" = "Pick Image";
+
+"Insert Image From Device" = "Insert Image From Device";
+
+"Alt" = "Alt";
+
+"Image scale, 0.5 by default" = "Image scale, 0.5 by default";
+
+"Text Color" = "Text Color";
+
+"Sorry" = "Sorry";
+
+"Error while trying access your camera!" = "Error while trying access your camera!";
+
+"Editing is free because you already purchased." = "Editing is free because you already purchased.";
+
+// Error message from parse
+"The object is too large -- should be less than 128 kB." = "The object is too large -- should be less than 128 kB.";
+
+// Walk through page
+"Next" = "Next";
+
+"Skip" = "Skip";
+
+"Start" = "Start";
+
+"Please add an email to your facebook account and then try again!" = "Please add an email to your facebook account and then try again!";
+
+"Your info is invalid!" = "Your info is invalid!";
+
+"Failed to detect location" = "Failed to detect location";
+
+"Thank you for your rating" = "Thank you for your rating";
+
+"You rated" = "You rated";
+
+"Rate it" = "Rate it";
+
+"WEBSITE" = "WEBSITE";
+
+"Website" = "Website";
+
+"RECENT POSTING" = "RECENT POSTING";
+
+"Use my location" = "Use my location";
+
+"Feature is not available" = "Feature is not available";
+
+"New post by" = "New post by";
+
+"New" = "New";
+
+"FOLLOWING" = "FOLLOWING";
+
+"All" = "All";
+
+"FREE\nYou can edit more complex content" = "FREE\nYou can edit more complex content";
+
+"FREE\nAdd a 9 seconds video" = "FREE\nAdd a 9 seconds video";
+
+"By browsing, signing up or logging in.I hereby agree to Sosokan's" = "By browsing, signing up or logging in. I hereby agree to Sosokan's";
+
+"Terms and Conditions" = "Terms and Conditions";
+
+"Privacy Policy" = "Privacy Policy";
+
+"Thank you for your support!" = "Thank you for your support!";
+
+"Like" = "Like";
+
+"Share" = "Share";
+
+"Report" = "Report";
+
+// Connect page
+"I'm using Sosokan. A COMMUNITY DRIVEN CLASSIFIEDS APP. You can find and post local classifieds and forums for your every needs such as jobs, housing, for sale, personals, services, local community, and events. And the best of it, it is FREE! Start marketing on Sosokan! Download it at below link:"
+= "I'm using Sosokan. A COMMUNITY DRIVEN CLASSIFIEDS APP. You can find and post local classifieds and forums for your every needs such as jobs, housing, for sale, personals, services, local community, and events. And the best of it, it is FREE! Start marketing on Sosokan! Download it at below link:";
+
+"Someone sent an invitation to you on Sosokan" = "Someone sent an invitation to you on Sosokan";
+
+"CONNECT" = "CONNECT";
+
+"CONNECT NEARBY FRIENDS" = "CONNECT NEARBY FRIENDS";
+
+"SELECT INVITATION MODE" = "SELECT INVITATION MODE";
+
+"Contact" = "Contact";
+
+// Code verification page
+"Verification code has been sent to your phone" = "Verification code has been sent to your phone";
+
+"Phone" = "Phone";
+
+"Code" = "Code";
+
+"Enter code" = "Enter code";
+
+"SUBMIT" = "SUBMIT";
+
+// Bottom bar
+
+"PROFILE" = "PROFILE";
+
+"BROWSE" = "BROWSE";

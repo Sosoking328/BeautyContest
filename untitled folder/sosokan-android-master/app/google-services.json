@@ -1,0 +1,43 @@
+{
+  "project_info": {
+    "project_number": "935208892140",
+    "firebase_url": "https://sosokan-1452b.firebaseio.com",
+    "project_id": "sosokan-1452b",
+    "storage_bucket": "sosokan-1452b.appspot.com"
+  },
+  "client": [
+    
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935208892140:android:947cef224106f6fa",
+        "android_client_info": {
+          "package_name": "com.sosokan.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935208892140-u3k9uk5ir3qgje779gpu79luea6fj9i1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDq4l_pa8vD7pG2SNtZPRDg3s_DWfnwfo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

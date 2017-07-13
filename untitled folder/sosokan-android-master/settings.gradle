@@ -1,0 +1,6 @@
+include ':app'
+/*
+project(':ResideMenu').projectDir = new File('../ResideMenu')*/
+/*
+include 'ResideMenu'
+project(':ResideMenu').projectDir = new File(settingsDir, '/ResideMenu')*/

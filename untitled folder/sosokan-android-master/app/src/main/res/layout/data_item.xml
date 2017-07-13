@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="@dimen/data_item_row_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/data_item_row_padding"
+    android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.sosokan.android.control.multi.level.menu.LevelBeamView
+            android:id="@+id/dataItemLevelBeam"
+            android:layout_width="5dp"
+            app:exampleColor="@color/white"
+            android:layout_height="@dimen/data_item_row_height" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="left|center_vertical"
+            android:layout_toLeftOf="@+id/rbCategory"
+            android:layout_toRightOf="@+id/dataItemLevelBeam"
+            android:layout_marginLeft="@dimen/advertise_padding_bottom"
+            android:layout_marginRight="@dimen/offset_default">
+            <ImageView
+                android:id="@+id/iconCategory"
+                android:layout_width="@dimen/data_item_row_height_30"
+                android:layout_height="@dimen/data_item_row_height_30"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/app_name"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="left|center_vertical"
+                android:orientation="vertical">
+                <TextView
+                    android:singleLine="true"
+                    android:id="@+id/dataItemName"
+                    android:layout_width="wrap_content"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/text_14"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:singleLine="true"
+                    android:id="@+id/dataItemInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_small"
+                    android:text=""
+                    android:textColor="@android:color/darker_gray" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/rbCategory"
+            android:layout_width="@dimen/ic_advertise_overflow_width"
+            android:layout_height="@dimen/ic_advertise_overflow_width"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:button="@drawable/ic_arrow_drop_down_black_24dp"
+            android:src="@drawable/ic_arrow_drop_down_black_24dp"
+            android:text="" />
+    </RelativeLayout>
+    <!-- <ImageView
+         android:id="@+id/dataItemArrow"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_alignParentRight="true"
+         android:src="@drawable/arrow_down"/>-->
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+pre{
+	font-family: monospace;
+}
+code, kbd, pre, samp {
+	font-family: monospace, serif;	
+}
+.featured-slider-3#featured-abs .ad-box .add-price span.add-price-icon{
+	font-family: 'Open Sans', sans-serif;
+}
+.footer-upper-box-inner span{
+    font-family: "Lato Bold italic" , sans-serif;
+}
+#register-login-block-top ul li a ,.header-pos-static .header-v5-login-register li a,.header-v5 .make-new-ad,.header-pos-static .header-v6-login-register li a,.header-v6 .make-new-ad,.header-v6 .register-btn,.header-v6 .make-new-ad a,.header-v6 .register-btn a,.header-v6-login-register.afterlogin li.first a,.header-v6-login-register.afterlogin li.last a,.post-title a,.ad-box .add-price span ,#featured-abs .ad-hover-content .post-title a ,#featured-abs .ad-box .add-price span ,.post-title-cat .post-title a,.category-btn a ,.cat-title h4 ,.more-btn-inner,.more-btn-inner a,#ads-homepage ul.tabs li a ,.subscribe_email #wp-subscribe h4.title,.single-slider .single-ad-price,.single-description .description-title,.detail-cat a,.author-form h3,#uploadTrigger,#latitude-field input, #longitude-field input,.ad-post-main #edit-submit, #edit-profile #edit-submit,.marker-info-title a,.marker-info-price ,.map-box-style-2 .marker-info-holder .add-price span,.map-box-style-2 .marker-info-title a,.map-box-style-2 .marker-info-left .feat-category,.map-box-style-3 .feat-category,.author-btn .button-ag,.search-bar-version2 .search-your-keyword-txt label,.search-bar-version3 #edit-submit-search-view span,.search-bar-version4 #edit-submit-search-view span,#featured-abs .ad-box .add-price span,.categories-homepage-vr-3 .category-title-v3 a h4,.categories-homepage-vr-3 .category-content-v3 ul li a,#ads-homepage.grid-vr-2 .feat-category,#ads-homepage.grid-vr-2 .ads-price-v2,.listing-ads-vr-3 .post-title-cat .post-title .list-post-price,#ads-homepage.grid-vr-3  .ad-box .add-price span,#ads-homepage.listing-ads-vr-2  .ad-box .add-price span,.plan-vr-3.single-plan #submit-plan,.location-version-3 .location-content a,.main_menu a,h4.block-title,.callout-inner h4,.callout-inner h4 span,.callout-inner p,.ad-title h2, .ad-title h2 a,.ad-title .ad-page-price aa.register-social-button-facebook,a.register-social-button-twitter,a.register-social-button-google,section#locations .location .span3 a,.my-ad-details a.my-ad-title,.my-ad-details span, .my-ad-details span a,.listing-ads .read-more-btn-inner a,.single-plan .product-title h3,.pro-price,.single-plan #submit-plan,.popular-title,.menu-v3 a,.log-forms #edit-submit,.log-forms input#edit-submit,.log-forms .register-page-title h5,.contact-meta .contact-single-meta h3,.page-template-template-profile-php .my-ad-box .post-title-my-ad a,.blog-date,.blog-month,.blog-title h2 a,.blog-title h2,.blog-btn,.blog-btn a,.blog-author-info .author-title h3,.related-post-title h3 a,.comments-header h3,.comment-author,.comment-title,.comment-reply a,.banner-text-one-h3-2,.banner-text-second-h2-2,.footer-menu #menu-footer li a ,.footer-menu #menu-footer li a{font-family: "Montserrat" ,sans-serif;}
+.controls input ,.views-exposed-form .views-exposed-widget .btn-primary,#upload-ad .input-title input#postTitle ,#upload-ad .input-title input#post_location,#edit-profile .input-title input.text,#edit-profile .input-title textarea.text, .subscribe_email #wp-subscribe p,.subscribe_email #wp-subscribe p.text,.subscribe_email #wp-subscribe input.email-field,.subscribe_email #wp-subscribe input.submit,.plan-vr-3.single-plan .plan-tag,input[type="submit"],.sticky li p,.banner-text-third-2{font-family:'Lato', sans-serif;}
+
+
+input#bbp_topic_title, input#bbp_topic_tags {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.bbp-submit-wrapper button.button,
+.button-ag {
+	font-family: 'Helvetica Neue',Arial,sans-serif;
+}
+
+.cat-widget .featurads-widget .ad-hover-content .post-title a,.cat-widget .featurads-widget,h4.trigger,.login-title,.error404 #edit-submit a{
+	font-family:'Raleway';
+}
+.button-ag span.button-inner,
+.views-exposed-form .views-exposed-widget .btn-primary {
+	font-family: 'Armata',"Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+}
+blockquote {
+	font-family:Georgia,"Times New Roman",Times,serif;
+}

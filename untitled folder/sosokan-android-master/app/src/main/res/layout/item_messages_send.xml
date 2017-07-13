@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="horizontal"
+    android:padding="15dp">
+
+    <com.sosokan.android.control.RoundedImageView
+        android:id="@+id/ivUserChat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/no_avatar"
+        app:border_color="@android:color/white"
+        app:border_width="2dp"
+        app:corner_radius="125dip"
+        app:mutate_background="false"
+        app:oval="true" />
+    <TextView
+        android:id="@+id/tvNameUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="You"
+        android:textColor="@color/grey"
+        android:textSize="18sp"
+        android:paddingBottom="15dp"
+        android:layout_marginRight="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/ivUserChat"/>
+    <LinearLayout
+        android:id="@+id/llMessageContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/ivUserChat"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/bubble_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bubble_in">
+
+            <TextView
+                android:id="@+id/txtMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:maxEms="12"
+                android:text="Hi! new message"
+                android:textColor="@android:color/primary_text_light" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTimestamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llMessageContent"
+        android:layout_gravity="center|center_horizontal"
+        android:gravity="center_horizontal"
+        android:textColor="@color/grey"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

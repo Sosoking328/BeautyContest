@@ -1,0 +1,120 @@
+{% extends "base_new.html" %}
+{% load staticfiles %}
+{% load humanize %}
+{% load imagekit %}
+{% block content %}
+  <script type="text/javascript">
+      window.CSRF_TOKEN = "{{ csrf_token }}";
+    </script>
+
+<link rel="stylesheet" href="{% static 'css/animate.css' %}"/>
+  <!--
+  ==================================================
+  Portfolio Section Start
+  ================================================== -->
+  <section id="works" class="works">
+    <div class="container">
+      <div class="section-heading">
+        <h1 class="title wow fadeInDown" data-wow-delay=".3s">Latest Ads</h1>
+        <p class="wow fadeInDown" data-wow-delay=".5s">
+          
+        </p>
+      </div>
+      <div class="container">
+        <nav class="navbar navbar-default navbar-xs" role="navigation">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+            <ul class="nav navbar-nav" >
+
+            {% if LANGUAGE_CODE == 'en' %}
+              {% for cat in categories %}
+                <li><a href="/search/?category={{cat.slug}}">{{cat.name}}</a></li>
+              {% endfor %}
+            {% else %}
+              {% for cat in categories %}
+                <li><a href="/search/?category={{cat.slug}}">{{cat.nameChinese}}{{cat.advertisecount}}</a></li>
+              {% endfor %}
+            {% endif %}
+            </ul>
+            </div><!-- /.navbar-collapse -->
+          </nav>
+        </div>
+        <div id="posts">
+        {% for ad in ads %}
+          <a href="/ad_ajax/{{ad.id}}/" data-featherlight="ajax" class="myElement">
+            <div class="col-sm-4 col-xs-12">
+              <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms" style="border-radius:25px;">
+                <div class="img-wrapper"  >
+                  <div class="crop" >
+                    <img src="{% if ad.imageHeader %} {{ad.imageHeader.url}} {% else %} {{ ad.defualt_image }} {% endif %}" class="img-responsive" alt=" " width="360px" >
+                  </div>
+                </div>
+                <div style="margin-left:10px;margin-top:10px;color:#fd863d;float:left;">
+                <i class="ion-android-time"> {{ad.time_since}}</i>
+                </div>
+                <div style="margin-right:10px;margin-top:10px;color:#CCCCCC;float:right;">
+                <a href="/project/{{project.id}}/rate/1" class="like" id="{{ad.id}}" onclick="return false;">
+                <i class="ion-heart" for="toggle-heart" style="font-size: 18px; color:#CCCCCC" id="vote_count_{{ad.id}}"> {{ad.rating_likes}}</i>&nbsp;
+                </a>
+                <i class="ion-eye" style="font-size: 18px;"> {{ad.views}}</i>
+                </div>
+                <br style="clear:left;"/>
+                <figcaption>
+                
+                {{ad.user.userprofile.image_tag|safe}}
+                 
+                {{ad.name}} {% if ad.price %} |
+                 ${{ad.price|intcomma|floatformat}}
+                {% endif %}
+               
+
+                </figcaption>
+                
+                
+              </figure>
+            </div>
+          </a>
+        {% endfor %}
+        </div>
+      </div>
+    </div>
+    </section> <!-- #works -->
+     <div class="text-center">
+      <a id="lazyLoadLink" href="javascript:void(0);" data-page="2" class="btn btn-success">Load More Results</a>
+    </div>   
+
+<script type="text/javascript">
+  (function($) {
+  $('#lazyLoadLink').on('click', function() {
+    var link = $(this);
+    var page = link.data('page');
+    
+    $.ajax({
+      type: 'post',
+      url: '/lazy_load_posts/',
+      data: {
+        'page': page,
+        'csrfmiddlewaretoken': window.CSRF_TOKEN // from index.html
+      },
+      success: function(data) {
+        // if there are still more pages to load,
+        // add 1 to the "Load More Posts" link's page data attribute
+        // else hide the link
+        if (data.has_next) {
+            link.data('page', page+1);
+        } else {
+          link.hide();
+        }
+        // append html to the posts div
+        $('#posts').append(data.posts_html);
+      },
+      error: function(xhr, status, error) {
+        // error!
+      }
+    });
+  });
+}(jQuery));
+</script>
+
+  {% endblock %}

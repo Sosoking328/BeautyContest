@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load account socialaccount %}
+{% load socialaccount %}
+{% block content %}
+	{% get_providers as socialaccount_providers %}
+	<section class="ads-main-page">
+		<div class="container">
+			<div id="edit-profile" class="row">
+				<div class="col-md-4 col-md-offset-4 col-sm-6 col-xs-12">
+					<div class="log-forms">
+						<form class="login" method="POST" action="{% url 'account_login' %}">
+							{{form.errors}}
+							{% csrf_token %}
+							<div class="form-group">
+								<h3>LOGIN</h3>
+							</div>
+							
+							<div class="form-group">
+								<label for="email">Username</label>
+								<input type="text" id="id_login" Placeholder="UserName" name="login" class="form-control" value="{{form.username.value|default:""}}" />
+								{{form.login.errors}}
+							</div>
+							<div class="form-group">
+								<label for="email">Password</label>
+								<input type="password" id="password" Placeholder="Password" name="password" class="form-control" value="" />
+								{{form.password.errors}}
+							</div>
+							<div class="form-group">
+								<fieldset class="input-title">
+									<label for="edit-title" class="remember-me">
+										<input id="id_remember" name="remember" type="checkbox" value="forever" style="float: left;"/>
+										<span style="margin-left: 10px; float: left;">Remember me</span>
+									</label>
+								</fieldset>
+								<input type="hidden" id="submitbtn" name="submit" value="Login" />
+							</div>
+							<div class="form-group">
+								<button class="btn btn-lg btn-wide btn-success" id="edit-submit" name="op-login" type="submit">LOGIN NOW</button>
+							</div>
+						</form>
+						<div class="clearfix"></div>
+						<span class="sign-free"><a href="/accounts/signup">Sign Up for Free</a></span>
+						<div class="register-page-title">
+							<h5>OR</h5>
+						</div>
+						<div class="social-btn clearfix">
+							{% for provider in socialaccount_providers %}
+								{% if provider.name == "Weixin" %}
+									<a class="register-social-button-{{provider.id}}" href="{% provider_login_url provider.id process=process scope=scope auth_params=auth_params %}">Login via Wechat</a>
+								{% else %}
+									<a class="register-social-button-{{provider.id}}" href="{% provider_login_url provider.id process=process scope=scope auth_params=auth_params %}">Login via {{provider.id}}</a>
+								{% endif %}
+							{% endfor %}
+							<a class="register-social-button-phone" href="/phone_login">Login via Phone Number</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}

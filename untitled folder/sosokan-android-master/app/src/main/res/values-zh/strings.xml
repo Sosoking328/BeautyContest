@@ -1,0 +1,352 @@
+<resources>
+    <string name="app_name">搜搜看</string>
+    <string name="facebook_app_id">1705306379718667</string>
+    <string name="Skip">跳过</string>
+    <string name="SignUp">注册</string>
+    <string name="ExamplePhoneCode">+ 1</string>
+    <string name="VerifyByPhone">通过电话验证</string>
+    <string name="TypeYourPhoneNumber">输入您的电话号码</string>
+    <string name="Verify">验证</string>
+    <string name="LoginUsingFacebook">登录使用FACEBOOK</string>
+    <string name="LoginUsingWeChat">登录使用WECHAT</string>
+    <string name="Or">或者</string>
+    <string name="read_full_des">全部内容</string>
+    <string name="availability">可用性</string>
+    <string name="phone">电话</string>
+    <string name="fax">传真</string>
+    <string name="email">電郵</string>
+    <string name="web">网站</string>
+    <string name="comments">评语</string>
+    <string name="tap_to_edit">即可编辑照片</string>
+    <string name="title">标题</string>
+    <string name="discount">折扣</string>
+    <string name="description">描述</string>
+    <string name="category">类别</string>
+    <string name="location">位置</string>
+    <string name="type_title_here">在这里输入你的标题...</string>
+    <string name="enter_percent">输入折扣</string>
+    <string name="des_classfield">这里描述您的公告</string>
+    <string name="coupons_dis">优惠/减价</string>
+    <string name="post">发布</string>
+    <string name="type_here">在此输入...</string>
+    <string name="skip">跳过</string>
+    <string name="chinese">简体中文</string>
+    <string name="english">英语</string>
+    <string name="view">视图</string>
+    <string name="distance">距离</string>
+    <string name="sort">排序</string>
+
+    <string name="Details">细节</string>
+    <string name="ReadFullDescription">全部内容</string>
+    <string name="Availability">可用性</string>
+    <string name="Phone">电话</string>
+    <string name="Fax">传真</string>
+    <string name="Email">电子邮件</string>
+    <string name="Web">网站</string>
+    <string name="Comments">评语</string>
+
+    <string name="btn_skip_intro">略过</string>
+    <string name="error_player">初始化YouTubePlayer（％1 $ s）时出错</string>
+    <string name="drawer_close">关闭抽屉</string>
+    <string name="drawer_open">打开抽屉</string>
+
+    <string name="home_menu">首页</string>
+    <string name="mess_menu">留言</string>
+    <string name="my_post_menu">我的发布</string>
+    <string name="favorite_menu">收藏</string>
+    <string name="subcrip_menu">订阅</string>
+    <string name="setting_menu">设置</string>
+    <string name="logout_menu">登出</string>
+
+    <string name="search_here">这里搜索</string>
+    <string-array name="spinner_distance_value">
+        <item>1英里内</item>
+        <item>5英里内</item>
+        <item>10英里内</item>
+        <item>25英里内</item>
+        <item>50英里内</item>
+        <item>100英里内</item>
+        <item>250英里内</item>
+        <item>500英里内</item>
+    </string-array>
+    <string-array name="spinner_sort_value">
+        <item>最近</item>
+    </string-array>
+    <string name="edit_profile">编辑个人资料</string>
+    <string name="photo">照片</string>
+    <string name="password">密码</string>
+    <string name="faq">常问问题</string>
+    <string name="invite_friend">邀请朋友</string>
+    <string name="more_category">其它类别</string>
+    <string name="why_dont_sosokan">不如搜搜看</string>
+    <string name="company_name">公司名</string>
+    <string name="name">名称</string>
+    <string name="address">地址</string>
+    <string name="city">市</string>
+    <string name="state">州</string>
+    <string name="zip">邮编号码</string>
+    <string name="note">笔记</string>
+    <string name="coupons">优惠</string>
+    <string name="text_all">所有</string>
+    <string name="save">保存</string>
+    <string name="profile">资料</string>
+    <string name="loading">缓冲...</string>
+    <string name="myProfile">个人资料</string>
+
+    <string name="off_percent">关闭</string>
+    <string name="class_field">%d 分类</string>
+
+    <!--MESSAGE-->
+    <string name="invalidate_email">电子邮件无效</string>
+    <string name="invalidate_phone">您输入的电话号码是无效的!</string>
+    <string name="alert">警告！</string>
+    <string name="error_input_user_name">请输入您的名字</string>
+    <string name="error_input_phone_number">请输入电话号码</string>
+    <string name="error_input_email">请输入您的电子邮件</string>
+    <string name="error_input_description_advertise">请输入描述</string>
+    <string name="error_select_category_advertise">請选择主分類</string>
+    <string name="error_input_title_advertise">请输入标题</string>
+    <string name="error_input_price_advertise">请输入价钱</string>
+    <string name="error_select_sub_category_advertise">请选子类别</string>
+
+    <string name="error_please_login">请登录</string>
+    <string name="error_your_post_was_not_successful">您的文章没有成功</string>
+    <string name="post_successfully">发布成功</string>
+    <string name="error_upload_image_advertise">请上载图片</string>
+    <string name="error_select_email_call_advertise">请电邮或致电</string>
+    <string name="alert_are_you_want_to_sign_out">您确定要退出吗？</string>
+    <!--END MESSAGE-->
+
+    <!--FAQ-->
+    <string-array name="list_faq_question">
+        <item>谁是搜搜看?</item>
+        <item>我如何注册搜搜看？</item>
+        <item>搜搜看是免费的吗？</item>
+        <item>我如何在搜搜看张贴？</item>
+        <item>我怎样在搜搜看上面放广告？</item>
+        <item>搜搜看会公布我的个人资料吗？</item>
+        <item>如何在搜搜看上面订阅？</item>
+        <item>搜搜看安全吗？</item>
+        <item>搜搜看会推出另一种语言吗？</item>
+        <item>我怎样才能删除我搜搜看帖子？</item>
+        <item>搜搜看如何提供或控制买方和卖方， 客户与商户之间付款流程？</item>
+        <item>我如何举报非法帖子或广告？</item>
+        <item>如何编辑我搜搜看的用户资料？</item>
+        <item>我可以邀请朋友来搜搜看吗？</item>
+        <item>我怎么能分享搜搜看的广告？</item>
+        <item>如何删除我的搜搜看账号？</item>
+        <item>如何在Sosokan删除邮件？</item>
+        <item>我在哪里上Sosokan输入密码？</item>
+        <item>我在哪里可以看到我所有的贴子？</item>
+        <item>搜搜看支持Android吗？</item>
+        <item>我如何能把我的广告移到第一位？</item>
+        <item>能否在搜搜看内聊天内添加附件？</item>
+        <item>我可以发广告到搜搜看网吗（sosokanapp.com)？</item>
+        <item>我没有看到我想要搜搜看的类别？</item>
+    </string-array>
+
+    <string-array name="list_faq_answer">
+
+        <item>Sosokan, 又名搜搜看，是一组以提供本地搜索分类广告，资讯的APP， 制造一个友好用户的经验程序。虽然许多人对太多杂乱分类感到沮丧，并由Craigslists（赶集）和许多其他在线分类广告的复杂性不堪重负，搜搜看把这些进行简单化，搜搜看平台一切都在你的手掌中。</item>
+
+        <item>我们已经采取了主动，使注册过程1-2-3一样简单。所有你需要的是一个有效的电话号码，Facebook或微信一个帐户。电话号码验证，请您点击注册，输入您的手机号码，并发送到手机上的短信代码验证。就这样。  对于Facebook和微信，你只需要通过你的Facebook，微信账号和密码登录就可。</item>
+
+        <item>是的，搜搜看是免费提供给所有用户与图片浏览和张贴广告 。不过，如果你希望自己的广告脱颖而出，与众不同的话，你可以使用我们的高级版本，它允许你发布视频和定制描述页面一小笔费用。请info@sosokanapp.com联系关于我们的高级广告。</item>
+
+        <item>我们已经将发布简单化，只要你在哪里都看到我们的应用程序中的一个大的，黄色的“+”按钮，您可以点击。然后，填写所有你需要的简短/详细的说明。</item>
+
+        <item>如果你有兴趣在我们的应用APP中推销你的公司，请联系我们的销售团队info@sosokanapp.com。</item>
+
+        <item>除非你在广告中指定的，唯一的资料搜搜看 将发布该广告是你的电话号码和电子邮件地址，这也是由你的广告张贴启用。</item>
+
+        <item>在设定里，只需点击类别/子类别，你有兴趣接收最新的信息，每一个新的广告或分类发布时，您将收到通知。订阅消除了持续反复搜索特定项目的麻烦。</item>
+
+        <item>虽然搜搜看是一个免费的应用程序，并免费浏览，我们只允许注册用户留言和发布广告。这将提供一种内容安全感到和消除垃圾邮件。我们的团队将监控所有的职位，并过滤掉非法和未经授权的内容是危害我们的应用程序和国家安全。</item>
+
+        <item>会的，搜搜看目前只有支持两种语言，英语和中文。我们未来的版本将提供多国语言的支持，如韩语，日语，西班牙语，德语，法语，意大利语，俄语等等。</item>
+
+        <item>你只需要在“我的帖子”菜单选项的具体帖子，然后把它点过期久可以。</item>
+
+        <item>搜搜看不处理买方和卖方，或客户与商户之间的任何付款方式。所有交易都通过安排买方和卖方，或客户与商家之间的付款方式进行处理。</item>
+
+        <item>在每个广告，请点击“举报”，我们的团队将调查看问题。如果它被认为是进攻和非法的，我们将立即删除广告。</item>
+
+        <item>在菜单设置页面中，您可以在“编辑个人资料”按钮，点击更新您的信息。</item>
+
+        <item>如果你觉得搜搜看是好用的，想和大家分享我们的应用程序，你可以通过Facebook，Twitter和微信联系邀请他们。</item>
+
+        <item>点击共享图标上的每个广告的右上角图片，你可以在自己喜爱的应用共享。</item>
+
+        <item>你为什么要这么做？请发送电子邮件至info@sosokanapp.com，我们将删除您的帐户。但是，以帮助我们改进我们的其他用户的应用程序，请随时给我们发送的电子邮件提供你的意见和建议，我们会以认真的态度去改良。</item>
+
+        <item>在主菜单中，单击“消息”，然后滑动从右到左的具体聊天，删除不需要的邮件。</item>
+
+        <item>Sosokan不需要密码，因为用户的手机，Facebook和微信验证。目前，我们没有为更改密码的选项。</item>
+
+        <item>在主菜单中，点击“我的文章”，你就能看到所有你的帖子的日期。</item>
+
+        <item>我们首批推出的搜搜看应用程序是支持IOS。我们的开发团队正在做 Android版本，并希望能在未来几个月内推出Android版本。</item>
+
+        <item>广告是由时间和日期排列。我们不建议重复发布相同的广告，只要你的广告是相关的，我们的用户将能够使用一个简单的搜索看到它。如果从发一样广告，它实际是违反我们的政策，每一个广告为7天有效期。累犯将其广告删除，并撤销他们的帐户暂停。</item>
+
+        <item>我们的程序员正在研究此功能。目前不支持。</item>
+
+        <item>您只可以在Sosokanapp.com浏览 。现在发帖仅在我们的应用程序Sosokan App内。</item>
+
+        <item>太好了！我们将继续改善我们的应用程序，你已经找到了缺失的环节。我们希望您给我们发电子邮件，告诉我们缺少的类别，如果合适的话，我们将很乐意加入。请发电邮info@sosokanapp.com</item>
+
+    </string-array>
+    <!--END FAQ-->
+
+    <!--CATEGORY-->
+    <string name="all">所有</string>
+    <!--END CATEGORY-->
+    <string name="verify_code">验证代码</string>
+    <string name="error_input_verify_1">请输入代码</string>
+    <string name="user_anonymous">无名用户</string>
+    <string name="ok">好</string>
+    <string name="yes">是</string>
+    <string name="no">没有</string>
+    <string name="cancel">取消</string>
+    <string name="done">完成</string>
+
+    <string name="please_select_your_language">選擇你的語言</string>
+    <string name="select_country">选择国家</string>
+    <string name="invitation">邀请</string>
+    <string name="facebook">Facebook</string>
+    <string name="the_invitation_was_sent">邀请以发出！</string>
+    <string name="feedback">评语</string>
+    <string name="your_email_address">您的電子郵件</string>
+    <string name="send">发送</string>
+    <string name="what_on_your_mind">你在想什么？</string>
+
+    <string-array name="languages_array">
+        <item>英语</item>
+        <item>简体中文</item>
+    </string-array>
+    <string name="search">搜索</string>
+    <string name="add">加</string>
+
+    <string name="price">价钱</string>
+    <string name="price_hint">0.00</string>
+    <string name="call_me">电话联系</string>
+    <string name="email_me">电邮联系</string>
+
+    <string name="just_now">刚刚</string>
+    <string name="ago">以前</string>
+    <string name="min_ago">一分钟前</string>
+    <string name="mins_ago">分钟前</string>
+    <string name="hour_ago">一小时前</string>
+    <string name="hours_ago">小时前</string>
+    <string name="yesterday">昨天</string>
+    <string name="days_ago">天前</string>
+
+    <string name="cannot_connect_firebase">连接不了服务器， 请再试一次！</string>
+    <string name="not_available">无</string>
+    <string name="full_time">全职</string>
+    <string name="error">错误!</string>
+    <string name="new_post">最新帖子</string>
+    <string name="balance">平衡</string>
+    <string name="your_post_was_not_successful">发布失败</string>
+    <string name="error_internet">网络失败，请再试一次！</string>
+    <string name="follow">跟随</string>
+    <string name="unfollow">取消关注</string>
+    <string name="guest">客人</string>
+    <string name="dollar">$</string>
+    <string name="thank_you_for_rating">感谢您的评分</string>
+    <string name="no_results_found">没有结果</string>
+    <string name="error_reach_limit">免费发布只能最多上载5张图片.</string>
+    <string name="allow_people_to_call_me">允许人们电话联系</string>
+    <string name="allow_people_to_email_me">允许人们电子邮件联系</string>
+    <string name="login_menu">登录</string>
+    <string name="private_settings">私人设置</string>
+    <string name="we_are_sorry">很抱歉</string>
+    <string name="you_need_to_login_your_sosokan">您需要登录到您的帐户Sosokan首次使用该功能！</string>
+    <string name="error_input_discount_advertise">输入折扣</string>
+    <string name="error_failed_record_video">抱歉! 无法录制视频</string>
+    <string name="error_failed_capture_image">抱歉! 无法捕获图像</string>
+    <string name="error_email_is_not_valid">您输入的电子邮件无效！</string>
+    <string name="error_no_email_client">没有安装电子邮件客户端。</string>
+    <string name="error_phone_number_is_not_valid">您输入的电话号码无效！</string>
+    <string name="error_you_did_not_setup_email">您尚未在帐户中设置电子邮件！</string>
+    <string name="error_you_did_not_setup_phone">您尚未在帐户中设置电话号码！</string>
+    <string name="none">没有</string>
+    <string name="next">下一个</string>
+    <string name="select_a_category">选择一个类别</string>
+    <string name="send_email">发送邮件...</string>
+    <string name="start">开始</string>
+    <string name="update">更新</string>
+
+    <!-- Date Util -->
+    <string name="date_util_term_less">少于</string>
+    <string name="date_util_term_a">一</string>
+    <string name="date_util_term_an">一</string>
+
+
+    <string name="date_util_unit_second">倅</string>
+    <string name="date_util_unit_seconds">倅</string>
+    <string name="date_util_unit_minute">分钟</string>
+    <string name="date_util_unit_minutes">分钟</string>
+    <string name="date_util_unit_hour">小时</string>
+    <string name="date_util_unit_hours">小时</string>
+    <string name="date_util_unit_day">日</string>
+    <string name="date_util_unit_days">日</string>
+    <string name="date_util_unit_month">个月</string>
+    <string name="date_util_unit_months">个月</string>
+    <string name="date_util_unit_year">年</string>
+    <string name="date_util_unit_years">年</string>
+
+
+    <string name="date_util_prefix_lt">少于 </string>
+    <string name="date_util_prefix_about">關於</string>
+    <string name="date_util_prefix_over">过度</string>
+    <string name="date_util_prefix_almost">几乎</string>
+
+
+    <string name="date_util_suffix">前</string>
+
+
+    <string name="term_condition">从此浏览,登入或注册,我已阅读并同意Sosokan </string>
+    <string name="term">的使用条款</string>
+    <string name="privacy_policy_new"> &amp; 隐私政策</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="empty"> </string>
+    <string-array name="post_action_array">
+        <item></item>
+        <item>到期</item>
+        <item>编辑</item>
+        <item>删除</item>
+        <item>标签</item>
+    </string-array>
+
+    <string name="edit_post">编辑帖子</string>
+
+    <string name="following">关注</string>
+    <string name="followers">信徒</string>
+
+    <string name="sosokan">SOSOKAN</string>
+    <string name="feature_is_not_available">此功能暂时无效</string>
+    <string name="confirm_delete_ad">您确定要删除该广告？</string>
+    <string name="delete">删除</string>
+    <string name="select_reason">选择此列表</string>
+    <string name="report">报告</string>
+    <string name="error_send_flag">您应该在发送之前选择一个原因</string>
+    <string name="thank_you_for_report">感谢您的举报</string>
+
+    <string name="error_input_comment">请输入您的评论.</string>
+    <string name="error_occur">发生错误。 请再试一次！</string>
+
+
+    <string name="rate_it">Rate it</string>
+
+    <string name="add_a_comment">Add a comment</string>
+
+    <string name="like">赞</string>
+
+    <string name="share">举报</string>
+
+    <string name="error_invalid_pin_code">PIN码无效</string>
+    <string name="error_invalid_number">无效号码</string>
+    <string name="error_input_phone_code">请选择电话代码。</string>
+    <string name="error_failed_to_detect_location">无法检测位置！</string>
+</resources>

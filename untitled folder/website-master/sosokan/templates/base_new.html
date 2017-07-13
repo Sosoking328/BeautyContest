@@ -1,0 +1,337 @@
+{% load staticfiles %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+    <title>Sosokan</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Template CSS Files
+    ================================================== -->
+    <!-- Twitter Bootstrs CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- Ionicons Fonts Css -->
+    <link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
+    <!-- animate css -->
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <!-- Hero area slider css-->
+    <link rel="stylesheet" href="{% static 'css/slider.css' %}">
+    <!-- owl craousel css -->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery.fancybox.css' %}">
+    <!-- template main css file -->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.6/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <!-- Template Javascript Files
+    ================================================== -->
+    <!-- modernizr js -->
+    <script src="{% static 'js/vendor/modernizr-2.6.2.min.js' %}"></script>
+    <!-- jquery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <!-- owl carouserl js -->
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <!-- bootstrap js -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- wow js -->
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <!-- slider js -->
+    <script src="{% static 'js/slider.js' %}"></script>
+    <script src="{% static 'js/jquery.fancybox.js' %}"></script>
+    <!-- template main js -->
+    <script src="{% static 'js/main.js' %}"></script>
+
+
+    <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBueyERw9S41n4lblw5fVPAc9UqpAiMgvM&#038;ver=2014-07-18'></script>
+
+    <script type='text/javascript' src="{% static 'js/gmap3.min.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/gmap3.infobox.js' %}"></script>
+    
+  </head>
+  <body>
+
+    <style>
+    .crop {
+
+    width: 350px;
+    height: 300px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    overflow: hidden;
+    }
+  @media all {
+        .lightbox { display: none; }
+        .fl-page h1,
+        .fl-page h3,
+        .fl-page h4 {
+          font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+          font-weight: 100;
+          letter-spacing: 1px;
+        }
+        .fl-page h1 { font-size: 110px; margin-bottom: 0.5em; }
+        .fl-page h1 i { font-style: normal; color: #ddd; }
+        .fl-page h1 span { font-size: 30px; color: #333;}
+        .fl-page h3 { text-align: right; }
+        .fl-page h3 { font-size: 15px; }
+        .fl-page h4 { font-size: 2em; }
+        .fl-page .jumbotron { margin-top: 2em; }
+        .fl-page .doc { margin: 2em 0;}
+        .fl-page .btn-download { float: right; }
+        .fl-page .btn-default { vertical-align: bottom; }
+
+        .fl-page .btn-lg span { font-size: 0.7em; }
+        .fl-page .footer { margin-top: 3em; color: #aaa; font-size: 0.9em;}
+        .fl-page .footer a { color: #999; text-decoration: none; margin-right: 0.75em;}
+        .fl-page .github { margin: 2em 0; }
+        .fl-page .github a { vertical-align: top; }
+        .fl-page .marketing a { color: #999; }
+
+        /* override default feather style... */
+        .fixwidth {
+          background: rgba(256,256,256, 0.8);
+        }
+        .fixwidth .featherlight-content {
+          width: 500px;
+          padding: 25px;
+          color: #fff;
+          background: #111;
+        }
+        .fixwidth .featherlight-close {
+          color: #fff;
+          background: #333;
+        }
+
+      }
+      @media(max-width: 768px){
+        .fl-page h1 span { display: block; }
+        .fl-page .btn-download { float: none; margin-bottom: 1em; }
+      }
+      button {
+     background:none!important;
+     color:inherit;
+     border:none; 
+     padding:0!important;
+     font: inherit;
+     /*border is optional*/
+     
+     cursor: pointer;
+}
+
+.navbar-xs { min-height:22px; border-radius:0} 
+.navbar-xs .navbar-brand{ padding: 2px 8px;font-size: 14px;line-height: 14px; } 
+.navbar-xs .navbar-nav > li > a { border-right:1px solid #ddd; padding-top: 2px; padding-bottom: 2px; line-height: 16px;     margin-bottom: 10px;}
+    </style>
+
+    <!--
+    ==================================================
+    Header Section Start
+    ================================================== -->
+    <header id="top-bar" class="navbar-fixed-top animated-header">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- responsive nav button -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <!-- /responsive nav button -->
+          <!-- logo -->
+          <div class="navbar-default">
+            <a href="/" >
+              <img src="{% static 'images/logo-cn.png' %}" alt="搜搜看" width=125>
+            </a>
+          </div>
+          <!-- /logo -->
+        </div>
+        <!-- main menu -->
+        <nav class="collapse navbar-collapse navbar-right" role="navigation" >
+          <div class="main-menu">
+            <ul class="nav navbar-nav navbar-right" style="margin-right:-100px">
+              <li>
+                <a href="/" ><h3>{% trans "home" %} </h3></a>
+              </li>
+              <a><li><h3> | </h3></a></li></a>
+              <li><a href="/pages/discover/"><h3>{% trans "discover" %}</h3></a></li>
+              <a><li><h3> | </h3></a></li></a>
+              <li><a href="/pages/about/"><h3>{% trans "about" %}</h3></a></li>
+              <a><li><h3> | </h3></a></li></a>
+              <li><a href="/pages/contact/"><h3>{% trans "contact" %}</h3></a></li>
+              <a><li><h3> | </h3></a></li></a>
+
+              <a href="{% url 'post_ad' %}" class="btn btn-sm btn-warning navbar-btn btns">{% trans "Post" %}</a>
+                {% if user.is_authenticated %}
+                <a href="/profile/{{ user.username }}" class="btn btn-sm btn-warning navbar-btn btns">{% trans "Profile" %}</a>
+                <a href="{% url 'account_logout' %}" class="btn btn-sm btn-warning navbar-btn btns">{% trans "Logout" %}</a>
+                {% else %}
+                <a href="{% url 'account_login' %}" class="btn btn-sm btn-warning navbar-btn btns">{% trans "Sign in" %}</a>
+                {% endif %}
+
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><h3>{% trans "language" %}<span class="caret"></span></h3></a>
+                <div class="dropdown-menu">
+                <form action="/i18n/setlang/" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="language" value="{% if LANGUAGE_CODE == 'en' %}zh-hans{% else %}en{% endif %}"> 
+                  <ul>
+
+                    <li><button type="submit">English</button></li>
+                    <li><button type="submit">{% trans "Chinese" %}</button></li>
+                  </ul>
+                  </form>
+                  <li><a href="https://itunes.apple.com/pg/app/sosokan/id1023454229"> <img src="{% static 'images/app-store.svg' %}" width=150 ></a></li>
+                </li>
+              </div>
+
+                     <form class="navbar-form navbar-left" action="/search/" method="get" style="margin: auto; width: 500px; margin-top: 10px; margin-left: 100px" role="search">
+                <div class="form-group">
+                  <input type="text"  name="keyword"  class="form-control search-form" style="width: 300px" placeholder="{% trans "Search" %}" value="{{keyword|default:''}}">
+                </div>
+              </form>
+
+
+
+
+        <style type="text/css">
+            .btns{
+                border-radius: 25px;
+            }
+        </style>
+
+
+
+              <!-- main menu
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="caret"></span></a>
+                <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="blog-fullwidth.html">Blog Full</a></li>
+                    <li><a href="blog-left-sidebar.html">Blog Left sidebar</a></li>
+                    <li><a href="blog-right-sidebar.html">Blog Right sidebar</a></li>
+                  </ul>
+                </div>
+              </li>
+              -->
+            </ul>
+          </div>
+        </nav>
+        <!-- /main nav -->
+      </div>
+    </header>
+
+    
+{% block content %}
+{% endblock %}
+    <!--
+    ==================================================
+    Footer Section Start
+    ================================================== -->
+    <footer id="footer">
+      <div class="container">
+        <div class="col-md-12">
+          <ul class="nav navbar-nav navbar-center" >
+            <a><li><h1> [  </h1></a></li></a>
+            <li>
+              <a href="index-cn.html" ><h1>{% trans "home" %}</h1></a>
+            </li>
+            <a><li><h1>  |  </h1></a></li></a>
+            <li><a href="/pages/discover/"><h1>{% trans "discover" %}</h1></a></li>
+            <a><li><h1>  |  </h1></a></li></a>
+            <li><a href="/pages/tips/"><h1>{% trans "tips" %}</h1></a></li>
+            <a><li><h1> |  </h1></a></li></a>
+            <li><a href="/pages/join/"><h1>{% trans "join" %}</h1></a></li>
+            <a><li><h1>  |  </h1></a></li></a>
+            <li><a href="/pages/faq/"><h1>{% trans "FAQ" %}</h1></a></li>
+            <a><li><h1>  |  </h1></a></li></a>
+            <li><a href="/pages/about/"><h1>{% trans "about" %}</h1></a></li>
+            <a><li><h1>  |  </h1></a></li></a>
+            <li><a href="/pages/contact/"><h1>{% trans "contact" %}</h1></a></li>
+            <a><li><h1>  ]  </h1></a></li></a>
+          </div>
+          <div class="col-md-8">
+            <p class="copyright">Copyright: <span>2017</span> . Design and Developed by <a href="http://www.sosokanapp.com">Team SSK!</a></p>
+          </div>
+          <div class="col-md-4">
+            <!-- Social Media -->
+            <ul class="social">
+              <li>
+                <a href="#" class="Facebook">
+                  <i class="ion-social-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="Twitter">
+                  <i class="ion-social-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="Linkedin">
+                  <i class="ion-social-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="Google Plus">
+                  <i class="ion-social-googleplus"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </footer> <!-- /#footer -->
+
+
+      
+<script src="{% static 'js/featherlight.js' %}" ></script>
+<script>
+$('.myElement').featherlight();
+</script>
+
+<script>
+      $('.like').click(function(){
+        {% if user.is_authenticated %}
+        var pk = $(this).attr('id');
+        $(this).children().addClass('animated flipInX');
+
+
+
+
+        $.ajax({
+          type: "POST",
+          url: "/ad/" + pk + "/rate/1",
+          data: {'pk': pk, 'csrfmiddlewaretoken': '{{ csrf_token }}'},
+          dataType: "json",
+          success: function(response) {
+            $('#vote_count_' + pk).html(response)
+          },
+          error: function(rs, e) {
+            alert(rs.responseText);
+          }
+        });
+        {% else %}
+        alert('Please sign in to vote');
+        {% endif %}
+      })
+ 
+
+
+
+     </script>
+      </body>
+
+    </html>

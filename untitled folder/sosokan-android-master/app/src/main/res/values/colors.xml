@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--Indigo 500-->
+    <color name="primary_500">#3F51B5</color>
+    <!--Indigo 700-->
+    <color name="primary_700">#303F9F</color>
+    <!--Pink 500-->
+    <color name="accent_500">#E91E63</color>
+    <!--Pink 700-->
+    <color name="accent_700">#C2185B</color>
+    <color name="black_trans80">#14000000</color>
+
+    <color name="indicator_unselected">#4D000000</color>
+
+
+    <color name="blue_grey">#455A64</color>
+    <color name="red">#F44336</color>
+    <color name="pink">#E91E63</color>
+    <color name="purple">#9C27B0</color>
+    <color name="deep_purple">#673AB7</color>
+    <color name="indigo">#3F51B5</color>
+    <color name="blue">#2196F3</color>
+    <color name="light_blue">#03A9F4</color>
+    <color name="cyan">#00BCD4</color>
+    <color name="teal">#009688</color>
+    <color name="green">#4CAF50</color>
+    <color name="light_green">#8BC34A</color>
+    <color name="lime">#CDDC39</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="amber">#FFC107</color>
+    <color name="orange">#FF6200</color>
+    <color name="deep_orange">#FF6200</color>
+    <color name="bg_light">#FAFAFA</color>
+    <color name="black">#000000</color>
+    <color name="white">#fff</color>
+    <color name="grey">#bfbfbe</color>
+    <color name="light_grey">#efefe7</color>
+    <color name="light_grey_text">#bbb4ab</color>
+    <color name="dark_grey_text">#A09D9C</color>
+
+    <color name="dark_grey_range_seek">#9e9e9e</color>
+    <color name="light_grey_text_edit_profile">#A39F9E</color>
+    <color name="grey_sale">#929090</color>
+    <color name="rating_orange">#FF6200</color>
+    <color name="light_grey_time">#c3c1c0</color>
+    <color name="grey_icon">#dddcdb</color>
+
+    <color name="primary_light">#C5CAE9</color>
+    <color name="colorText">#FFFFFF</color>
+    <color name="secondary_text">#212121</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="bg_edit_profile">#363031</color>
+
+
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="view_divider_color">#BABABA</color>
+    <color name="view_divider_color_2">#DADADA</color>
+    <color name="sliding_list_divider_color">#DADABB</color>
+
+
+    <array name="array_dot_active">
+        <item>@color/blue</item>
+        <item>@color/blue</item>
+        <item>@color/blue</item>
+        <item>@color/blue</item>
+        <item>@color/blue</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/grey</item>
+        <item>@color/grey</item>
+        <item>@color/grey</item>
+        <item>@color/grey</item>
+        <item>@color/grey</item>
+    </array>
+
+    <color name="pink_text_category">#FF6200</color>
+    <color name="grey_text_category">#b7b9ba</color>
+
+    <color name="indicator">#ecd95a</color>
+</resources>

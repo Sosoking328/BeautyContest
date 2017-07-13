@@ -1,0 +1,293 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load humanize %}
+{% block content %}
+<style>
+
+.author-details {
+  margin-bottom: 20px;
+  float: left;
+  width: 100%;
+  font-size:14px;
+  color:#333;
+}
+.profile-list {
+  padding:30px;
+  border-right:1px solid #eee;
+}
+.profile-content .description.span4{
+  padding:20px 30px;
+}
+.author-details:last-child{
+  margin-bottom:0px;
+}
+.author-details .fa {
+  width: 32px;
+  height:32px;
+  line-height:32px;
+  text-align:center;
+  margin-right:10px;
+  border-radius:50%;
+  background:#333;
+  color:#fff;
+}
+
+.author-description {
+  line-height: 22px;
+}
+.author-info .author-avatar{
+  float:left;
+  border-right:1px solid #eee;
+  padding:10px;
+  padding-bottom:7px;
+  width:196px;
+}
+.author-info .author-avatar img{
+  border-radius:50%;
+  width:100%;
+}
+.author-meta{
+  display:block;
+  font-size:14px;
+  color:#333;
+  margin-bottom:30px;
+}
+.author-meta:first-child{
+  margin-top:20px;
+}
+.author-meta:last-child{
+  margin-bottom:20px;
+}
+
+.author-meta i{
+  width:32px;
+  height:32px;
+  background:#333;
+  color:#fff;
+  font-size:16px;
+  border-radius:50%;
+  line-height:32px;
+  text-align:center;
+  margin-right:20px;
+}
+</style>
+<div class="container" id="product-section">
+  <div class="row">
+   <div class="col-md-3"></div>
+   <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-12">
+           <h1>{{ad.name}}</h1>
+         </div>
+         <hr>
+        </div>
+         <div class="row">
+          <img src='{{ad.imageHeader.url}}' class="image-responsive" data-big='{{ad.imageHeader.url}}' />
+          </div>
+          {% for image in ad.adimage.all|slice:":1" %}
+          <div class="row" style="margin-top:30px;">
+          <img src='{{image.image.url}}' class="image-responsive" data-big='{{image.image.url}}' width="85%"/>
+          {% endfor %} 
+
+        </div>
+            <div class="row">
+             <div class="col-md-12">
+               <a href="/search/?category={{ad.category.slug}}" title="View all posts in {{ad.category.name}}"> <span class="label label-primary">{{ad.category.name}}</span></a>
+               {% if ad.Referral_ID %}
+              <span class="monospaced">Referral ID: {{ad.Referral_ID}}</span>
+               {% endif %}
+             </div>
+            </div><!-- end row -->
+            <div class="row">
+             <div class="col-md-12">
+              <p class="description">
+                {{ad.description|safe}} ID: {{ad.legacy_id}}
+              </p>
+             </div>
+            </div><!-- end row -->
+            {% if ad.price %}
+            <div class="row">
+             <div class="col-md-12 bottom-rule">
+              <h2 class="product-price">Price: ${{ad.price|intcomma|floatformat}}</h2>
+             </div>
+            </div><!-- end row -->
+            {% endif %}
+            {% if ad.position.latitude %}
+             <div id="single-page-map">
+                                            <div id="single-page-main-map"></div>
+                                            <script type="text/javascript">
+                                            var mapDiv,
+                                            map,
+                                            infobox;
+                                            jQuery(document).ready(function($) {
+                                            mapDiv = $("#single-page-main-map");
+                                            mapDiv.height(400).gmap3({
+                                            map: {
+                                            options: {
+                                            "center": [{{ad.position.latitude}},{{ad.position.longitude}}]
+                                            ,"zoom": 16
+                                            ,"draggable": true
+                                            ,"mapTypeControl": true
+                                            ,"mapTypeId": google.maps.MapTypeId.ROADMAP
+                                            ,"scrollwheel": false
+                                            ,"panControl": true
+                                            ,"rotateControl": false
+                                            ,"scaleControl": true
+                                            ,"streetViewControl": true
+                                            ,"zoomControl": true
+                                            ,"styles": [{"featureType":"all","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.country","elementType":"geometry.stroke","stylers":[{"weight":"1.2"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"geometry.stroke","stylers":[{"weight":"1"},{"visibility":"off"}]},{"featureType":"administrative.neighborhood","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.park","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45},{"visibility":"on"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"transit.station","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#b4d2dc"}]}]                                       }
+                                            }
+                                            ,marker: {
+                                            values: [
+                                            
+                                            {
+                                            
+                                            latLng: [54.978252,-1.6177800000000389],
+                                            options: {
+                                            icon: "http://demo.designinvento.net/classiads5/wp-content/themes/classiads/images/icon-services.png",
+                                            shadow: "http://demo.designinvento.net/classiads5/wp-content/themes/classiads/images/shadow.png",
+                                            },
+                                            
+                                            data: '<div class="marker-holder map-box-style-3"><div class="marker-content"><div class="marker-image"><img src="http://demo.designinvento.net/classiads5/wp-content/uploads/bfi_thumb/marriage-270x2201-30o7iialzpy30t87q7a0i2-31ddx4wnmwy52ntup5uoei.jpg" /></div><div class="marker-info-holder"><div class="map-category-icon-3"><div class="marker-icon-box" ><div class="category-icon-box" style="background-color:#976833"><i class="fa fa-gift"></i></div></div></div><div class="marker-info"><div class="marker-info-title"><a href="http://demo.designinvento.net/classiads5/2016/04/30/grooms-villa/">Grooms Villa</a></div><div class="map-category-bottom-3"><a class="feat-category" href="http://demo.designinvento.net/classiads5/category/grooms/">Grooms</a><div class="marker-info-price">&#36;8,000</div></div></div></div><div class="arrow-down"></div><div class="close"></div></div></div>'
+                                            
+                                            }
+                                            
+                                            ],
+                                            options:{
+                                            draggable: false
+                                            },
+                                            cluster:{
+                                            radius: 20,
+                                            // This style will be used for clusters with more than 0 markers
+                                            0: {
+                                            content: "<div class='cluster cluster-1'>CLUSTER_COUNT</div>",
+                                            width: 62,
+                                            height: 62
+                                            },
+                                            // This style will be used for clusters with more than 20 markers
+                                            20: {
+                                            content: "<div class='cluster cluster-2'>CLUSTER_COUNT</div>",
+                                            width: 82,
+                                            height: 82
+                                            },
+                                            // This style will be used for clusters with more than 50 markers
+                                            50: {
+                                            content: "<div class='cluster cluster-3'>CLUSTER_COUNT</div>",
+                                            width: 102,
+                                            height: 102
+                                            },
+                                            events: {
+                                            click: function(cluster) {
+                                            map.panTo(cluster.main.getPosition());
+                                            map.setZoom(map.getZoom() + 2);
+                                            }
+                                            }
+                                            },
+                                            events: {
+                                            click: function(marker, event, context){
+                                            map.panTo(marker.getPosition());
+                                            var ibOptions = {
+                                            pixelOffset: new google.maps.Size(-125, -88),
+                                            alignBottom: true
+                                            };
+                                            infobox.setOptions(ibOptions)
+                                            infobox.setContent(context.data);
+                                            infobox.open(map,marker);
+                                            // if map is small
+                                            var iWidth = 560;
+                                            var iHeight = 560;
+                                            if((mapDiv.width() / 2) < iWidth ){
+                                            var offsetX = iWidth - (mapDiv.width() / 2);
+                                            map.panBy(offsetX,0);
+                                            }
+                                            if((mapDiv.height() / 2) < iHeight ){
+                                            var offsetY = -(iHeight - (mapDiv.height() / 2));
+                                            map.panBy(0,offsetY);
+                                            }
+                                            }
+                                            }
+                                            }
+                                            });
+                                            map = mapDiv.gmap3("get");
+                                            infobox = new InfoBox({
+                                            pixelOffset: new google.maps.Size(-50, -65),
+                                            closeBoxURL: '',
+                                            enableEventPropagation: true
+                                            });
+                                            mapDiv.delegate('.infoBox .close','click',function () {
+                                            infobox.close();
+                                            });
+                                            if (Modernizr.touch){
+                                            map.setOptions({ draggable : false });
+                                            var draggableClass = 'inactive';
+                                            var draggableTitle = "Activate map";
+                                            var draggableButton = $('<div class="draggable-toggle-button '+draggableClass+'">'+draggableTitle+'</div>').appendTo(mapDiv);
+                                            draggableButton.click(function () {
+                                            if($(this).hasClass('active')){
+                                            $(this).removeClass('active').addClass('inactive').text("Activate map");
+                                            map.setOptions({ draggable : false });
+                                            } else {
+                                            $(this).removeClass('inactive').addClass('active').text("Deactivate map");
+                                            map.setOptions({ draggable : true });
+                                            }
+                                            });
+                                            }
+                                            });
+                                            </script>
+                                            
+                                        </div>
+            {% endif %}
+<hr>
+            <div class="clearfix"></div>
+                                    <div class="author-info clearfix post-single">
+                                        <div >
+                                            {{ad.user.userprofile.image_tag|safe}}
+                                        </div>
+                                        
+                                        <div class="author-detail-right clearfix">
+                                            
+                                            <span class="author-meta">
+                                            <i class="fa fa-map-marker"></i>Address:{{ad.user.userprofile.address}}                                  </span>
+                                            
+                                            
+                                            <span class="author-meta">
+                                            <i class="fa fa-phone"></i>Call:{{ad.user.userprofile.phoneNumber}}                                  </span>
+                                            
+                                            
+                                            <span class="author-meta">
+                                                <i class="fa fa-globe"></i>Website: <a href="{{ad.user.userprofile.website}}">{{ad.user.userprofile.website}}</a>
+                                            </span>
+                                        </div>
+                                        <div class="author-btn">
+                                            <span class="author-profile-ad-details"><a href="/profile/{{ad.user.username}}/" class="button-ag large green">VIEW {{ad.user.username}}'s PROFILE</a></span>
+                                        </div>
+                                    </div>
+                                    </hr>
+
+             {% if ad.comments %}
+             <div class="col-md-3">
+              <span class="monospaced">Comment:</span>
+                {% for comment in ad.comments %}
+                  <p>{{ comment }}</p>
+                  <hr>
+                {% endfor %}
+             </div>
+             {% endif %}
+
+
+
+    </div>
+     <div class="col-md-1"></div>
+  </div><!-- end row -->
+</div><!-- end container -->
+
+ <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+ <style type="text/css">
+     .monospaced { font-family: 'Ubuntu Mono', monospaced ; }
+    .add-to-cart .btn-qty {
+      width: 52px;
+      height: 46px;
+    }
+    .add-to-cart .btn { border-radius: 0; }
+ </style>
+{% endblock %}

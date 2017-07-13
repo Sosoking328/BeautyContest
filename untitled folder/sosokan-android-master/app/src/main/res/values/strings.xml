@@ -1,0 +1,363 @@
+<resources>
+    <string name="app_name">SOSOKAN</string>
+    <string name="facebook_app_id">1705306379718667</string>
+
+    <string name="buddy_build_app_id">57b68e1c803c5601008c925f</string>
+
+    <string name="buddy_build_access_token">V3DnH3GykYBj5WxAEYfDkFKorcJrLl4sFUrpqZc004JEnOQSbsCv7T9c7CX3262NAlnH2nodXfSvzk89ZfSSHayz8vlZLA2VPa0gxUy00VKrPBsPbMWbKh27KHXM</string>
+
+
+    <string name="Skip">Skip</string>
+    <string name="SignUp">Sign Up</string>
+    <string name="ExamplePhoneCode">+ 1</string>
+    <string name="VerifyByPhone">VERIFY BY PHONE</string>
+    <string name="TypeYourPhoneNumber"> Type your phone number</string>
+    <string name="Verify">VERIFY</string>
+    <string name="LoginUsingFacebook">LOG IN USING FACEBOOK</string>
+    <string name="LoginUsingWeChat">LOG IN USING WECHAT</string>
+    <string name="Or">OR</string>
+    <string name="read_full_des">READ FULL DESCRIPTION</string>
+    <string name="availability">AVAILABILITY</string>
+    <string name="phone">PHONE</string>
+    <string name="fax">FAX</string>
+    <string name="email">EMAIL</string>
+    <string name="web">WEB</string>
+    <string name="comments">COMMENTS</string>
+    <string name="tap_to_edit">TAP TO EDIT PHOTO</string>
+    <string name="title">TITLE</string>
+    <string name="discount">DISCOUNT</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="category">CATEGORY</string>
+    <string name="location">LOCATION</string>
+    <string name="type_title_here">Type your title here…</string>
+    <string name="enter_percent">Enter the percentage of your discount</string>
+    <string name="des_classfield">Describe your classified here</string>
+    <string name="coupons_dis">COUPONS / DISCOUNT</string>
+    <string name="post">POST</string>
+    <string name="type_here">Type here…</string>
+    <string name="skip">SKIP</string>
+    <string name="chinese">CHINESE</string>
+    <string name="english">ENGLISH</string>
+    <string name="view">VIEW</string>
+    <string name="distance">DISTANCE</string>
+    <string name="sort">SORT ORDER</string>
+
+    <string name="Details">DETAILS</string>
+    <string name="ReadFullDescription">READ FULL DESCRIPTION</string>
+    <string name="Availability">AVAILABILITY</string>
+    <string name="Phone">PHONE</string>
+    <string name="Fax">FAX</string>
+    <string name="Email">Email</string>
+    <string name="Web">WEB</string>
+    <string name="Comments">COMMENTS</string>
+
+    <string name="btn_skip_intro">Skip Intro</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="drawer_close">Close drawer</string>
+    <string name="drawer_open">Open drawer</string>
+
+    <string name="home_menu">HOME</string>
+    <string name="mess_menu">MESSAGES</string>
+    <string name="my_post_menu">MY POSTS</string>
+    <string name="favorite_menu">FAVORITES</string>
+    <string name="subcrip_menu">SUBSCRIPTIONS</string>
+    <string name="setting_menu">SETTINGS</string>
+    <string name="logout_menu">LOGOUT</string>
+    <string name="login_menu">LOGIN</string>
+    <string name="search_here">Search here</string>
+    <string-array name="spinner_distance_value">
+        <item>WITHIN 1 MILES</item>
+        <item>WITHIN 5 MILES</item>
+        <item>WITHIN 10 MILES</item>
+        <item>WITHIN 25 MILES</item>
+        <item>WITHIN 50 MILES</item>
+        <item>WITHIN 100 MILES</item>
+        <item>WITHIN 250 MILES</item>
+        <item>WITHIN 500 MILES</item>
+        <item>ALL DISTANCE</item>
+    </string-array>
+    <string-array name="spinner_sort_value">
+        <item>MOST RECENT</item>
+        <item>MOST FAVORITE</item>
+    </string-array>
+    <string name="edit_profile">EDIT PROFILE</string>
+    <string name="photo">PHOTO</string>
+    <string name="password">PASSWORD</string>
+    <string name="faq">FAQ</string>
+    <string name="invite_friend">INVITE FRIEND</string>
+    <string name="more_category">MORE CATEGORY</string>
+    <string name="why_dont_sosokan">Why don\'t you sosokan?</string>
+    <string name="company_name">COMPANY NAME</string>
+    <string name="name">NAME</string>
+    <string name="address">ADDRESS</string>
+    <string name="city">CITY</string>
+    <string name="state">STATE</string>
+    <string name="zip">ZIP</string>
+    <string name="note">NOTE</string>
+    <string name="coupons">COUPONS</string>
+    <string name="text_all">ALL</string>
+    <string name="save">SAVE</string>
+    <string name="profile">PROFILE</string>
+    <string name="loading">Loading...</string>
+    <string name="myProfile">My Profile</string>
+
+    <string name="off_percent">OFF</string>
+    <string name="class_field">%d Classifieds</string>
+
+    <!--MESSAGE-->
+    <string name="invalidate_email">The email address is invalid.</string>
+    <string name="invalidate_phone">The phone number you entered is not valid!</string>
+    <string name="alert">Alert!</string>
+    <string name="error">Error!</string>
+    <string name="we_are_sorry">We\'re sorry</string>
+    <string name="error_input_user_name">Please enter your name.</string>
+    <string name="error_input_phone_number">Please enter phone number.</string>
+    <string name="error_input_email">Please enter your email.</string>
+    <string name="error_input_description_advertise">Please enter description.</string>
+    <string name="error_select_category_advertise">Please select category.</string>
+    <string name="error_input_title_advertise">Please enter your post title.</string>
+    <string name="error_input_price_advertise">Please add price</string>
+    <string name="error_input_discount_advertise">Please enter the percentage of your discount</string>
+    <string name="error_select_sub_category_advertise">Please select subcategory</string>
+    <string name="error_please_login">Please login</string>
+    <string name="your_post_was_not_successful">Your post was not successful!</string>
+    <string name="post_successfully">Post Successfully</string>
+    <string name="error_upload_image_advertise">Please upload at least one Ad image</string>
+    <string name="error_select_email_call_advertise">Please select Email Me and / or Call Me</string>
+    <string name="alert_are_you_want_to_sign_out">Are you sure you want to sign out?</string>
+    <string name="error_internet">Internet Error. Please Try again!</string>
+
+    <string name="you_need_to_login_your_sosokan">You need to login to your Sosokan account first to use this function!</string>
+    <!--END MESSAGE-->
+
+    <!--FAQ-->
+    <string-array name="list_faq_question">
+        <item>Who is Sosokan?</item>
+        <item>How do I signup for Sosokan?</item>
+        <item>Is Sosokan Free?</item>
+        <item>How do I post on Sosokan?</item>
+        <item>How can I advertise on Sosokan?</item>
+        <item>Will Sosokan publish my personal information?</item>
+        <item>How does Sosokan Subscription works?</item>
+        <item>How secure is Sosokan?</item>
+        <item>Will Sosokan be launch in another language?</item>
+        <item>How can I delete a post on Sosokan?</item>
+        <item>How do Sosokan process payment between buyer and seller, or customer and merchant?</item>
+        <item>How do I report illegal activity on Sosokan?</item>
+        <item>How do I edit my user profile on Sosokan?</item>
+        <item>Who can I invite to Sosokan?</item>
+        <item>How can I share an ad on Sosokan?</item>
+        <item>How do I delete my account on Sosokan?</item>
+        <item>How do I delete messages on Sosokan?</item>
+        <item>Where do I enter password on Sosokan?</item>
+        <item>Where can I see all my postings?</item>
+        <item>Is Sosokan supported on Android?</item>
+        <item>How can I move my listing to the Top?</item>
+        <item>Can I add attachment within Chat on Sosokan?</item>
+        <item>Can I post on Sosokanapp.com?</item>
+        <item>I do not see the category I want on Sosokan?</item>
+    </string-array>
+
+    <string-array name="list_faq_answer">
+        <item>Sosokan is a classifieds app created by a group of to provide a user friendly experience for searching local advertisement and classifieds. While many are frustrated and overwhelmed by the complexity of Craigslists and many other online classifieds, Sosokan is here to make it simple for all in the palm of your hand.</item>
+        <item>We have took the initiative to make the signup process as simple as 1-2-3. All you need is a valid phone number, facebook or a wechat account. For phone number verification, after you click on signup, enter your phone number and verify it with the sms text code sent to your phone. Viola! For Facebook and weChat, all you need is to login via your facebook userid and password and authenticate sosokan.</item>
+        <item>Yes, Sosokan is free for all users to browse and post ads with picture without any fee. However, if you want your ads to stand out amongst others, you can use our premium version which allows you to post videos and customized description page for a small fee. Please contact us at info@sosokanapp.com for Premium ads.</item>
+        <item>We have made posting simple with a click of a button. Where ever you see a big, yellow "+ " button within our app, you can click on that to add a new post. Then all you need to do is fill-in a brief/detail description.</item>
+        <item>If you are interested in marketing your company within our apps, please contact our sales team at info@sosokanapp.com.</item>
+        <item>Unless you specified in the ads, the only information Sosokan will publish on the ad is your phone number and email address, which is also enabled by you on posting of an ad.</item>
+        <item>Just clicked on the category/sub-category that you are interested in receiving the most updated information, each time a new ad or classified is posted, you will receive a notification. It eliminates the hassle of continuing to search for a specific item repeatedly.</item>
+        <item>Although Sosokan is a free app and free to browse, we do require our posting to allowed only to registered users. This will provide a sense of security to our contents and eliminate spams. Our team will monitor all posts and filter out illegal and unauthorized contents that are hazard to our app and to national security.</item>
+        <item>Yes, Sosokan is currently being launched in two languages, English and Chinese. Our future releases will have the support of multiple languages such as Spanish, German, French, Italian, Russian and many more.</item>
+        <item>All you need to do is to mark the specific post expired in your "My Posts " menu option.</item>
+        <item>Sosokan does not process any forms of payment between buyer and seller, or customer and merchant. All transactions are processed via payment method arranged between buyer and seller, or customer and merchant.</item>
+        <item>Within each ad, please click on the "REPORT IT" and our team will investigate the issue. If it was found to be offensive and illegal, we will remove the ad immediately.</item>
+        <item>In the menu, setting page, you can click on "Edit Profile " button to update your information.</item>
+        <item>If you find Sosokan is useful and would like to share our app to your friends, you can invite them via Facebook, Twitter, and weChat contact.</item>
+        <item>Click on the share icon on the upper right picture of each ad and you can share on your favorite apps.</item>
+        <item>Why would you want to do that? Please email us at info@sosokanapp.com and we will remove your account. But to help us improve our app for other users, please feel free to drop us a line when you send us the email. We do take your opinion and suggestion in a serious manner.</item>
+        <item>In main menu, click on "Messages ", then slide right-to-left on the specific chat to delete unwanted messages.</item>
+        <item>Sosokan does not require password since users are phone, Facebook and weChat verified. Currently we do not have the option for password changes.</item>
+        <item>In main menu, click on "My Posts ", and you will be able to see all of your postings to date. Is Sosokan supported on Android?</item>
+        <item>Our first launch of the Sosokan app is on IOS only. Our team of developer are working on the Android version tirelessly and hope to launch the Android version in the coming months.</item>
+        <item>Listings are sorted by time and date. We do not recommend posting the same advertisement repeatedly just to be on the Top, as long as your ads are relevant, our user will be able to see it with a simple search. It is actually against our policy to post the same ad within a 7 days period. Repeat offenders will have their listings revoked and their account suspended.</item>
+        <item>Our programmers are working on this feature. Currently it is not supported.</item>
+        <item>You can only browse on Sosokanapp.com. Posting are only available on our Sosokan app</item>
+        <item>Great! As we are continuing to improve our app, you have found our missing link. We want you to email us the category that we are missing and we will gladly add it if appropriate.</item>
+
+    </string-array>
+    <!--END FAQ-->
+
+    <!--CATEGORY-->
+    <string name="all">ALL</string>
+    <!--END CATEGORY-->
+    <string name="verify_code">Verify Code</string>
+    <string name="error_input_verify_1">Please enter code.</string>
+    <string name="user_anonymous">User Anonymous</string>
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="please_select_your_language">Choose your language</string>
+    <string name="select_country">Select Country</string>
+    <string name="invitation">Invitation</string>
+    <string name="facebook">Facebook</string>
+    <string name="the_invitation_was_sent">The invitation was sent!</string>
+    <string name="feedback">FEEDBACK</string>
+    <string name="your_email_address"> Your email address</string>
+    <string name="send">Send</string>
+    <string name="what_on_your_mind">What\'s on your mind?</string>
+
+    <string-array name="languages_array">
+        <item>English</item>
+        <item>Chinese (Simplified)</item>
+    </string-array>
+    <string name="search">Search</string>
+    <string name="add">Add</string>
+
+    <string name="price">PRICE</string>
+    <string name="price_hint">0.00</string>
+    <string name="call_me">Call me</string>
+    <string name="email_me">Email me</string>
+
+    <string name="just_now">Just now</string>
+    <string name="ago">ago</string>
+    <string name="min_ago">a minute ago</string>
+    <string name="mins_ago">minutes ago</string>
+    <string name="hour_ago">an hour ago</string>
+    <string name="hours_ago">an hours ago</string>
+    <string name="yesterday">yesterday</string>
+    <string name="days_ago">days ago</string>
+
+    <string name="cannot_connect_firebase">Can not connect to server, please try again.</string>
+    <string name="not_available">N/A</string>
+    <string name="dollar">$</string>
+    <string name="full_time">Full time</string>
+    <string name="new_post">New Post</string>
+    <string name="balance">Balance</string>
+    <string name="thank_you_for_rating">Thank you for your rating</string>
+    <string name="follow">Follow</string>
+    <string name="unfollow">Unfollow</string>
+    <string name="no_results_found">No results</string>
+    <string name="guest">Guest</string>
+    <string name="error_your_post_was_not_successful">Your post was not successful</string>
+    <string name="error_failed_capture_image">Sorry! Failed to capture image</string>
+    <string name="error_failed_record_video">Sorry! Failed to record video</string>
+
+    <string name="private_settings">Private Settings</string>
+    <string name="allow_people_to_call_me">Allow people to call me</string>
+    <string name="allow_people_to_email_me">Allow people to email me</string>
+    <string name="error_reach_limit">Free Posting has a restriction of uploading 5 images maximum.  </string>
+    <string name="send_email">Send mail...  </string>
+    <string name="error_no_email_client">There is no email client installed.  </string>
+    <string name="error_phone_number_is_not_valid">The phone number you entered is not valid!  </string>
+    <string name="error_email_is_not_valid">The email you entered is not valid!  </string>
+    <string name="error_you_did_not_setup_phone">You didn\'t set up phone number!  </string>
+    <string name="error_you_did_not_setup_email">You didn\'t set up email! </string>
+
+    <string name="select_a_category">Select a category</string>
+    <string name="none">None</string>
+    <string name="next">Next</string>
+    <string name="start">Start</string>
+    <string name="update">Update</string>
+
+    <!-- Date Util -->
+    <string name="date_util_term_less">less than</string>
+    <string name="date_util_term_a">a</string>
+    <string name="date_util_term_an">an</string>
+
+
+    <string name="date_util_unit_second">second</string>
+    <string name="date_util_unit_seconds">seconds</string>
+    <string name="date_util_unit_minute">minute</string>
+    <string name="date_util_unit_minutes">minutes</string>
+    <string name="date_util_unit_hour">hour</string>
+    <string name="date_util_unit_hours">hours</string>
+    <string name="date_util_unit_day">day</string>
+    <string name="date_util_unit_days">days</string>
+    <string name="date_util_unit_month">month</string>
+    <string name="date_util_unit_months">months</string>
+    <string name="date_util_unit_year">year</string>
+    <string name="date_util_unit_years">years</string>
+
+
+    <string name="date_util_prefix_lt">less than a</string>
+    <string name="date_util_prefix_about">about</string>
+    <string name="date_util_prefix_over">over</string>
+    <string name="date_util_prefix_almost">almost</string>
+
+
+    <string name="date_util_suffix">ago</string>
+
+
+    <string name="term_condition">By browsing, signing up or logging in. I here by agree to Sosokan’s</string>
+    <string name="term">Terms and Conditions</string>
+    <string name="privacy_policy_new"> &amp; Privacy Policy</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="empty"> </string>
+    <string-array name="post_action_array">
+        <item></item>
+        <item>EXPIRE</item>
+        <item>EDIT</item>
+        <item>DELETE</item>
+        <item>FLAG</item>
+    </string-array>
+
+    <string name="edit_post">Edit Post</string>
+
+
+
+    <string name="following">FOLLOWING</string>
+    <string name="followers">FOLLOWERS</string>
+
+    <string name="sosokan">SOSOKAN</string>
+    <string name="feature_is_not_available">Feature is not available</string>
+    <string name="confirm_delete_ad"> Are you sure you want to delete this Ad?</string>
+    <string name="delete">Delete</string>
+    <string name="select_reason">Select this listing</string>
+    <string name="report">Report</string>
+    <string name="error_send_flag">You should select a reason before send</string>
+    <string name="thank_you_for_report">Thank you for your report</string>
+
+    <string name="error_input_comment">Please enter your comment.</string>
+    <string name="error_occur">Occurred error. Please try again!</string>
+
+
+    <string name="rate_it">Rate it</string>
+
+    <string name="add_a_comment">Add a comment...</string>
+
+    <string name="like">Like</string>
+
+    <string name="share">Share</string>
+
+    <string name="error_invalid_pin_code">Invalid pin code</string>
+    <string name="error_invalid_number">Invalid number</string>
+    <string name="error_input_phone_code">Please select phone code.</string>
+    <string name="error_failed_to_detect_location">Failed to detect location!</string>
+
+
+    <string name="please_enter_4_digits_sosokan">We sent you a text with four digits activation code please enter it here</string>
+    <string name="login_sign_up">LOGIN/SIGN UP</string>
+    <string name="all_distance">ALL DISTANCE</string>
+    <string name="advance_search">Advance Search</string>
+    <string name="category_lowercase">Category</string>
+    <string name="city_lowercase">City</string>
+    <string name="distance_lowercase">Distance</string>
+    <string name="price_lowercase">Price</string>
+    <string name="property">Property</string>
+    <string name="all_cities">All cities</string>
+    <string name="all_properties">All properties</string>
+    <string name="apply">Apply</string>
+    <string name="all_lowercase">All</string>
+
+    <string name="demo_min_label"> </string>
+    <string name="demo_max_label"> </string>
+    <string name="miles"> mile(s)</string>
+    <string name="day_lowercase">Day</string>
+    <string name="days"> day(s)</string>
+    <string name="all_cities_lowercase">All cities</string>
+    <string name="all_state_lowercase">All state</string>
+    <string name="state_lowercase">State</string>
+    <string name="plus_add">+ADD</string>
+</resources>

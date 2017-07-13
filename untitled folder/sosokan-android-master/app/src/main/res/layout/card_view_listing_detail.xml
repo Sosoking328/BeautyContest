@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_listing_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="@dimen/card_advertise_radius">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/thumbnail_listing_detail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/advertise_cover_height"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:scaleType="fitXY" />
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_item_favorite" />
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                android:layout_alignRight="@+id/thumbnail"
+                android:src="@drawable/ic_share_white_30dp" />
+            <TextView
+                android:id="@+id/sale_listing_detail"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/advertise_title_padding"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:layout_marginTop="100dp"
+                android:textSize="@dimen/advertise_created_date"
+                android:layout_alignRight="@+id/thumbnail"
+                />
+            <TextView
+                android:id="@+id/createdDate_listing_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/thumbnail"
+                android:paddingLeft="@dimen/advertise_title_padding"
+                android:paddingRight="@dimen/advertise_title_padding"
+                android:paddingTop="@dimen/advertise_title_padding"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/advertise_created_date"
+                android:drawableLeft="@drawable/ic_clock"
+                android:drawablePadding="5dp"
+                />
+
+            <TextView
+                android:id="@+id/title_listing_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/createdDate_listing_detail"
+                android:paddingLeft="@dimen/advertise_title_padding"
+                android:paddingRight="@dimen/advertise_title_padding"
+                android:paddingTop="@dimen/advertise_title_padding"
+                android:textColor="@color/black"
+                android:textSize="@dimen/advertise_title" />
+
+            <TextView
+                android:id="@+id/description_listing_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_listing_detail"
+                android:paddingBottom="@dimen/advertise_padding_bottom"
+                android:paddingLeft="@dimen/advertise_title_padding"
+                android:paddingRight="@dimen/advertise_title_padding"
+                android:textSize="@dimen/advertise" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.design.widget.CoordinatorLayout>

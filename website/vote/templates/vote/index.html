@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>2017 Miss Chinese Beauty Pageant</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="allery.css">
+
+</head>
+<body>
+
+  {% if all_albums%}
+
+    <h3>Here are all my albums: </h3>
+    <ul>
+      {% for album in all_albums %}
+      <li><a href="{% url 'vote:detail' album.id %}">{{ album.album_title }}</a></li>
+      {% endfor %}
+    </ul>
+
+  {% else %}
+    <h3>You dont have any data!</h3>
+  {% endif %}
+
+<div class="container gallery-container">
+
+    <h1>Bootstrap 3 Gallery</h1>
+
+    <p class="page-description text-center">Thumbnails With Title And Description</p>
+
+    <div class="tz-gallery">
+
+        <div class="row">
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="http://misschinesepageant.com/ny/images/2017/MCBP2017_Top13_01_Shannon_Fan_Profile.jpg">
+                        <img src="http://misschinesepageant.com/ny/images/2017/MCBP2017_Top13_01_Shannon_Fan_Profile.jpg" alt="#1">
+                    </a>
+                    <div class="caption">
+                        <h4>Contestant #01: Shannon Fang</h4>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="http://misschinesepageant.com/ny/images/2017/MCBP2017_Top13_02_Anita_Lee_Profiles.jpg">
+                        <img src="http://misschinesepageant.com/ny/images/2017/MCBP2017_Top13_02_Anita_Lee_Profiles.jpg" alt="#1">
+                    </a>
+                    <div class="caption">
+                        <h4>Contestant #02:</h4>
+                        <p></p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="http://misschinesepageant.com/ny/images/2017/MCBP2017_Top13_03_Jenny_Guo_Profiless.jpg">
+                        <img src="http://misschinesepageant.com/ny/images/2017/MCBP2017_Top13_03_Jenny_Guo_Profiless.jpg" alt="#1">
+                    </a>
+                    <div class="caption">
+                        <h4>Contestant #03:</h4>
+                      <p></p>
+                      </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="http://misschinesepageant.com/ny/images/2017/MCBP2017_Top13_04_Meichi_Chen_Profile.jpg">
+                        <img src="http://misschinesepageant.com/ny/images/2017/MCBP2017_Top13_04_Meichi_Chen_Profile.jpg" alt="#1">
+                    </a>
+                    <div class="caption">
+                        <h4>Contestant #04:</h4>
+                      <p></p>
+                      </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="http://misschinesepageant.com/ny/images/2017/MCBP2017_Top13_05_Leann_Lee_Profile.jpg">
+                        <img src="http://misschinesepageant.com/ny/images/2017/MCBP2017_Top13_05_Leann_Lee_Profile.jpg" alt="#1">
+                    </a>
+                    <div class="caption">
+                        <h4>Contestant #05:</h4>
+                      <p></p>
+                      </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="http://misschinesepageant.com/ny/images/2017/MCBP2017_Top13_06_Rose_Li_Profile.jpg">
+                        <img src="http://misschinesepageant.com/ny/images/2017/MCBP2017_Top13_06_Rose_Li_Profile.jpg" alt="#1">
+                    </a>
+                    <div class="caption">
+                        <h4>Contestant #06:</h4>
+                      <p></p>
+                      </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="http://misschinesepageant.com/ny/images/2017/MCBP2017_Top13_07_Shulammite_Ng_Profile.jpg">
+                        <img src="http://misschinesepageant.com/ny/images/2017/MCBP2017_Top13_07_Shulammite_Ng_Profile.jpg" alt="#1">
+                    </a>
+                    <div class="caption">
+                        <h4>Contestant #07:</h4>
+                        <p></p>
+                      </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="http://misschinesepageant.com/ny/images/2017/MCBP2017_Top13_08_Maggie_Yeung_Profile.jpg">
+                        <img src="http://misschinesepageant.com/ny/images/2017/MCBP2017_Top13_08_Maggie_Yeung_Profile.jpg" alt="#1">
+                    </a>
+                    <div class="caption">
+                        <h4>Contestant #08:</h4>
+                        <p></p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="http://misschinesepageant.com/ny/images/2017/MCBP2017_Top13_09_Selina_Liu_Profiles.jpg">
+                        <img src="http://misschinesepageant.com/ny/images/2017/MCBP2017_Top13_09_Selina_Liu_Profiles.jpg" alt="#1">
+                    </a>
+                    <div class="caption">
+                        <h4>Contestant #09:</h4>
+                      <p></p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="http://misschinesepageant.com/ny/images/2017/MCBP2017_Top13_10_Angela_Huang_Profiles.jpg">
+                        <img src="http://misschinesepageant.com/ny/images/2017/MCBP2017_Top13_10_Angela_Huang_Profiles.jpg" alt="#1">
+                    </a>
+                    <div class="caption">
+                        <h4>Contestant #10:</h4>
+                      <p></p>
+                      </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="http://misschinesepageant.com/ny/images/2017/MCBP2017_Top13_11_Christie_Chang_Profiles.jpg">
+                        <img src="http://misschinesepageant.com/ny/images/2017/MCBP2017_Top13_11_Christie_Chang_Profiles.jpg" alt="#1">
+                    </a>
+                    <div class="caption">
+                        <h4>Contestant #11:</h4>
+                      <p></p>
+                      </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="http://misschinesepageant.com/ny/images/2017/MCBP2017_Top13_12_Anyi_Gao_Profiles.jpg">
+                        <img src="http://misschinesepageant.com/ny/images/2017/MCBP2017_Top13_12_Anyi_Gao_Profiles.jpg" alt="#1">
+                    </a>
+                    <div class="caption">
+                        <h4>Contestant #12:</h4>
+                      <p></p>
+                      </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="http://misschinesepageant.com/ny/images/2017/MCBP2017_Top13_13_Cynthia_Leung_Profile.jpg">
+                        <img src="http://misschinesepageant.com/ny/images/2017/MCBP2017_Top13_13_Cynthia_Leung_Profile.jpg" alt="#1">
+                    </a>
+                    <div class="caption">
+                        <h4>Contestant #13:</h4>
+                      <p></p>
+                      </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+</body>
+</html>

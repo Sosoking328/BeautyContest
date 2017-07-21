@@ -1,0 +1,67 @@
+{% extends "polls/base.html" %}
+{% load staticfiles %}
+{% block main_content %}
+
+<div class="container gallery-container">
+
+    <h2><p class="page-description text-center">2017 Miss Chinese Beauty Pageant</p></h2>
+    <div class="tz-gallery">
+
+        <div class="row">
+            {% for contestant in candidates %}
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="{{contestant.candidate_image.url}}">
+                        <img src="{{contestant.candidate_image.url}}" width=500 alt="{{contestant.first_name}}"/>
+                    </a>
+                    <div class="caption">
+                    <h4><p class="page-description text-center">#{{contestant.assigned_number}}. {{contestant.first_name}} {{contestant.last_name}}</p></h4>
+
+
+                              <form action="{% url 'polls:login' %}">
+                                  <p class="page-description text-center">
+                              <input type="image" src="http://www.clker.com/cliparts/c/l/Y/w/j/p/orange-heart-hi.png" width=40>{{contestant.vote_count}}
+                                  </p>
+                              </form>
+                 </div>
+                </div>
+            </div>
+
+            {% endfor %}
+        </div>
+
+    </div>
+
+</div>
+
+
+<!--
+<div class="container">
+    {% for contestant in candidates %}
+        {% if forloop.counter|divisibleby:3 %}
+        <div class="row">
+        {% endif %}
+            <div class="col-md-4">
+                <div class="picture w3-card-4" style="width:20rem">
+                    <a class="lightbox" href="{{contestant.candidate_image.url}}">
+                        <img class="card-img-top" src="{{contestant.candidate_image.url}}" style="width:19rem" class="center-block img-responsive">
+                    </a>
+                    <div class = "card-block">
+                        <h4>#{{contestant.assigned_number}} {{contestant.first_name}} {{contestant.last_name}}</h4>
+                    </div>
+                    <div class = "card-footer">
+                       <p style="font-size:120%">
+                           <img src="static/polls/images/heart-transparent.png" style="height:15px;width:15px"> {{contestant.vote_count}}
+                       </p>
+                    </div>
+                </div>
+            </div>
+        {% if forloop.counter|divisibleby:3 %}
+        </div>
+        <br>
+        {% endif %}
+    {% endfor %}
+</div>
+-->
+
+{% endblock %}

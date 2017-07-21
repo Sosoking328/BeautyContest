@@ -1,0 +1,32 @@
+{% extends 'polls/base.html' %}
+{% load staticfiles %}
+{% block main_content %}
+<div>
+
+      <h2 align="center">THANK YOU FOR VOTING!</h2>
+    <h5 align="center"><a href="{% url 'polls:index' %}">Back to Homepage</a></h5>
+
+</div>
+
+
+<div class="container">
+	<h2><p class="page-description text-center">Sponsor and Brought to you by: Sosokan!</p></h2>
+	<div class="row">
+		<div class="col-sm-12 col-md-offset-3">
+			<!--div class="panel panel-default"-->
+
+            <div class="panel-body">
+
+              <a href="http://www.sosokanapp.com/cn/" target="_blank">
+
+                  <img src="http://sosokanapp.com/assets/images/cn/hand.png" width="500" border="0" align="center"  /><br>
+
+
+              </a>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

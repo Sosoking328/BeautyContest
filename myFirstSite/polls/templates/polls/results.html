@@ -1,0 +1,42 @@
+{% extends 'polls/base_after.html' %}
+{% load staticfiles %}
+{% block main_content %}
+
+<div class="container gallery-container">
+<h2>{% if error_message %} <strong><p class="page-description text-center">{{error_message}}</p></strong> </h2>
+<h5 align="center"><a href="{% url 'polls:index' %}">Back to Homepage</a></h5>
+
+{% else %}
+
+<h2 align="center">THANK YOU FOR VOTING</h2>{{contestant.first_name}} {{contestant.last_name}}
+<h5 align="center"><a href="{% url 'polls:index' %}">Back to Homepage</a></h5>
+    <div class="tz-gallery">
+
+        <div class="row">
+            {% for contestant in candidates %}
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="{{contestant.candidate_image.url}}">
+                        <img src="{{contestant.candidate_image.url}}" width=500 alt="{{contestant.first_name}}"/>
+                    </a>
+                    <div class="caption">
+                    <h4><p class="page-description text-center">#{{contestant.assigned_number}}. {{contestant.first_name}} {{contestant.last_name}}</p></h4>
+
+                            <p class="page-description text-center">
+                            <input type="image" src="http://www.clker.com/cliparts/c/l/Y/w/j/p/orange-heart-hi.png" width=40>{{contestant.vote_count}}
+                          </p>
+                    </div>
+                </div>
+            </div>
+
+            {% endfor %}
+        </div>
+
+    </div>
+
+{% endif %}
+
+
+</div>
+
+{% endblock %}

@@ -118,7 +118,7 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated'],
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
     'PAGE_SIZE': 100,
-   
+
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
@@ -340,7 +340,7 @@ TINYMCE_DEFAULT_CONFIG = {
                '| bullist numlist | outdent indent | table | link image | codesample | preview code | fontselect  fontsizeselect | forecolor backcolor | emoticons',
     'contextmenu': 'formats | link image',
     'fontsize_formats': '8px 10px 12px 14px 18px 24px 36px',
-    'relative_urls': False, 
+    'relative_urls': False,
     'content_css' : "/static/css/custom_content.css",
     'theme_advanced_fonts' : "Andale Mono=andale mono,times;"+
                              "Arial=arial,helvetica,sans-serif;"+
@@ -370,7 +370,7 @@ TINYMCE_DEFAULT_CONFIG = {
     'custom_undo_redo_levels': 10,
     'forced_root_block': False,
     'remove_linebreaks': True,
-    #'theme_advanced_resize_horizontal': False,      
+    #'theme_advanced_resize_horizontal': False,
     #'entity_encoding': "raw",
     #'verify_html' : 'false',
     'statusbar': True,

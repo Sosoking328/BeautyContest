@@ -1,0 +1,27 @@
+{% extends 'polls/base_after.html' %}
+{% load staticfiles %}
+{% block main_content %}
+  <div class="container">
+  {% if error_message %} <strong><p>{{error_message}}</p></strong> {% endif %}
+  <!-- {% if candidates %} -->
+  {% for contestant in candidates %}
+      {% if forloop.counter|divisibleby:3 %}
+      <div class="row">
+      {% endif %}
+          <div class="col-md-4">
+              <div class="picture w3-card-4" style="width:20rem">
+                  <img class="card-img-top" src="{{contestant.candidate_image.url}}" style="width:19rem" class="center-block img-responsive">
+                  <br>
+                  <div class = "card-block">
+                      <h4>{{contestant.assigned_number}} {{contestant.first_name}} {{contestant.last_name}} has {{contestant.vote_count}} vote{{contestant.vote_count|pluralize}}</h4>
+                  </div>
+              </div>
+          </div>
+      {% if forloop.counter|divisibleby:3 %}
+      </div>
+      <br>
+      {% endif %}
+  {% endfor %}
+  </div>
+{% endif %}
+{% endblock %}

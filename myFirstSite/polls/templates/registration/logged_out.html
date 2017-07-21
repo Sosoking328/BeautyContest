@@ -1,0 +1,16 @@
+{% extends 'polls/base.html' %}
+{% load staticfiles %}
+{% block title %}_Logout_{% endblock %}
+{% block main_content %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Login</button>
+    </form>
+
+    <a href="http://www.sosokanapp.com/cn/" target="_blank">
+      <img width="220" height="250" border="0" align="center"  src="http://sosokanapp.com/assets/images/logo.png"/>
+    </a>
+
+
+{% endblock %}

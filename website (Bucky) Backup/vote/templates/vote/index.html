@@ -1,0 +1,46 @@
+{% extends 'vote/base.html' %}
+
+{% block body %}
+
+
+
+<div class="container gallery-container">
+
+    <h1><p class="page-description text-center">2017 Miss Chinese Beauty Pageant</p></h1>
+
+    <p class="page-description text-center">Thumbnails With Title And Description</p>
+
+    <div class="tz-gallery">
+
+        <div class="row">
+            {% for album in all_albums %}
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="{{ album.album_logo}}">
+                        <img src="{{ album.album_logo}}" width=500 alt="{{album.album_artist}}"/>
+                    </a>
+                    <div class="caption">
+                    <h4><p class="page-description text-center">{{album.album_title}}</p></h4>
+                        <form action="{% url 'vote:favorite' album.id %}" method="post">
+                            {% csrf_token %}
+                                {% if song.is_favorite %}
+                                  <img src="http://www.clker.com/cliparts/D/u/R/8/Y/q/solid-orange-heart-md.png" width=40/>
+                                {% endif %}
+                              </label><br>
+                            <p class="page-description text-center">
+                            <input type="image" src="http://www.clker.com/cliparts/c/l/Y/w/j/p/orange-heart-hi.png" width=40>
+                          </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            {% endfor %}
+        </div>
+
+    </div>
+
+</div>
+
+
+{% endblock %}

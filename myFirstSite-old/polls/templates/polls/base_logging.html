@@ -1,0 +1,15 @@
+{% extends "polls/base.html" %}
+
+{% load staticfiles %}
+
+
+{% include "polls/header_logging.html" %}
+<div class="jumbotron">
+    <div class="container">
+        {% block main_content %}
+        {% endblock %}
+    </div>
+</div>
+{% include "polls/footer.html" %}
+</body>
+</html>

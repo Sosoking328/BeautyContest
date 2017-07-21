@@ -1,0 +1,26 @@
+{% extends 'polls/base.html' %}
+{% load staticfiles %}
+{% block title %}_Login_{% endblock %}
+{% block main_content %}
+<div class="container">
+	<h2><p class="page-description text-center">Please signup or login to vote.</p></h2>
+	<div class="row">
+		<div class="col-sm-12 col-md-offset-3">
+			<!--div class="panel panel-default"-->
+
+            <div class="panel-body">
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit">Login</button>
+                    <button type="reset">Reset</button>
+                </form>
+								<br>
+
+                <a href= "{% url 'polls:register' %}"><h5>New User</h5></a>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,27 @@
+body{
+    background: white url("image/background.png");
+}
+
+.navbar{
+    border-radius: 0;
+    background-color: #F8F8F8;
+    border-color: #E7E7E7;
+
+}
+
+.navbar-brand{
+  font-family: 'Satisfy', cursive;
+  color: #FF6200
+}
+
+h2 {
+    display: block;
+    font-family: 'Satisfy', cursive;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    color: #FF6200
+}

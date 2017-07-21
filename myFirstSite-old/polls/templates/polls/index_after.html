@@ -1,0 +1,40 @@
+{% extends "polls/base_after.html" %}
+{% load staticfiles %}
+{% block main_content %}
+
+<div class="container">
+    <form action = "{% url 'polls:votes' %}" method="post">
+    {% csrf_token %}
+    <div class="row">
+        <h3 align="center"><b>Select your favorite contestant below.</b></h3>
+        <div class="block" align="center">
+            <label style="display:inline-block; vertical-align:middle; font-size: 22px;">Then click</label>
+            <input type ="submit" class="btn btn-success" value="CONFIRM" style="text-align:center; vertical-align:middle; font-size:18px"/>
+        </div>
+    </div>
+        <br>
+    {% for contestant in candidates %}
+
+        {% if forloop.counter|divisibleby:3 %}
+        <div class="row">
+        {% endif %}
+            <div class="col-md-4">
+                <div class="picture w3-card-4" style="width:20rem">
+                    <img class="card-img-top" src="{{contestant.candidate_image.url}}" style="width:19rem"   class="center-block img-responsive">
+                    <br>
+                    <div class = "card-block">
+                        <br>
+                        <input type="radio" name="contestant" id="contestant{{forloop.counter}}" value ="{{contestant.id}}"/>
+                        <label for="contestant{{forloop.counter}}">{{contestant.assigned_number}} {{contestant.first_name}} {{contestant.last_name}}</label><br>
+                    </div>
+                </div>
+            </div>
+        {% if forloop.counter|divisibleby:3 %}
+        </div>
+        <br>
+        {% endif %}
+    {% endfor %}
+    </form>
+</div>
+
+{% endblock %}

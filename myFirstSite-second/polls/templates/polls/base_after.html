@@ -1,0 +1,43 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>2017 Miss Chinese Beauty Pageant</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/bootstrap-3.3.7-dist/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<!--    <link rel="stylesheet" type="text/css" href={% static 'vote/style.css' %}/>  -->
+
+  <script type="text/javascript">
+        var likes=0;
+        function like() {
+            document.getElementById("show").innerHTML=likes;
+            likes = likes + 1;
+        }
+     </script>
+</head>
+
+<body>
+
+<br>
+{% include "polls/header_after.html" %}
+<div class="jumbotron">
+    <div class="container">
+        {% block main_content %}
+        {% endblock %}
+    </div>
+</div>
+{% include "polls/footer.html" %}
+</body>
+</html>

@@ -1,0 +1,90 @@
+
+
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>2017 Miss Chinese Beauty Pageant</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" type="text/css" href={% static 'vote/style.css' %}/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+
+        <!-- Header -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="{% url 'vote:index' %}">SOSOKAN</a>
+      </div>
+
+      <!--Items -->
+      <div class="collaspe navbar-collaspe" id="topNavBar">
+          <ul class="nav navbar-nav">
+            <li class="">
+              <a href="{% url 'vote:index' %}">
+                 <span class="glyphicon glyphicon-cd" aria-hidden="false"></span>
+                 Contestants
+              </a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav">
+            <li class="">
+              <a href="{% url 'vote:index' %}">
+                 <span class="glyphicon glyphicon-cd" aria-hidden="false"></span>
+                 Gallery
+              </a>
+            </li>
+          </ul>
+
+          <form class="navbar-form navbar-left" role="search" method="get" action="#">
+            <div class="form-group">
+              <input type="text" class="form-control" name="q" value="">
+            </div>
+            <button type="submit" class="btn btn-default">Search</button>
+
+          </form>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="">
+              <a href="#">
+                 <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                 Logout
+              </a>
+            </li>
+          </ul>
+
+      </div>
+    </div>
+</nav>
+
+{% block body %}
+
+{% endblock %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+</body>
+</html>

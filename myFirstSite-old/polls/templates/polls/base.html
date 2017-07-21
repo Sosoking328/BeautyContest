@@ -1,0 +1,61 @@
+
+
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>2017 Miss Chinese Beauty Pageant</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/bootstrap-3.3.7-dist/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/thumbnail-gallery.css' %}" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script type="text/javascript">
+        var likes=0;
+        function like() {
+            document.getElementById("show").innerHTML=likes;
+            likes = likes + 1;
+        }
+     </script>
+</head>
+
+<body>
+<br>
+{% include "polls/header.html" %}
+<div class="jumbotron">
+    <div class="container">
+       <!--div class="row">
+           <div class="col-md-4"><a href="{% static 'polls/images/Desertsmall.jpg' %}"><img src="{% static 'polls/images/Desertsmall.jpg' %}"></a></div>
+           <div class="col-md-4"><a href="{% static 'polls/images/Koalasm.jpg' %}"><img src="{% static 'polls/images/Koalasm.jpg' %}"></a></div>
+           <div class="col-md-4"><a href="{% static 'polls/images/Penguinssmall.jpg' %}"><img src="{% static 'polls/images/Penguinssmall.jpg' %}"></a></div>
+
+           <!-- LikeBtn.com BEGIN -->
+           <!--span class="likebtn-wrapper" data-theme="squarespace" data-identifier="item_1"></span>
+           <!--script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+            <!-- LikeBtn.com END -->
+      <!--/div-->
+        {% block main_content %}
+        {% endblock %}
+    </div>
+</div>
+
+{% include "polls/footer.html" %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+</body>
+</html>

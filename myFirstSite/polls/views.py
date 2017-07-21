@@ -66,11 +66,12 @@ class UserFormView(generic.View):
             user = form.save(commit=False)
             #clean the data
             username = form.cleaned_data['username']
+            email = form.cleaned_data['email']
             password = form.cleaned_data['password']
             user.set_password(password)
             user.save()
             # return user objects if crediential are correct
-            user = authenticate(username=username, password=password)
+            user = authenticate(username=username, email=email, password=password)
 
             if user is not None:
                 if user.is_active:

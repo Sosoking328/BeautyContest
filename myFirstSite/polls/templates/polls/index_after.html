@@ -4,15 +4,20 @@
 
 <div class="container gallery-container">
 
-    <h2><p class="page-description text-center">2017 Miss Chinese Beauty Pageant</p></h2>
+
+      <p class="page-description text-center">
+        <img src="http://www.sosokanapp.com/assets/images/topbanner.jpg" width=400 alt=""/>
+      </p>
+
     <div class="tz-gallery">
 
       <form action = "{% url 'polls:votes' %}" method="post">
       {% csrf_token %}
 
         <div class="row">
-          <h3 align="center"><b>Select your favorite contestant below and click the "heart" to vote.</b></h3>
-          <h3 align="center"><b>You will only have "1" chance to vote, so please choose carefully!</b></h3>
+          <p class="page-description text-center">
+            <img src="http://www.sosokanapp.com/assets/images/pickone.jpg" width=400 alt=""/>
+          </p>
 
             {% for contestant in candidates %}
             <div class="col-sm-6 col-md-4">
@@ -23,12 +28,14 @@
                     <div class="caption">
                       <h4><p class="page-description text-center">#{{contestant.assigned_number}}. {{contestant.first_name}} {{contestant.last_name}}</p></h4>
                     <div class = "card-block">
-                    
+
                     </div>
 
                             <p class="page-description text-center">
-                            <input type="image" src="http://www.clker.com/cliparts/c/l/Y/w/j/p/orange-heart-hi.png" name="contestant" id="contestant{{forloop.counter}}" value ="{{contestant.id}}" width=40>{{contestant.vote_count}}
+                            <input type="image" src="http://www.clker.com/cliparts/c/l/Y/w/j/p/orange-heart-hi.png" name="contestant" id="contestant{{forloop.counter}}" value ="{{contestant.id}}" width=60>{{contestant.vote_count}}
                           </p>
+                          <p class="page-description text-center">Tap on the heart to Vote!</p>
+
                     </div>
                 </div>
             </div>
@@ -37,6 +44,13 @@
         </div>
 
     </div>
+
+    <p class="page-description text-center">
+      <a href="http://www.sosokanapp.com/index_cn.html" target="_blank">
+            <img src="http://www.sosokanapp.com/assets/images/bottombanner.jpeg" width=400 border="0" align="center"/>
+    </p>
+
+
 
 </div>
 

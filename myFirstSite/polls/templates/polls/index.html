@@ -3,16 +3,22 @@
 {% block main_content %}
 
 <div class="container gallery-container">
+</div>
 
-    <h2><p class="page-description text-center">2017 Miss Chinese Beauty Pageant</p></h2>
+<p class="page-description text-center">
+  <img src="http://www.sosokanapp.com/assets/images/beautypageant.jpg" width=400 alt=""/>
+</p>
+    <p class="page-description text-center">
+      <img src="http://www.sosokanapp.com/assets/images/topbanner.jpg" width=400 alt=""/>
+    </p>
     <div class="tz-gallery">
 
         <div class="row">
             {% for contestant in candidates %}
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <a class="lightbox" href="{{contestant.candidate_image.url}}">
-                        <img src="{{contestant.candidate_image.url}}" width=500 alt="{{contestant.first_name}}"/>
+                    <a class="lightbox" href="{{contestant.candidate_image2}}">
+                        <img src="{{contestant.candidate_image.url}}" width=400 alt="{{contestant.first_name}}"/>
                     </a>
                     <div class="caption">
                     <h4><p class="page-description text-center">#{{contestant.assigned_number}}. {{contestant.first_name}} {{contestant.last_name}}</p></h4>
@@ -20,7 +26,11 @@
 
                               <form action="{% url 'polls:login' %}">
                                   <p class="page-description text-center">
-                              <input type="image" src="http://www.clker.com/cliparts/c/l/Y/w/j/p/orange-heart-hi.png" width=40>{{contestant.vote_count}}
+                              <input type="image" src="http://www.clker.com/cliparts/c/l/Y/w/j/p/orange-heart-hi.png" width=60>{{contestant.vote_count}}
+                                  </p>
+                              </form>
+                              <form action="{% url 'polls:login' %}">
+                                  <p class="page-description text-center">VOTE
                                   </p>
                               </form>
                  </div>
@@ -31,6 +41,14 @@
         </div>
 
     </div>
+
+
+
+    <p class="page-description text-center">
+      <a href="http://www.sosokanapp.com/index_cn.html" target="_blank">
+            <img src="http://www.sosokanapp.com/assets/images/bottombanner.jpeg" width=400 border="0" align="center"/>
+    </p>
+
 
 </div>
 

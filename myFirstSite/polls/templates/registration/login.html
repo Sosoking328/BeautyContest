@@ -3,7 +3,9 @@
 {% block title %}_Login_{% endblock %}
 {% block main_content %}
 <div class="container">
-	<h2><p class="page-description text-center">Please signup or login to vote.</p></h2>
+	<p class="page-description text-center">
+		<img src="http://www.sosokanapp.com/assets/images/signup.jpg" width=400 alt=""/>
+	</p>
 	<div class="row">
 		<div class="col-sm-12 col-md-offset-3">
 			<!--div class="panel panel-default"-->
@@ -12,15 +14,19 @@
                 <form method="post">
                     {% csrf_token %}
                     {{ form.as_p }}
-                    <button type="submit">Login</button>
-                    <button type="reset">Reset</button>
+                    <button type="submit">LOGIN</button>
+                    <button type="reset">RESET</button>
+										<br>
                 </form>
 								<br>
-
-                <a href= "{% url 'polls:register' %}"><h5>New User</h5></a>
+								<br>
+				<a href= "{% url 'polls:register' %}"><button>NEW USER</button></a>
+																<a href= "{% url 'polls:register' %}"><img src="http://www.sosokanapp.com/assets/images/adduser.png" width=40 border="0" align="center"/></a>
 
             </div>
+
         </div>
+
     </div>
 </div>
 {% endblock %}

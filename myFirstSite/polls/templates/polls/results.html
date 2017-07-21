@@ -4,12 +4,19 @@
 
 <div class="container gallery-container">
 <h2>{% if error_message %} <strong><p class="page-description text-center">{{error_message}}</p></strong> </h2>
-<h5 align="center"><a href="{% url 'polls:index' %}">Back to Homepage</a></h5>
+<h5 align="center"><a href="{% url 'polls:logout' %}">Back to Homepage</a></h5><br>
+<p class="page-description text-center">
+<a href="http://www.sosokanapp.com/index-cn.html" target="_blank">
+  <img src="http://www.sosokanapp.com/assets/images/moving-banner.gif" width=500 border="0" align="center"/>
+</p>
+
+
 
 {% else %}
 
-<h2 align="center">THANK YOU FOR VOTING</h2>{{contestant.first_name}} {{contestant.last_name}}
-<h5 align="center"><a href="{% url 'polls:index' %}">Back to Homepage</a></h5>
+
+
+
     <div class="tz-gallery">
 
         <div class="row">
@@ -23,7 +30,7 @@
                     <h4><p class="page-description text-center">#{{contestant.assigned_number}}. {{contestant.first_name}} {{contestant.last_name}}</p></h4>
 
                             <p class="page-description text-center">
-                            <input type="image" src="http://www.clker.com/cliparts/c/l/Y/w/j/p/orange-heart-hi.png" width=40>{{contestant.vote_count}}
+                            <input type="image" src="http://www.clker.com/cliparts/c/l/Y/w/j/p/orange-heart-hi.png" width=60>{{contestant.vote_count}}
                           </p>
                     </div>
                 </div>
@@ -37,6 +44,12 @@
 {% endif %}
 
 
-</div>
 
+
+</div>
 {% endblock %}
+
+<p class="page-description text-center">
+  <a href="http://www.sosokanapp.com/index_cn.html" target="_blank">
+        <img src="http://www.sosokanapp.com/assets/images/bottombanner.jpeg" width=500 border="0" align="center"/>
+</p>

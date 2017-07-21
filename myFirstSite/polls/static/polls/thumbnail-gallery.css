@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    background-image: linear-gradient(to top, #e6e9f0 0%, #ffffff 100%);
     min-height: 100vh;
     font: normal 16px sans-serif;
 }
@@ -24,7 +24,7 @@ body {
 }
 
 .tz-gallery .thumbnail {
-    padding: 0;
+    padding: 20px;
     margin-bottom: 30px;
     background-color: #fff;
     border-radius: 40px;
@@ -60,4 +60,16 @@ body {
 
 .baguetteBox-button {
     background-color: transparent !important;
+}
+
+h2 {
+    display: block;
+    font-family: 'Satisfy', cursive;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    color: #FF6200;
 }

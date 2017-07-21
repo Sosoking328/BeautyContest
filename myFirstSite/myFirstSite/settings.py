@@ -25,7 +25,7 @@ SECRET_KEY = '$s186k40%fh5o^evysvr3*&fwp$3&zr^tsom27^tgck0ryxvi#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sosoking.pythonanywhere.com']
 
 
 # Application definition

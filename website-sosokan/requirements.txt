@@ -30,7 +30,7 @@ django-storages==1.5.1
 django-tinymce4-lite==1.4.1
 django-updown==1.0.1
 django-user-agents==0.3.0
-djangorestframework==3.6.3
+djangorestframework==3.11.2
 djangorestframework-gis==0.11
 drfdocs==0.0.11
 enum34==1.1.6

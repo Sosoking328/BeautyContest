@@ -74,7 +74,7 @@ pyparsing==2.2.0
 Pyrebase==3.0.24
 python-dotenv==0.6.2
 -e git://github.com/Sosokan/python-firebase@5d63d8e03fabacc270c5bfae73e4bf5b50fc3d51#egg=python_firebase
-python-jwt==2.0.1
+python-jwt==3.3.4
 python-openid==2.2.5
 python-utils==2.0.1
 python3-openid==3.0.10

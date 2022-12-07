@@ -2,7 +2,7 @@ alphabet-detector==0.0.5
 appdirs==1.4.2
 BeautifulSoup==3.2.1
 boto==2.43.0
-certifi==2017.4.17
+certifi==2022.12.7
 chardet==3.0.4
 click==6.7
 coreapi==2.3.1
